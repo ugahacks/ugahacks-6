@@ -3,11 +3,11 @@
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;900&display=swap";
 
 body {
-background-image:url(../images/blueprint.svg);
-background-repeat:no-repeat;
-background-attachment:fixed;
-background-size:cover!important;
-}
+  background-image:url(../images/blueprint.svg);
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:cover!important;
+  }
 
 html {
 scroll-behavior:smooth;
@@ -24,7 +24,7 @@ color:#fff;
 h1 {
 font-family:"Poppins";
 text-transform:uppercase;
-color:#ffe401!important;
+color:#ffe401;
 font-weight:600!important;
 letter-spacing:2px!important;
 }
@@ -302,6 +302,30 @@ display:block;
 margin-left:auto;
 margin-right:auto;
 }
+
+#Registration {
+  background-image: none !important;
+  height: auto !important;
+}
+
+#cdmobile {
+  display: block;
+}
+
+.regiscontent {
+  position: static !important;
+  margin-bottom: 15%;
+}
+
+#regcountdown {
+  display: none;
+}
+
+#countdownd, #countdownh, #countdownm, #countdowns {
+  color: #ffe401 !important;
+}
+
+
 }
 
 @media (max-width: 990px) {
@@ -312,23 +336,23 @@ right:80px!important;
 
 @media (max-width:767px) {
 .imgsec {
-padding-left:15%!important;
+  padding-left:15%!important;
 }
 
 .keydatestext {
-flex-wrap:wrap;
+  flex-wrap:wrap;
 }
 
 .schedulecol,.datecol,.timecol {
-flex-basis:100%;
+  flex-basis:100%;
 }
 
 #Organizers,#Organizernav {
-display:none;
+  display:none;
 }
 
 #regcountdown {
-padding:5px;
+  padding:5px;
 }
 }
 
@@ -546,4 +570,55 @@ margin-left:5px;
 .active:after {
 content:"-";
 /* Unicode character for "minus" sign (-) */
+}
+
+
+#Registration {
+  background-image: url(../images/countdown.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-top: 6%;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+
+.regiscontent {
+  position: absolute;
+  max-height: 80%;
+  max-width: 100%;
+  top: 55%;
+  left: 10%;
+  right: 10%;
+}
+
+#regcountdown {
+  background-color: #21232c !important;
+  color: #ffe401;
+}
+
+.timecol h1, .timecol h2 {
+  color:#21232c;
+}
+
+.hide {
+  display: none;
+}
+
+#showmore {
+  color: #ffe401;
+  background: none;
+  border: none;
+  outline: none;
+  float: right;
+  padding: 2%;
+}
+
+#cdmobile {
+  display: none;
+}
+
+#countdownd, #countdownh, #countdownm, #countdowns {
+  color: #21232c;
 }

@@ -7,10 +7,28 @@
 	.st1{fill:none;stroke:#23489B;stroke-miterlimit:10;}
 	.st2{opacity:0.5;}
 	.st3{opacity:0.5;fill:none;stroke:#FCFFFF;stroke-width:0.75;stroke-miterlimit:10;enable-background:new    ;}
-	
+
 		.st4{opacity:0.5;fill:none;stroke:#FCFFFF;stroke-width:0.75;stroke-miterlimit:10;stroke-dasharray:12.12;stroke-dashoffset:50;enable-background:new    ;}
-	
+
 		.st5{opacity:0.5;fill:none;stroke:#FCFFFF;stroke-width:0.75;stroke-miterlimit:10;stroke-dasharray:1353;stroke-dashoffset:1353;enable-background:new    ;}
+		#dottedcircle, #dotted1, #dotted2, #dotted3, #dotted4, #dotted5, #dotted6 {
+		                stroke-dasharray: 12.12;
+		                stroke-dashoffset: 50;
+		                animation: move 3s linear infinite;
+		            }
+
+		            #draw {
+		                stroke-dasharray: 1353px;
+		                stroke-dashoffset: 1353px;
+		                animation: move 5s linear;
+		                animation-fill-mode: forwards;
+		            }
+
+		            @keyframes move {
+		                100% {
+		                    stroke-dashoffset: 0;
+		                }
+		            }
 </style>
 <path class="st0" d="M1885.1-8.5H-11.1v1304.3h1896.2V-8.5z"/>
 <g id="grid">
@@ -104,10 +122,10 @@
 	<path class="st5" d="M1487.7,1239.2h22.6"/>
 </g>
 <g id="draw" class="st2">
-	<path class="st5" d="M-240,796.2V611h724.1V407.2"/>
-	<line class="st5" x1="801.6" y1="426.3" x2="1973.3" y2="426.3"/>
-	<line class="st5" x1="801.6" y1="393.4" x2="801.6" y2="460.5"/>
-	<line class="st5" x1="-821.8" y1="986.3" x2="349.9" y2="986.3"/>
-	<line class="st5" x1="350.1" y1="954.7" x2="350.1" y2="1021.8"/>
+	<path class="st3" d="M-240,796.2V611h724.1V407.2"/>
+	<line class="st3" x1="801.6" y1="426.3" x2="1973.3" y2="426.3"/>
+	<line class="st3" x1="801.6" y1="393.4" x2="801.6" y2="460.5"/>
+	<line class="st3" x1="-821.8" y1="986.3" x2="349.9" y2="986.3"/>
+	<line class="st3" x1="350.1" y1="954.7" x2="350.1" y2="1021.8"/>
 </g>
 </svg>
