@@ -1,0 +1,77 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:400,600,700,900&display=swap";
+
+body {
+  font-family: "Poppins" !important;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  max-width: 100%;
+}
+
+.site-content {
+  margin: auto;
+  max-width: 2200px;
+}
+
+section {
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+.about {
+  background-image: radial-gradient(rgba(250, 250, 250, 0.9), rgba(255, 255, 255, 0.9)), url(../images/toolpattern.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover !important;
+}
+
+.section-text {
+  margin: auto;
+  width: 50%;
+  font-size: 1.3em;
+}
+
+@media only screen and (max-width: 480px) {
+  .section-text {
+    width: 90%;
+    font-size: 1.1em;
+  }
+}
+
+.about-text, .tool {
+  color: black;
+}
+
+.tool-rack {
+  margin-top: 75px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.schedule {
+  background-image: url(../images/blueprint.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover !important;
+}
+
+div {
+  font-weight: 400;
+  color: #fff;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 25px 0px;
+}
