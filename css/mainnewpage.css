@@ -33,13 +33,6 @@ section {
   font-size: 1.3em;
 }
 
-@media only screen and (max-width: 480px) {
-  .section-text {
-    width: 90%;
-    font-size: 1.1em;
-  }
-}
-
 .about-text, .tool {
   color: black;
 }
@@ -49,7 +42,16 @@ section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+
+.tool {
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  text-align: center;
+  flex-basis: 25%;
+  flex-grow: 0;
 }
 
 .schedule {
@@ -74,4 +76,16 @@ h2 {
   font-weight: 600;
   letter-spacing: 2px;
   margin: 25px 0px;
+}
+
+@media only screen and (max-width: 480px) {
+  .section-text {
+    width: 90%;
+    font-size: 1.1em;
+  }
+
+  .tool-rack {
+    margin-top: 0px;
+    flex-direction: column;
+  }
 }
