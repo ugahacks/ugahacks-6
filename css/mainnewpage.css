@@ -61,6 +61,29 @@ section {
   background-size: cover !important;
 }
 
+.day-schedule {
+  text-align: center;
+}
+
+.day-header {
+  font-size: 1.7em;
+}
+
+table {
+  margin: auto;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+td {
+  padding: 15px 20px;
+  width: 70%;
+}
+
+td:last-child {
+  color: #ffe401;
+}
+
 div {
   font-weight: 400;
   color: #fff;
