@@ -30,7 +30,7 @@
   </script>
 </head>
 
-<body>
+<body onload="setDefault()">
   <div class="site-content">
     <section class="about">
       <div class="section-text about-text">
@@ -64,8 +64,8 @@
     <section class="schedule">
       <div class="section-text schedule-text">
         <h1>Schedule</h1>
-        <div class="day-schedule">
-          <h1 class="day-header"><i class="material-icons">arrow_back_ios</i> Friday <i class="material-icons">arrow_forward_ios</i></h1>
+        <div class="day-schedule collapse" id="Frisched">
+          <h1 class="day-header"><span class="disabled"><i class="material-icons">arrow_back_ios</i></span> Friday <span class="active" onclick="changeSchedule('#Frisched','#Satsched')"><i class="material-icons">arrow_forward_ios</i></span></h1>
           <table>
             <tbody>
               <tr>
@@ -91,17 +91,101 @@
             </tbody>
           </table>
         </div>
+        <div class="day-schedule collapse" id="Satsched">
+          <h1 class="day-header"><span class="active" onclick="changeSchedule('#Satsched','#Frisched')"><i class="material-icons">arrow_back_ios</i></span> Saturday <span class="active" onclick="changeSchedule('#Satsched','#Sunsched')"><i class="material-icons">arrow_forward_ios</i></span></h1>
+          <table>
+            <tbody>
+              <tr>
+                <td>Breakfast</td>
+                <td>8:00 am</td>
+              </tr>
+              <tr>
+                <td>Workshops</td>
+                <td>10:00 am</td>
+              </tr>
+              <tr>
+                <td>The latest Byte - Example Sponsor (Room 101)</td>
+                <td>11:00 am</td>
+              </tr>
+              <tr>
+                <td>Even More Workshops</td>
+                <td>11:30 am</td>
+              </tr>
+              <tr>
+                <td>Lunch</td>
+                <td>12:00 pm</td>
+              </tr>
+              <tr>
+                <td>Cup Stacking - Example Sponsor (Room 101)</td>
+                <td>1:00 pm</td>
+              </tr>
+              <tr>
+                <td>Dinner</td>
+                <td>6:00 pm</td>
+              </tr>
+              <tr>
+                <td>Join the UGAHacks team!</td>
+                <td>7:00 pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="day-schedule collapse" id="Sunsched">
+          <h1 class="day-header"><span class="active" onclick="changeSchedule('#Sunsched','#Satsched')"><i class="material-icons">arrow_back_ios</i></span> Sunday <span class="disabled"><i class="material-icons">arrow_forward_ios</i></span></h1>
+          <table>
+            <tbody>
+              <tr>
+                <td>Brekafast</td>
+                <td>9:00 am</td>
+              </tr>
+              <tr>
+                <td>Judging</td>
+                <td>10:00 am</td>
+              </tr>
+              <tr>
+                <td>Closing Ceremony</td>
+                <td>1:00 pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    function setDefault(){
+      let curTime = Date.now()
+      let saturdayDate = new Date('July 29, 2020');
+      let sundayDate = new Date('July 30, 2020');
+      let dayScheds = $('.day-schedule');
+      if (curTime - saturdayDate.getTime() > 0 && curTime - sundayDate.getTime() < 0) {
+        $(dayScheds[1]).removeClass('collapse');
+        $(dayScheds[1]).addClass('visible');
+      }
+      else if (curTime - sundayDate.getTime() > 0) {
+        $(dayScheds[2]).removeClass('collapse');
+        $(dayScheds[2]).addClass('visible');
+      }
+      else {
+        $(dayScheds[0]).removeClass('collapse');
+        $(dayScheds[0]).addClass('visible');
+      }
+    }
 
+    function changeSchedule(oldSchedule, newSchedule){
+      $(oldSchedule).removeClass("visible");
+      $(oldSchedule).addClass("collapse");
+      if ($(newSchedule).hasClass("collapse")) {
+         $(newSchedule).removeClass("collapse");
+      }
+      $(newSchedule).addClass("visible");
+    }
+  </script>
   <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script> -->
 </body>
 
 </html>
