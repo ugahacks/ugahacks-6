@@ -61,22 +61,20 @@ section {
   background-size: cover !important;
 }
 
-.day-schedule {
-  text-align: center;
-}
-
 .day-header {
   font-size: 1.7em;
+  text-align: center;
 }
 
 table {
   margin: auto;
   font-size: 1.1em;
   font-weight: 600;
+  text-align: left;
 }
 
 td {
-  padding: 15px 20px;
+  padding: 15px 35px;
   width: 70%;
 }
 
