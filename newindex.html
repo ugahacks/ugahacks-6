@@ -31,8 +31,12 @@
 </head>
 
 <body>
+  <div class="nav">
+    <a href="#about"><span class="nav-icon"><i class="material-icons">lens</i></span></a>
+    <a href="#schedule"><span class="nav-icon"><i class="material-icons">trip_origin</i></span></a>
+  </div>
   <div class="site-content">
-    <section class="about">
+    <section id="about">
       <div class="section-text about-text">
         <h2>What is UGAHacks?</h2>
         <p>UGAHacks is an annual hackathon organized by fellow students at the University of Georgia in Athens, Georgia. Hackathons are all about groups of dedicated people coming together to create something amazing in a epic 36-hour programming
@@ -61,7 +65,7 @@
         </div>
       </div>
     </section>
-    <section class="schedule">
+    <section id="schedule">
       <div class="section-text schedule-text">
         <h1>Schedule</h1>
         <div class="day-schedule collapse" id="Frisched">
@@ -153,6 +157,16 @@
     </section>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(window).on("scroll", function () {
+      if ($(this).scrollTop() > $(window).height()) {
+        $('.nav-icon').addClass('nav-white');
+      }
+      else {
+        $('.nav-icon').removeClass('nav-white');
+      }
+    });
+  </script>
   <script src="js/schedule.js"></script>
   <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
