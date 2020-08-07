@@ -50,7 +50,17 @@ div {
 }
 
 #hof-container {
-  
+  padding-top: 15vh;
+}
+
+.hof-heading {
+  display: block;
+  text-align: center;
+}
+
+#hof-subheader {
+  color: #ffc107;
+  padding-bottom: 1vh;
 }
 
 #overall {
