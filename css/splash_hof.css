@@ -63,8 +63,9 @@ div {
   padding-bottom: 1vh;
 }
 
-#overall {
-  margin: auto;
+.card {
+  margin: 15px;
+  padding: 25px;
 }
 
 #cardbody {
@@ -86,20 +87,32 @@ div {
   height: auto;
 }
 
-#overall a {
+#overall {
+  margin: auto;
+  padding-left: .75%;
+  padding-right: 2%;
+  width: 95%;
+}
+
+.slick-arrow {
+  z-index: 99;
+}
+
+/*#overall a {
   position: relative;
   left: 10%;
   width: 80%;
   transition: .5s ease;
 }
-
+*/
 #team-members-heading {
   font-size: 110%;
 }
-
+/*
 #overall a:hover {
 
-}
+}*/
+
 
 img#imghof {
   background-color: transparent;
