@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>UGAHacks 6</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="css/mainnewpage.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script>
+    (function(h, o, t, j, a, r) {
+      h.hj = h.hj || function() {
+        (h.hj.q = h.hj.q || []).push(arguments)
+      };
+      h._hjSettings = {
+        hjid: 1566634,
+        hjsv: 6
+      };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script');
+      r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+</head>
+
+<body>
+  <div class="nav">
+    <a href="#about"><span class="nav-icon"><i class="material-icons" title="about">lens</i></span></a>
+    <a href="#schedule"><span class="nav-icon"><i class="material-icons" title="schedule">trip_origin</i></span></a>
+  </div>
+  <div class="site-content">
+    <section id="about">
+      <div class="section-text about-text">
+        <h2>What is UGAHacks?</h2>
+        <p>UGAHacks is an annual hackathon organized by fellow students at the University of Georgia in Athens, Georgia. Hackathons are all about groups of dedicated people coming together to create something amazing in a epic 36-hour programming
+          sleepover.</p>
+        <p>Even though submitting a project is the main objective, that's not all there is. We'll have mentors, free food, video game competitions, workshops and more. There's even a workshop at the event for anyone that still needs to find some
+          teammates!</p>
+        <p>So come and join us to build the future!</p>
+        <h2>The tools you'll need:</h2>
+        <div class="tool-rack">
+          <div class="tool">
+            <img id="sittingbyte" src="images/sittingbyte.svg" alt="Byte (UGAHacks's mascot) winking">
+            <h3>Laptop</h3>
+          </div>
+          <div class="tool">
+            <img id="sittingbyte" src="images/sittingbyte.svg" alt="Byte (UGAHacks's mascot) winking">
+            <h3>Phone</h3>
+          </div>
+          <div class="tool">
+            <img id="sittingbyte" src="images/sittingbyte.svg" alt="Byte (UGAHacks's mascot) winking">
+            <h3>Sleeping <br> Bag</h3>
+          </div>
+          <div class="tool">
+            <img id="sittingbyte" src="images/sittingbyte.svg" alt="Byte (UGAHacks's mascot) winking">
+            <h3>Chargers</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="schedule">
+      <div class="section-text schedule-text">
+        <h1>Schedule</h1>
+        <div class="day-schedule collapse" id="Frisched">
+          <h1 class="day-header"><span class="disabled"><i class="material-icons">arrow_back_ios</i></span> Friday <span class="active" onclick="changeSchedule('#Frisched','#Satsched')"><i class="material-icons">arrow_forward_ios</i></span></h1>
+          <table>
+            <tbody>
+              <tr>
+                <td>What's big data? - Example Sponsor (Room 101)</td>
+                <td>9:00 am</td>
+              </tr>
+              <tr>
+                <td>Workshops</td>
+                <td>10:00 am</td>
+              </tr>
+              <tr>
+                <td>More Workshops</td>
+                <td>11:00 am</td>
+              </tr>
+              <tr>
+                <td>Even More Workshops</td>
+                <td>11:30 am</td>
+              </tr>
+              <tr>
+                <td>Lunch</td>
+                <td>12:00 pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="day-schedule collapse" id="Satsched">
+          <h1 class="day-header"><span class="active" onclick="changeSchedule('#Satsched','#Frisched')"><i class="material-icons">arrow_back_ios</i></span> Saturday <span class="active" onclick="changeSchedule('#Satsched','#Sunsched')"><i class="material-icons">arrow_forward_ios</i></span></h1>
+          <table>
+            <tbody>
+              <tr>
+                <td>Breakfast</td>
+                <td>8:00 am</td>
+              </tr>
+              <tr>
+                <td>Workshops</td>
+                <td>10:00 am</td>
+              </tr>
+              <tr>
+                <td>The latest Byte - Example Sponsor (Room 101)</td>
+                <td>11:00 am</td>
+              </tr>
+              <tr>
+                <td>Even More Workshops</td>
+                <td>11:30 am</td>
+              </tr>
+              <tr>
+                <td>Lunch</td>
+                <td>12:00 pm</td>
+              </tr>
+              <tr>
+                <td>Cup Stacking - Example Sponsor (Room 101)</td>
+                <td>1:00 pm</td>
+              </tr>
+              <tr>
+                <td>Dinner</td>
+                <td>6:00 pm</td>
+              </tr>
+              <tr>
+                <td>Join the UGAHacks team!</td>
+                <td>7:00 pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="day-schedule collapse" id="Sunsched">
+          <h1 class="day-header"><span class="active" onclick="changeSchedule('#Sunsched','#Satsched')"><i class="material-icons">arrow_back_ios</i></span> Sunday <span class="disabled"><i class="material-icons">arrow_forward_ios</i></span></h1>
+          <table>
+            <tbody>
+              <tr>
+                <td>Brekafast</td>
+                <td>9:00 am</td>
+              </tr>
+              <tr>
+                <td>Judging</td>
+                <td>10:00 am</td>
+              </tr>
+              <tr>
+                <td>Closing Ceremony</td>
+                <td>1:00 pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).on("scroll", function () {
+      let scrollPosition = $(document).scrollTop();
+      let aboutPos = $('#about').offset().top;
+      let schedPos = $('#schedule').offset().top;
+      if (scrollPosition >= schedPos-450) {
+        $('.nav-icon').addClass('nav-white');
+        $($('.nav-icon > i')[0]).text("trip_origin");
+        $($('.nav-icon > i')[1]).text("lens");
+      }
+      else if (scrollPosition >= aboutPos && scrollPosition < schedPos){
+        $('.nav-icon').removeClass('nav-white');
+        $($('.nav-icon > i')[1]).text("trip_origin");
+        $($('.nav-icon > i')[0]).text("lens");
+      }
+    });
+  </script>
+  <script src="js/schedule.js"></script>
+  <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
