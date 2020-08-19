@@ -1,671 +1,138 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>UGAHacks 6</title>
+    <link rel="stylesheet" href="style/faq.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="section faq-section">
+      <div class="faq-container">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>UGAHacks 6</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-  <link rel="manifest" href="images/favicon/site.webmanifest">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="css/mainpage.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <script>
-    (function (h, o, t, j, a, r) {
-      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
-      h._hjSettings = { hjid: 1566634, hjsv: 6 };
-      a = o.getElementsByTagName('head')[0];
-      r = o.createElement('script'); r.async = 1;
-      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-      a.appendChild(r);
-    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-  </script>
-</head>
+          <h1>FAQ</h1>
 
-<body>
-  <a id="mlh-trust-badge"
-    style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000"
-    href="https://mlh.io/seasons/na-2020/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2020-season&utm_content=white"
-    target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-white.svg"
-      alt="Major League Hacking 2020 Hackathon Season" style="width:100%"></a>
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark navbar-custom">
-    <a class="navbar-brand" href="#"><img src="images/bytesixlogo.svg" alt="UGAHacks 6"
-        id="navbarlogo"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse navbar-nav" id="navbarNavAltMarkup">
-      <a class="nav-item nav-link" href="#HOF" hidden>Hall of Fame</a>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="dropdownhead" data-toggle="dropdown">
-          Event Info
-        </a>
-        <div class="dropdown-menu" aria-labelledby="dropdownhead">
-          <a class="dropdown-item" href="#About">About</a>
-          <a class="dropdown-item" href="#FAQ">FAQ</a>
-        </div>
-      </li>
-      <a class="nav-item nav-link" href="#Schedule" hidden>Schedule</a>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="dropdownhead" data-toggle="dropdown" hidden>
-          UGAHacks Team
-        </a>
-        <div class="dropdown-menu" aria-labelledby="dropdownhead">
-          <a class="dropdown-item" id="Organizernav" href="#Organizers">Organizers</a>
-          <a class="dropdown-item" href="#Pasthack">Past Events</a>
-          <a class="dropdown-item" href="mailto:hello@ugahacks.com">Contact Us</a>
-        </div>
-      </li>
-      <a class="nav-item nav-link" href="#Sponsors" hidden>Sponsors</a>
-    </div>
-  </nav>
-  <div id="mainheader">
-    <br>
-    <img src="images/tools.svg" alt="" id="mainbannerlogo">
-    <img src="images/mobilesplash.svg" alt="" id="mobilemainbannerlogo">
-    <a class="ct-btn-scroll ct-js-btn-scroll" href="#About"><img alt="Arrow Down Icon"
-        src="https://raw.githubusercontent.com/solodev/scroll-down-anchor/master/images/arrow-down-1.png"></a>
-    <div class="sectionhead">
-      <h3 id="mainsubtitle" hidden><b>February 7 - 9, 2020 at Zell B. Miller Learning Center</b></h3>
-    </div>
-  </div>
-  <div id="Register-goto"></div>
-   <div id="Registration">
-     <div class="section" >
-         <img src="images/cdmobile-01.svg" id="cdmobile">
-       <div class="regiscontent">
-       <div class="sectionhead">
-         <h1 id="regcountdown">UGAHacks 6 Registration starts in :</h1>
-       </div>
-       <div class="sectiontext">
-         <div class="keydatestext" >
-           <div class="timecol">
-             <h1 id="countdownd"></h1>
-             <h2> Days </h2>
-           </div>
-           <div class="timecol">
-             <h1 id="countdownh"></h1>
-             <h2> Hours </h2>
-           </div>
-           <div class="timecol">
-             <h1 id="countdownm"></h1>
-             <h2> Minutes </h2>
-           </div>
-           <div class="timecol">
-             <h1 id="countdowns"></h1>
-             <h2> Seconds </h2>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
-
-
-   <div id="About">
-     <div class="section" data-aos="fade-up">
-       <div class="sectionhead">
-         <br>
-         <h1 class="sectiontitle" hidden>About</h1>
-         <img id="aboutimg" src="images/about.svg">
-       </div>
-       <div class="d-flex flex-wrap justify-content-center">
-         <div class="abouttext">
-           <p>This year at UGAHacks, we are all about building your ideas into reality. Hackathons are all about bridging your mind and fingertips to make sure your vision comes to life. You might even construct and design multiple skyscrapers before settling on one mockup or use one as a strong foundation to reach other ones. Log on and join us for this epic 36 hour programming sleepover, hosted at UGA's <a href="https://goo.gl/maps/rMa5f99XiaW39a8e6" class="textlink">Zell
-             B. Miller Learning Center.</a>
-           </p><p>
-               Emergency, Emergency! Fret not, we have mentors, workshops, and volunteers to help you get those critical materials so you can keep building. Two materials you'll not need to worry about is food and water as plenty of truckloads will be shipped out throughout the event. We also have cool features such as a Photo Booth and video game tournaments when you just want to unwind from a long day on the site. Just remember not to end up in a catastrophic failure because of procrastination!
-           </p>
-           <p class="subheader"> We can't wait to see your ideas. Build the Future!</p>
-         </div>
-         <figure id="bytehello">
-           <img id="sittingbyte" src="images/sittingbyte.svg" alt="Byte (UGAHacks's mascot) winking">
-
-         </figure>
-       </div>
-     </div>
-   </div>
-  <div id="Schedule" hidden>
-    <div class="section" data-aos="zoom-in-up" data-aos-duration="500">
-      <div class="sectionhead">
-        <br>
-        <h1>Schedule</h1>
-      </div>
-      <h2 id="keydates">Key Dates</h2>
-      <div class="keydatestext">
-        <div class="datecol" data-aos="fade-up-right">
-          <h3>Registration Opens:</h3>
-          <h2><b>December 1<sup>st</sup></b></h2>
-        </div>
-        <div class="datecol" data-aos="fade-up">
-          <h3>Registration Closes:</h3>
-          <h2><b>January 24<sup>th</sup></b></h2>
-        </div>
-        <div class="datecol" data-aos="fade-up-left">
-          <h3>Decision Response:</h3>
-          <h2><b>January 30<sup>th</sup></b></h2>
-        </div>
-      </div>
-      <img id="bytecal" src="images/laptopbyte.svg" alt="Byte with a laptop"
-        data-aos="fade-up">
-      <div class="scheduletext">
-        <div class="schedulecol" data-aos="fade-up-right">
-          <h3>Friday - Feb. 7th</h3>
-          <div class="sectiontext">
-            <table>
-              <tbody>
-                <tr>
-                  <td><b>5:00 PM</b></td>
-                  <td>Check-in Opens (MLC 4th Floor)</td>
-                </tr>
-                <tr>
-                  <td><b>6:00 PM</b></td>
-                  <td>Tate Free Parking Decks Open</td>
-                </tr>
-                <tr>
-                  <td><b>6:30 PM</b></td>
-                  <td>Opening Ceremony (Room 101)</td>
-                </tr>
-                <tr>
-                  <td><b>7:15 PM</b></td>
-                  <td>Dinner/Check-In Closes</td>
-                </tr>
-                <tr>
-                  <td><b>8:15 PM</b></td>
-                  <td>Art Contest Briefing (Room 348)</td>
-                </tr>
-                <tr>
-                  <td><b>8:15 PM</b></td>
-                  <td>First Time Hackers/Team Building - Jennifer Ly (Room 102)</td>
-                </tr>
-                <tr>
-                  <td><b>9:00 PM</b></td>
-                  <td>Web Architecture - Paul Hansa (Room 350)</td>
-                </tr>
-                <tr>
-                  <td><b>9:15 PM</b></td>
-                  <td>BlackRock API Challenge and the Power of UX/UI (Room 101)</td>
-                </tr>
-                <tr>
-                  <td><b>10:00 PM</b></td>
-                  <td>Web Dev 101: Hosting, Domains, and Analytics - Andy Troung (Room 348)</td>
-                </tr>
-                <tr>
-                  <td><b>11:00 PM</b></td>
-                  <td> GitHub Sites for Sore IO's - Zane Blalock and Madison Hanberry (Room 350)</td>
-                </tr>
-                <tr>
-                  <td><b>12:00 AM</b></td>
-                  <td>Sleeping Room Opens (Room 348)</td>
-                </tr>
-              </tbody>
-            </table>
+          <button class="faq-question">Where will the event be held this year?</button>
+          <div class="faq-answer">
+            <p>The event will be held at UGA's <a href="https://goo.gl/maps/rMa5f99XiaW39a8e6" class="textlink">Zell
+              B. Miller Learning Center.</a></p>
           </div>
-        </div>
-        <div class="schedulecol" data-aos="fade-up">
-          <h3>Saturday - Feb. 8th</h3>
-          <div class="sectiontext">
-            <table>
-              <tbody>
-                <tr>
-                  <td><b>9:00 AM</b></td>
-                  <td>Breakfast</td>
-                </tr>
-                <tr>
-                  <td><b>10:00 AM</b></td>
-                  <td>Future of Financial Products with Technology and Sustainability - BlackRock (Room 101)</td>
-                </tr>
-                <tr>
-                  <td><b>10:00 AM</b></td>
-                  <td>Google maps app integration - Leo Chen (Room 350)</td>
-                </tr>
-                <tr>
-                  <td><b>11:00 AM</b></td>
-                  <td>Pitch Perfect - Penn Hansa (Room 348)</td>
-                </tr>
-                <tr>
-                  <td><b>11:00 AM</b></td>
-                  <td>Indoor Football Toss - State Farm (Room 102)</td>
-                </tr>
-                <tr>
-                  <td><b>12:15 PM</b></td>
-                  <td>Capture the Flag - MLH (Room 350)</td>
-                </tr>
-                <tr>
-                  <td><b>12:30 PM</b></td>
-                  <td>How to Solve a Cyber Crime - PwC (Room 101)</td>
-                </tr>
-                <tr>
-                  <td><b>2:00 PM</b></td>
-                  <td>Lunch</td>
-                </tr>
-                <tr>
-                  <td><b>3:00 PM</b></td>
-                  <td>HPCC Systems Big Data Analytics Workshop (Room 101)</td>
-                </tr>
-                <tr>
-                  <td><b>3:00 PM</b></td>
-                  <td>Delivering Your Idea: Pitching with Purpose - BlackRock (Room 348)</td>
-                </tr>
-                <tr>
-                  <td><b>4:15 PM</b></td>
-                  <td>Pathways - Statefarm (Room 102)</td>
-                </tr>
-                <tr>
-                  <td><b>4:15 PM</b></td>
-                  <td>Resume Workshop (Room 350)</td>
-                </tr>
-                <tr>
-                  <td><b>5:30 PM</b></td>
-                  <td>MLH Werewolf (Room 348)</td>
-                </tr>
-                <tr>
-                  <td><b>6:45 PM</b></td>
-                  <td>Realtime cloud messaging mobile app with Ionic and Firebase - Dr Cengiz Gunay (Room 350)</td>
-                </tr>
-                <tr>
-                  <td><b>8:00 PM</b></td>
-                  <td>Dinner</td>
-                </tr>
-                <tr>
-                  <td><b>9:15 PM</b></td>
-                  <td>Join the UGAHacks Team! (Room 350)</td>
-                </tr>
-                <tr>
-                  <td><b>9:30 PM</b></td>
-                  <td>Computer Hacking 101 with the Metasploit Framework - Jackson Reid (Room 348)</td>
-                </tr>
-                <tr>
-                  <td><b>11:00 PM</b></td>
-                  <td>Smash Ultimate Tourney (Room 350)</td>
-                </tr>
-                <tr>
-                  <td><b>12:00 AM</b></td>
-                  <td>Sleeping Room Opens (Room 348)</td>
-                </tr>
-              </tbody>
-            </table>
+
+          <button class="faq-question">Who can sign up?</button>
+          <div class="faq-answer">
+            <p>All university students! We welcome all undergraduates and graduate students of all skill levels to
+              attend.
+              Professionals and other guests are welcome to attend as mentors or volunteers.</p>
           </div>
-        </div>
-        <div class="schedulecol" data-aos="fade-up-left">
-          <h3>Sunday - Feb. 9th</h3>
-          <div class="sectiontext">
-            <table>
-              <tbody>
-                <tr>
-                  <td><b>9:00 AM</b></td>
-                  <td>Submissions Due on DevPost</td>
-                </tr>
-                <tr>
-                  <td><b>9:00 AM</b></td>
-                  <td>Breakfast</td>
-                </tr>
-                <tr>
-                  <td><b>10:00 AM</b></td>
-                  <td>Expo/Judging (4th Floor Hallway)</td>
-                </tr>
-                <tr>
-                  <td><b>1:00 PM</b></td>
-                  <td>Closing Ceremony (Room 101)</td>
-                </tr>
-              </tbody>
-            </table>
+
+          <button class="faq-question">How much does it cost to sign up?</button>
+          <div class="faq-answer">
+            <p>Nothing! The entire event and its amazing perks are free for all participants, including meals and snacks
+              to keep you powered throughout the weekend, as well as workshops to help you get started and sharpen your
+              hacking skills.</p>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div id="FAQ">
-    <div class="section" data-aos="fade-up">
-      <div class="sectionhead">
-        <br>
-        <h1 hidden>Have Questions?</h1>
-        <img id="faqimg" src="images/faq.svg">
-      </div>
-      <div class="accordion-container">
-      <button class="accordion">Where will the event be held this year?</button>
-      <div class="panel">
-        <p>The event will be held at UGA's <a href="https://goo.gl/maps/rMa5f99XiaW39a8e6" class="textlink">Zell
-          B. Miller Learning Center.</a> </p>
-      </div>
-
-      <button class="accordion">Who can sign up?</button>
-      <div class="panel">
-        <p>All university students! We welcome all undergraduates and graduate students of all skill levels to
-          attend.
-          Professionals and other guests are welcome to attend as mentors or volunteers.</p>
-      </div>
-
-      <button class="accordion">How much does it cost to sign up?</button>
-      <div class="panel">
-        <p>Nothing! The entire event and its amazing perks are free for all participants, including meals and snacks
-          to keep you powered throughout the weekend, as well as workshops to help you get started and sharpen your
-          hacking skills.</p>
-      </div>
-
-      <button class="accordion">What if I don't have a team or idea?</button>
-      <div class="panel">
-        <p>Don't sweat it! You're free to join any existing team or form a new one when you get there. We'll also
-          provide ample opportunities for hackers to meet each other and brainstorm some amazing ideas</p>
-      </div>
-
-      <button class="accordion">Can I start working on my project before the event?</button>
-      <div class="panel">
-        <p>No. All UGAHacks projects must begin at the hackathon. You are not permitted to begin a hackathon project
-          before this event. Feel free to bring ideas, but no code!</p>
-      </div>
-
-      <button class="accordion">What should I bring?</button>
-      <div class="panel">
-        <p>Enthusiasm! Laptops, phones, chargers, and other tools you might need for your project are also
-          important!
-          If you're staying overnight, be sure to bring the necessary toiletries and a sleeping bag. Additionally,
-          please bring your official student ID or government ID (no photocopies allowed).</p>
-      </div>
-
-      <button class="accordion">Will you be offering travel reimbursements?</button>
-      <div class="panel">
-        <p>Yes, we will be offering travel reimbursements! Please make sure to note it on your registration and we
-          will reach out to you upon acceptance. University of Georgia students are not eligible to receive travel
-          reimbursements.</p>
-      </div>
-
-      <button class="accordion">Can I volunteer/mentor at UGAHacks?</button>
-      <div class="panel">
-        <p>We love your enthusiasm! Volunteers and mentors can apply via the registration form above! If you
-          have any
-          questions regarding the position, please contact us at <a href="mailto:hello@ugahacks.com"
-            class="textlink">hello@ugahacks.com</a> - Be sure to mention the specific position in the subject of
-          the
-          email. See you at the event!</p>
-      </div>
-
-      <button class="accordion">How many people can I have on my team?</button>
-      <div class="panel">
-        <p>There is no hard limit, but we recommend teams be at most 4 people, as we only have prizes for 4
-          people per
-          team.</p>
-      </div>
-
-      <button class="accordion">Where will I sleep?</button>
-      <div class="panel">
-        <p>We'll have designated sleeping areas for hackers, but they will be on a first-come-first-serve
-          basis.
-          You're welcome and even encouraged to bring a sleeping bag!</p>
-      </div>
-
-      <button class="accordion">What are the rules all attendees must abide by?</button>
-      <div class="panel">
-        <p>UGAHacks will be following the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" class="textlink">
-            MLH Code of Conduct</a>. By participating in UGAHacks, you are agreeing to
-          follow the
-          Code of Conduct throughout the duration of the event.</p>
-      </div>
-
-      <button class="accordion">Who do I reach out to if I have more questions?</button>
-      <div class="panel">
-        <p>Reach out to <a href="mailto:hello@ugahacks.com" class="textlink">hello@ugahacks.com</a> and
-          we'll be happy
-          to answer it!</p>
-      </div>
-    </div>
-  </div>
-  </div>
-</div>
-
-
-  <div id="Sponsors" hidden>
-    <div class="section" data-aos="fade-up">
-      <div class="sectionhead">
-        <h1>Sponsors</h1>
-      </div>
-      <div class="sponsorlogos">
-        <div class="sponimgsec">
-          <a href="https://www.pwc.com/gx/en/about.html">
-            <img src="ugahacks5/images/sponsorpics/pwcready.png" alt="pwc">
-          </a>
-        </div>
-        <div class="sponimgsec">
-          <a href="https://macyscollege.com/Internships/Technology/">
-            <img src="ugahacks5/images/sponsorpics/Macyslogo.svg" alt="macy's tech">
-          </a>
-        </div>
-        <div class="sponimgsec">
-          <a href="https://www.blackrock.com/corporate/about-us">
-            <img src="ugahacks5/images/sponsorpics/blackrock.svg" alt="blackRock">
-          </a>
-        </div>
-        <div class="sponimgsec">
-          <a href="https://www.statefarm.com/about-us/">
-            <img src="ugahacks5/images/sponsorpics/statefarm.png" alt="statefarm">
-          </a>
-        </div>
-        <div class="sponimgsec">
-          <a href="https://hpccsystems.com/">
-            <img src="ugahacks5/images/sponsorpics/HPCCSystems.png" alt="hpcc systems">
-          </a>
-        </div>
-        <div class="sponimgsec">
-          <a href="https://www.equifax.com/personal/">
-            <img src="ugahacks5/images/sponsorpics/equifax.png" alt="equifax">
-          </a>
-        </div>
-        <div class="sponimgsec">
-          <a href="https://www.digitalocean.com/">
-            <img src="ugahacks5/images/sponsorpics/DigitalOcean_Logo.svg" alt="digital ocean">
-          </a>
-        </div>
-        <div class="sponimgsec">
-          <a href="https://www.kontrolfreek.com/">
-            <img src="ugahacks5/images/sponsorpics/KF.png" alt="kontrolfreek">
-          </a>
-        </div>
-        <div class="sponimgsec">
-          <a href="https://www.cs.uga.edu/">
-            <img src="ugahacks5/images/sponsorpics/uga.png" id="ugacombologo"
-              alt="UGA CS Department, Student Govt Association, Resident Hall Association">
-          </a>
-        </div>
-        <div class="sponimgsec" id="acm">
-          <a href="https://www.ugaacm.com/#who-we-are">
-            <img src="ugahacks5/images/sponsorpics/acm.png" alt="UGA ACM">
-          </a>
-        </div>
-      </div>
-      <div class="sectiontext">
-        <h3 class="subheader">Partners</h3>
-      </div>
-      <div class="sponsorlogos">
-        <div class="sponimgsec">
-          <a href="http://hackp.ac/mlh-stickermule-hackathons">
-            <img src="ugahacks5/images/sponsorpics/sticker-mule-logo-light-bg.svg" alt="Sticker mule">
-          </a>
-        </div>
-      </div>
-      <br>
-      <br>
-      <div class="sectiontext">
-        <h3 class="subheader">Interested in sponsoring us?</h3>
-        <p>By sponsoring UGAHacks, your company will have the opportunity to inspire new programmers
-          while also reaching
-          out to and recruiting the rising stars of the tech industry. Please look over the <a
-            href="docs/UGAHacks-5-Sponsorship-Deck.pdf" class="textlink">Sponsorship Packet</a>
-          and <a href="mailto:sponsor@ugahacks.com" class="textlink">reach out to our sponsorship team
-            for more
-            information.</a></p>
-        <br>
-      </div>
-    </div>
-  </div>
-
-  <div id="Pasthack">
-    <div class="section" data-aos="fade-up">
-      <div class="sectionhead">
-        <br>
-        <h1>Past Events</h1>
-      </div>
-      <div class="container" data-aos="fade-left">
-        <div id="phcarousel" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#phcarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#phcarousel" data-slide-to="1"></li>
-            <li data-target="#phcarousel" data-slide-to="2"></li>
-            <li data-target="#phcarousel" data-slide-to="3"></li>
-            <li data-target="#phcarousel" data-slide-to="4"></li>
-          </ol>
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-              <a href="https://5.ugahacks.com/"> <img class="d-block w-100 "
-                  src="images/banner/five.svg " alt="First slide "></a>
-
-              <div class=" carousel-caption d-none d-md-block ">
-                <p id="carstext1">Click me to see more!</p>
-              </div>
+          <div class="collapse" id="hidden-questions">
+            <button class="faq-question">What if I don't have a team or idea?</button>
+            <div class="faq-answer">
+              <p>Don't sweat it! You're free to join any existing team or form a new one when you get there. We'll also
+                provide ample opportunities for hackers to meet each other and brainstorm some amazing ideas</p>
             </div>
-            <div class="carousel-item ">
-              <a href="https://4.ugahacks.com/"><img class="d-block w-100 "
-                  src="images/banner/four.svg " alt="Second slide "></a>
 
-              <div class=" carousel-caption d-none d-md-block ">
-                <p id="carstext1">Click me to see more!</p>
-              </div>
+            <button class="faq-question">Can I start working on my project before the event?</button>
+            <div class="faq-answer">
+              <p>No. All UGAHacks projects must begin at the hackathon. You are not permitted to begin a hackathon project
+                before this event. Feel free to bring ideas, but no code!</p>
             </div>
-            <div class="carousel-item ">
-              <a href="https://3.ugahacks.com/"><img class="d-block w-100 "
-                  src="images/banner/three.svg " alt="Third slide "></a>
 
-              <div class="carousel-caption d-none d-md-block ">
-                <p id="carstext2">Click me to see more!</p>
-              </div>
+            <button class="faq-question">What should I bring?</button>
+            <div class="faq-answer">
+              <p>Enthusiasm! Laptops, phones, chargers, and other tools you might need for your project are also
+                important!
+                If you're staying overnight, be sure to bring the necessary toiletries and a sleeping bag. Additionally,
+                please bring your official student ID or government ID (no photocopies allowed).</p>
             </div>
-            <div class="carousel-item ">
-              <a href="https://2.ugahacks.com/"> <img class="d-block w-100 "
-                  src="images/banner/two.svg" alt="Fourth slide "></a>
 
-              <div class="carousel-caption d-none d-md-block ">
-                <p id="carstext3">Click me to see more!</p>
-              </div>
+            <button class="faq-question">Will you be offering travel reimbursements?</button>
+            <div class="faq-answer">
+              <p>Yes, we will be offering travel reimbursements! Please make sure to note it on your registration and we
+                will reach out to you upon acceptance. University of Georgia students are not eligible to receive travel
+                reimbursements.</p>
             </div>
-            <div class="carousel-item ">
-              <a href="https://1.ugahacks.com/"><img class="d-block w-100 "
-                  src="images/banner/one.svg " alt="Last slide "></a>
 
-              <div class="carousel-caption d-none d-md-block ">
-                <p id="carstext4">Click me to see more!</p>
-              </div>
+            <button class="faq-question">Can I volunteer/mentor at UGAHacks?</button>
+            <div class="faq-answer">
+              <p>We love your enthusiasm! Volunteers and mentors can apply via the registration form above! If you
+                have any
+                questions regarding the position, please contact us at <a href="mailto:hello@ugahacks.com"
+                  class="textlink">hello@ugahacks.com</a> - Be sure to mention the specific position in the subject of
+                the
+                email. See you at the event!</p>
             </div>
+
+            <button class="faq-question">How many people can I have on my team?</button>
+            <div class="faq-answer">
+              <p>There is no hard limit, but we recommend teams be at most 4 people, as we only have prizes for 4
+                people per
+                team.</p>
+            </div>
+
+            <button class="faq-question">Where will I sleep?</button>
+            <div class="faq-answer">
+              <p>We'll have designated sleeping areas for hackers, but they will be on a first-come-first-serve
+                basis.
+                You're welcome and even encouraged to bring a sleeping bag!</p>
+            </div>
+
+            <button class="faq-question">What are the rules all attendees must abide by?</button>
+            <div class="faq-answer">
+              <p>UGAHacks will be following the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" class="textlink">
+                  MLH Code of Conduct</a>. By participating in UGAHacks, you are agreeing to
+                follow the
+                Code of Conduct throughout the duration of the event.</p>
+            </div>
+
+            <button class="faq-question">Who do I reach out to if I have more questions?</button>
+            <div class="faq-answer">
+              <p>Reach out to <a href="mailto:hello@ugahacks.com" class="textlink">hello@ugahacks.com</a> and
+                we'll be happy
+                to answer it!</p>
+            </div>
+
+
           </div>
+          <button class="show-more" type="button" data-toggle="collapse" data-target="#hidden-questions" aria-expanded="false" aria-controls="hidden-questions">
+            Show More
+          </button>
+
+
+      </div>
+
+    </div>
+    <div class="section covid-faq-section">
+      <div class="faq-container">
+        <h1>COVID FAQ</h1>
+
+        <button class="faq-question">Filler question?</button>
+        <div class="faq-answer">
+          <p>Filler Answer</p>
         </div>
+
+        <button class="faq-question">Filler question?</button>
+        <div class="faq-answer">
+          <p>Filler Answer</p>
+        </div>
+
+        <button class="faq-question">Filler question?</button>
+        <div class="faq-answer">
+          <p>Filler Answer</p>
+        </div>
+
       </div>
     </div>
-  </div>
-  <footer>
-    <a href="https://github.com/ugahacks/" class="footericons"><img src="images/icons/github.svg"
-        alt="ugahacks-github"></a>
-    <a href="https://www.facebook.com/ugahacks/" class="footericons"><img
-        src="images/icons/facebook.svg" alt="ugahacks-facebook"></a>
-    <a href="https://twitter.com/ugahacks" class="footericons"><img src="images/icons/twitter.svg"
-        alt="ugahacks-twitter"></a>
-    <a href="https://www.instagram.com/ugahacks/" class="footericons"><img src="images/icons/insta.svg"
-        alt="ugahacks-instagram"></a>
-  </footer>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script>
-    var regtime = new Date("Sept 1, 2020 18:30:00").getTime();
-    var x = setInterval(function () {
-      var currtime = new Date().getTime();
-      var timeleft = regtime - currtime;
-      var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 3600));
-      var mins = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
-      var secs = Math.floor((timeleft % (1000 * 60)) / 1000);
-
-      if (timeleft > 0) {
-        document.getElementById("countdownd").innerHTML = days;
-        document.getElementById("countdownh").innerHTML = hours;
-        document.getElementById("countdownm").innerHTML = mins;
-        document.getElementById("countdowns").innerHTML = secs;
-      }
-      else {
-        clearInterval(x);
-        document.getElementById("regcountdown").innerHTML = "Submit your project to the Devpost by 9 am!";
-        document.getElementById("regcountdown").insertAdjacentHTML("afterend", "<br><a href='https://ugahacks5.devpost.com/' id='regbtn'>Devpost</a>");
-        $(".timecol").remove();
-      }
-    })
-  </script>
-  <script>
-    $(document).ready(function () {
-      $("#collapsebtn").click(function () {
-        if ($("#collapsebtn").text() === "Show More") {
-          $("#collapsebtn").text("Show Less");
-        }
-        else {
-          $("#collapsebtn").text("Show More");
-        }
-        $("#moreinfo").toggleClass("invis");
-      });
-      $("#collapsebtnaward").click(function () {
-        if ($("#collapsebtnaward").text() === "Show More") {
-          $("#collapsebtnaward").text("Show Less");
-        }
-        else {
-          $("#collapsebtnaward").text("Show More");
-        }
-        $(".moreawards").toggleClass("awardinvis");
-      });
-    });
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-          panel.style.maxHeight = null;
-        } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-      });
-    }
-  </script>
-  <script>
-    function showFunction() {
-      var elem = document.getElementById("showmore");
-    var x = document.getElementsByClassName("hide");
-    var i;
-    for (i = 0; i < x.length; i++) {
-      if (window.getComputedStyle(x[i], null).getPropertyValue("display") === 'none') {
-        x[i].style.display = "block";
-        elem.innerHTML = "Show Less";
-      } else {
-        x[i].style.display = "none";
-        elem.innerHTML = "Show More";
-      }
-  }
-}
-
-  </script>
-</body>
-
+  </body>
+  <script src="js/faq.js"></script>
 </html>
