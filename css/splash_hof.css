@@ -1,0 +1,184 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap";
+
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;900&display=swap";
+
+body {
+  background-image:url(../images/blueprint.svg);
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:cover!important;
+}
+
+html {
+scroll-behavior:smooth;
+max-width:100%;
+overflow-x:hidden;
+}
+
+div {
+  font-family:"Poppins";
+  font-weight:400;
+  color:#fff;
+}
+
+.sectionhead {
+    padding-top: 125px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.sectiontext {
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 1.4em;
+    text-align: justify;
+    max-width: 1300px;
+    margin: auto;
+}
+
+#splash {
+  background-color: yellow;
+  height: 100vh;
+  width: 100vw;
+}
+
+#hof {
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+
+#hof-container {
+  padding-top: 15vh;
+}
+
+.hof-heading {
+  display: block;
+  text-align: center;
+}
+
+#hof-subheader {
+  color: #ffc107;
+  padding-bottom: 1vh;
+}
+
+.card {
+  margin: 15px;
+  padding: 25px;
+}
+
+#cardbody {
+  margin-top: 0px;
+}
+
+#overall h4, h5, p {
+  text-align: center;
+}
+
+.card-body a {
+  position: relative;
+  left: 10%;
+  width: 80%;
+}
+
+.card-img-top {
+  width: 300px;
+  height: auto;
+}
+
+#overall {
+  margin: auto;
+  padding-left: .75%;
+  padding-right: 2%;
+  width: 95%;
+}
+
+.slick-arrow {
+  z-index: 99;
+}
+
+/*#overall a {
+  position: relative;
+  left: 10%;
+  width: 80%;
+  transition: .5s ease;
+}
+*/
+#team-members-heading {
+  font-size: 110%;
+}
+/*
+#overall a:hover {
+
+}*/
+
+
+img#imghof {
+  background-color: transparent;
+}
+
+p#tempsplash {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  color: black;
+}
+
+h1 {
+font-family:"Poppins";
+text-transform:uppercase;
+color:#ffe401;
+font-weight:600!important;
+letter-spacing:2px!important;
+}
+
+/* body > div[id]
+{
+  min-height: 100vh;
+} */
+.navbar-custom {
+background-color:#1A1B1A;
+}
+
+a.navbar-brand {
+width:20%;
+vertical-align:middle;
+}
+
+#navbarlogo {
+max-width:100%;
+max-height:100%;
+}
+
+.nav-link,#navbarlogo {
+transition:.3s ease;
+border-bottom:4px solid transparent;
+}
+
+.nav-link:hover,#navbarlogo:hover {
+border-bottom:4px solid #ffe401;
+}
+
+.dropdown-item {
+position:relative;
+}
+
+.dropdown-item:before {
+content:"";
+position:absolute;
+width:100%;
+height:2px;
+bottom:0;
+left:0;
+background:#ffe401;
+visibility:hidden;
+transform:scaleX(0);
+transition:all .3s ease-in-out;
+}
+
+.dropdown-item:hover:before {
+visibility:visible;
+transform:scaleX(1);
+}
