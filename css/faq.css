@@ -14,13 +14,6 @@ h1, h2, h3, h4, h5{
   padding: 0;
 }
 
-.section {
-  background-repeat:no-repeat;
-  background-attachment:fixed;
-  background-size:cover!important;
-  width: 100%;
-  min-height: 100vh;
-}
 
 .faq-section {
   background-image: radial-gradient(rgba(250, 250, 250, 0.9), rgba(255, 255, 255, 0.9)), url(../assets/screws-01.svg);
