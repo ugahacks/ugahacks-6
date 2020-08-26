@@ -1,4 +1,4 @@
-## Available Scripts
+## BASIC SCRIPTS
 
 In the project directory, you can run:
 
@@ -33,14 +33,22 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Building ugahacks6
+## BUILDING AND DEPLOYING UGAHACKS
 
-NOTE: you will need to run `npm i` in order to build local dependencies first (which is pulled from package-lock.json and package.json).
+#### NOTE: you will need to run `npm i` in order to build local dependencies first (which is pulled from package-lock.json and package.json).
 
-The branch 'react-hacks' should maintain a copy of the most recent production build's source. All contributions should be branched from here and merged back in (via pull request).
+The branch `react-hacks` should maintain a copy of the most recent production build's source. All contributions should be branched from here and merged back in (via pull request).
 
 
-In order to build the application, simply run `npm run build` on the most up-to-date react-hacks branch. After a succcessful build, run `npm run custom-deploy` and enter your valid github credentials to sign the build and push it to the production branch 'react-hacks-build.' 
+In order to build the application, simply run 
+### `npm run build` 
+on the most up-to-date react-hacks branch. 
+
+After a succcessful build, run 
+
+### `npm run custom-deploy` 
+
+and enter your valid github credentials to sign the build and push it to the production branch `react-hacks-build`.
 
 It is **paramount** to use the above command (instead of `npm run deploy`) since the script is configured to publish to a branch we designate to GitHub to host the website.
 
