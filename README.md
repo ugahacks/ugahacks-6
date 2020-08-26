@@ -1,5 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
@@ -7,7 +5,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
@@ -25,8 +23,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
@@ -37,7 +33,20 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Building ugahacks6
+
+NOTE: you will need to run `npm i` in order to build local dependencies first (which is pulled from package-lock.json and package.json).
+
+The branch 'react-hacks' should maintain a copy of the most recent production build's source. All contributions should be branched from here and merged back in (via pull request).
+
+
+In order to build the application, simply run `npm run build` on the most up-to-date react-hacks branch. After a succcessful build, run `npm run custom-deploy` and enter your valid github credentials to sign the build and push it to the production branch 'react-hacks-build.' 
+
+It is **paramount** to use the above command (instead of `npm run deploy`) since the script is configured to publish to a branch we designate to GitHub to host the website.
+
+If this is confusing, throw tomatos at Neal.
+
+## Additional Resources:
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
