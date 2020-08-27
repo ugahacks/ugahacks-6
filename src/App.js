@@ -12,14 +12,14 @@ import Schedule from './components/Schedule/Schedule.jsx';
 
 function App() {
   return (
-    <>
+    <div className="App">
       <Splash/>
       <HallOfFame/>
       <About/>
       <Schedule/>
       <FAQ/>
       <CovidFAQ/>
-    </>
+    </div>
   );
 }
 
