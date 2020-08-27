@@ -1,7 +1,7 @@
 import React from 'react';
-import './HallOfFame.css';
+import './Sponsors.css';
 
-function HallOfFame(props) {
+function Sponsors(props) {
   return (
     <>
       <section className=''>
@@ -12,4 +12,4 @@ function HallOfFame(props) {
   );
 }
 
-export default HallOfFame;
+export default Sponsors;
