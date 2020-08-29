@@ -63,25 +63,3 @@ h2 {
   letter-spacing: 2px;
   margin: 25px 0px;
 }
-
-.section-text {
-  margin: auto;
-  width: 50%;
-  font-size: 1.3em;
-}
-
-@media only screen and (max-width: 480px) {
-  .nav {
-    display: none;
-  }
-
-  .section-text {
-    width: 90%;
-    font-size: 1.1em;
-  }
-
-  .tool-rack {
-    margin-top: 0px;
-    flex-direction: column;
-  }
-}

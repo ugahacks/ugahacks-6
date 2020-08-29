@@ -1,5 +1,7 @@
 import React from 'react';
 import './Schedule.css';
+import '../../bootstrap.css'
+
 
 function Schedule(props) {
   return (

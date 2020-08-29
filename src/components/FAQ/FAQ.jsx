@@ -2,16 +2,7 @@ import React, { useState } from "react";
 import "./FAQ.css";
 import { motion } from "framer-motion";
 import Question from "./Questions";
-
-const questionVariants = {
-  open: { height: "auto",},
-  closed: {
-    height: 0,
-    transition: {
-      duration: .2,
-    }
-  },
-}
+import {collapseVariants} from "./CommonVariants"
 
 
 function FAQ(props) {
@@ -42,7 +33,7 @@ function FAQ(props) {
 
             <motion.div
               className="hidden-questions"
-              variants={questionVariants}
+              variants={collapseVariants}
               animate={isOpen ? "open" : "closed"}
               >
               <Question

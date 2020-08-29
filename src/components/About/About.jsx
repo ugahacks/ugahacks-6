@@ -1,12 +1,33 @@
 import React from 'react';
 import './About.css';
 import sittingByte from './images/sittingbyte.svg';
+import { motion } from "framer-motion";
+
+const toolVariants = {
+  hover: {
+    scale: 1.1,
+  }
+}
+
+function Tool(props) {
+  return (
+    <div className="tool">
+      <motion.img
+        src={props.image}
+        alt={props.alt}
+        variants={toolVariants}
+        whileHover="hover"
+
+      />
+      <h3>{props.tool}</h3>
+    </div>
+  );
+}
 
 function About(props) {
   return (
     <>
-      <section id='about' className=''>
-
+      <section className="about">
         <div className="section-text about-text">
           <h2>What is UGAHacks?</h2>
           <p>UGAHacks is an annual hackathon organized by fellow students at the University of Georgia in Athens, Georgia. Hackathons are all about groups of dedicated people coming together to create something amazing in a epic 36-hour programming
@@ -16,24 +37,14 @@ function About(props) {
           <p>So come and join us to build the future!</p>
           <h2>The tools you'll need:</h2>
           <div className="tool-rack">
-            <div className="tool">
-              <img id="sittingbyte" src={sittingByte} alt="Byte (UGAHacks's mascot) winking"/>
-              <h3>Laptop</h3>
-            </div>
-            <div className="tool">
-              <img id="sittingbyte" src={sittingByte} alt="Byte (UGAHacks's mascot) winking"/>
-              <h3>Phone</h3>
-            </div>
-            <div className="tool">
-              <img id="sittingbyte" src={sittingByte} alt="Byte (UGAHacks's mascot) winking"/>
-              <h3>Sleeping <br/> Bag</h3>
-            </div>
-            <div className="tool">
-              <img id="sittingbyte" src={sittingByte} alt="Byte (UGAHacks's mascot) winking"/>
-              <h3>Chargers</h3>
-            </div>
+            <Tool image={sittingByte} tool="Laptop" alt="Byte Winking"/>
+            <Tool image={sittingByte} tool="Phone" alt="Byte Winking"/>
+            <Tool image={sittingByte} tool="Sleeping Bag" alt="Byte Winking"/>
+            <Tool image={sittingByte} tool="Chargers" alt="Byte Winking"/>
+
           </div>
         </div>
+
 
       </section>
     </>

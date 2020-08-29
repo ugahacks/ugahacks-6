@@ -1,16 +1,7 @@
 import React, { useState } from "react";
 import "./FAQ.css";
 import { motion } from "framer-motion"
-
-const questionVariants = {
-  open: { height: "auto",},
-  closed: {
-    height: 0,
-    transition: {
-      duration: .2,
-    }
-  },
-}
+import {collapseVariants, hoverVariants} from "./CommonVariants"
 
 function Question(props) {
 
@@ -18,15 +9,15 @@ function Question(props) {
 
   return (
     <>
-      <button
+      <motion.button
         className="faq-question"
         onClick={() => setIsOpen(!isOpen)}
-
-
-      >{props.question}</button>
+        variants={hoverVariants}
+        whileHover="hover"
+      >{props.question}</motion.button>
       <motion.div
         className="faq-answer"
-        variants={questionVariants}
+        variants={collapseVariants}
         animate={isOpen ? "open" : "closed"}
 
       >
