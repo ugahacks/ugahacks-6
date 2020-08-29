@@ -64,10 +64,8 @@
 }
 
 .faq-answer {
-  max-height: 0;
   overflow: hidden;
   background-color: #f5f5f5;
-  transition: max-height 0.2s ease-out;
   color: #444;
   order: -1;
 }
@@ -99,5 +97,6 @@
 }
 
 .hidden-questions {
+  overflow: hidden;
 
 }

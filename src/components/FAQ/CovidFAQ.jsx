@@ -1,29 +1,69 @@
-import React from 'react';
-import './FAQ.css';
+import React, { useState } from "react";
+import "./FAQ.css";
+import { motion } from "framer-motion";
+import Question from "./Questions";
+
+const questionVariants = {
+  open: { height: "auto",},
+  closed: {
+    height: 0,
+    transition: {
+      duration: .2,
+    }
+  },
+}
+
 
 function CovidFAQ(props) {
+
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
       <section class="section covid-faq-section">
-        <div class="faq-container">
-          <h1>COVID FAQ</h1>
+      <div className="faq-container">
 
-          <button class="faq-question">Filler question?</button>
-          <div class="faq-answer">
-            <p>Filler Answer</p>
-          </div>
+          <h1>Covid FAQ</h1>
 
-          <button class="faq-question">Filler question?</button>
-          <div class="faq-answer">
-            <p>Filler Answer</p>
-          </div>
+          <Question
+            question="Where will the event be held this year?"
+            answer="The event will be held at UGA's Zell B. Miller Learning Center."
+          />
 
-          <button class="faq-question">Filler question?</button>
-          <div class="faq-answer">
-            <p>Filler Answer</p>
-          </div>
+          <Question
+            question="Where will the event be held this year?"
+            answer="The event will be held at UGA's Zell B. Miller Learning Center."
+          />
 
-        </div>
+          <Question
+            question="Where will the event be held this year?"
+            answer="The event will be held at UGA's Zell B. Miller Learning Center."
+          />
+
+          <motion.div
+            className="hidden-questions"
+            variants={questionVariants}
+            animate={isOpen ? "open" : "closed"}
+            >
+            <Question
+              question="Where will the event be held this year?"
+              answer="The event will be held at UGA's Zell B. Miller Learning Center."
+            />
+
+            <Question
+              question="Where will the event be held this year?"
+              answer="The event will be held at UGA's Zell B. Miller Learning Center."
+            />
+
+            <Question
+              question="Where will the event be held this year?"
+              answer="The event will be held at UGA's Zell B. Miller Learning Center."
+            />
+          </motion.div>
+          <button className="show-more" onClick={() => setIsOpen(!isOpen)}>
+            Show More
+          </button>
+      </div>
       </section>
     </>
 
