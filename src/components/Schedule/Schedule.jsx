@@ -145,14 +145,14 @@ function Schedule(props) {
     <>
       <section id='schedule' className=''>
         <div className="section-text schedule-text">
-          <h1>Schedule</h1>
+          <h1 id="scheduleheader">Schedule</h1>
           <div className="day-header">
             <motion.button
               onClick={() => changeDay(-1)}
               className="back-button"
               variants={buttonVariants}
               whileHover="hover"
-              > </motion.button>
+              ></motion.button>
             <h1>{dayMapping[day]} </h1>
             <motion.button
               onClick={() => changeDay(1)}
