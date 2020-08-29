@@ -5,10 +5,10 @@ function Schedule(props) {
   return (
     <>
       <section id='schedule' className=''>
-        <div class="section-text schedule-text">
+        <div className="section-text schedule-text">
           <h1>Schedule</h1>
-          <div class="day-schedule collapse" id="Frisched">
-            <h1 class="day-header"><span class="disabled"><i class="material-icons">arrow_back_ios</i></span> Friday <span class="active" onclick="changeSchedule('#Frisched','#Satsched')"><i class="material-icons">arrow_forward_ios</i></span></h1>
+          <div className="day-schedule collapse" id="Frisched">
+            <h1 className="day-header"><span className="disabled"><i className="material-icons">arrow_back_ios</i></span> Friday <span className="active" onClick="changeSchedule('#Frisched','#Satsched')"><i className="material-icons">arrow_forward_ios</i></span></h1>
             <table>
               <tbody>
                 <tr>
@@ -34,8 +34,8 @@ function Schedule(props) {
               </tbody>
             </table>
           </div>
-          <div class="day-schedule collapse" id="Satsched">
-            <h1 class="day-header"><span class="active" onclick="changeSchedule('#Satsched','#Frisched')"><i class="material-icons">arrow_back_ios</i></span> Saturday <span class="active" onclick="changeSchedule('#Satsched','#Sunsched')"><i class="material-icons">arrow_forward_ios</i></span></h1>
+          <div className="day-schedule collapse" id="Satsched">
+            <h1 className="day-header"><span className="active" onClick="changeSchedule('#Satsched','#Frisched')"><i className="material-icons">arrow_back_ios</i></span> Saturday <span className="active" onClick="changeSchedule('#Satsched','#Sunsched')"><i className="material-icons">arrow_forward_ios</i></span></h1>
             <table>
               <tbody>
                 <tr>
@@ -73,8 +73,8 @@ function Schedule(props) {
               </tbody>
             </table>
           </div>
-          <div class="day-schedule collapse" id="Sunsched">
-            <h1 class="day-header"><span class="active" onclick="changeSchedule('#Sunsched','#Satsched')"><i class="material-icons">arrow_back_ios</i></span> Sunday <span class="disabled"><i class="material-icons">arrow_forward_ios</i></span></h1>
+          <div className="day-schedule collapse" id="Sunsched">
+            <h1 className="day-header"><span className="active" onClick="changeSchedule('#Sunsched','#Satsched')"><i className="material-icons">arrow_back_ios</i></span> Sunday <span className="disabled"><i className="material-icons">arrow_forward_ios</i></span></h1>
             <table>
               <tbody>
                 <tr>
