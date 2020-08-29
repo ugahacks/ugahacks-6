@@ -8,6 +8,21 @@
 .day-header {
   font-size: 1.7em;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.back-button{
+  scale: 2;
+  background: url('./images/arrow_back_ios-24px.svg') no-repeat;
+  border: none;
+}
+
+.forward-button {
+  scale: 2;
+  background: url('./images/arrow_forward_ios-24px.svg') no-repeat;
+  border: none;
 }
 
 table {

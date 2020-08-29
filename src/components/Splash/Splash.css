@@ -1,6 +1,5 @@
 .splash {
   background-image: url(./images/splash.svg);
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover !important;
 }
