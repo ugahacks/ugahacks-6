@@ -76,9 +76,9 @@
   text-align: center;
   background-color: #ffe401;
   color: black;
-  width: 150px;
   cursor: pointer;
   margin: 20px auto;
+  border-radius: 5px;
 }
 
 .show-more:after {

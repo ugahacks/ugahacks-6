@@ -52,7 +52,7 @@ function CovidFAQ(props) {
             />
           </motion.div>
           <button className="show-more" onClick={() => setIsOpen(!isOpen)}>
-            Show More
+            {isOpen ? 'Show Less' : 'Show More'}
           </button>
       </div>
       </section>
