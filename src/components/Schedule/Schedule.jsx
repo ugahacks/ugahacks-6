@@ -7,6 +7,9 @@ import { motion } from "framer-motion"
 const buttonVariants = {
   hover: {
     scale: 1.1,
+  },
+  tap: {
+    scale: .9,
   }
 }
 
@@ -37,8 +40,7 @@ function Schedule(props) {
   function renderDay() {
     if (day === 0) {
       return (
-
-        <div >
+        <div>
           <table>
             <tbody>
               <tr>
@@ -64,12 +66,10 @@ function Schedule(props) {
             </tbody>
           </table>
         </div>
-
       );
     } else if (day === 1) {
       return (
-
-        <div >
+        <div>
           <table>
             <tbody>
               <tr>
@@ -107,7 +107,6 @@ function Schedule(props) {
             </tbody>
           </table>
         </div>
-
       );
     } else {
       return (
@@ -144,6 +143,15 @@ function Schedule(props) {
   return (
     <>
       <section id='schedule' className=''>
+        
+      </section>
+    </>
+  )
+
+  /**
+  return (
+    <>
+      <section id='schedule' className=''>
         <div className="section-text schedule-text">
           <h1 id="scheduleheader">Schedule</h1>
           <div className="day-header">
@@ -159,16 +167,15 @@ function Schedule(props) {
               className="forward-button"
               variants={buttonVariants}
               whileHover="hover"
+              whileTap="tap"
               > </motion.button>
           </div>
 
           {renderDay()}
         </div>
       </section>
-
     </>
-
-  );
+  );*/
 }
 
 export default Schedule;
