@@ -1,6 +1,9 @@
 import React from 'react';
 import './About.css';
 import sittingByte from './images/sittingbyte.svg';
+import charger from './images/charger.svg';
+import phone from './images/phone.svg';
+import sleepingBag from './images/sleepingbag.svg';
 import { motion } from "framer-motion";
 
 const toolVariants = {
@@ -38,9 +41,9 @@ function About(props) {
           <h2>The tools you'll need:</h2>
           <div className="tool-rack">
             <Tool image={sittingByte} tool="Laptop" alt="Byte Winking"/>
-            <Tool image={sittingByte} tool="Phone" alt="Byte Winking"/>
-            <Tool image={sittingByte} tool="Sleeping Bag" alt="Byte Winking"/>
-            <Tool image={sittingByte} tool="Chargers" alt="Byte Winking"/>
+            <Tool image={phone} tool="Phone" alt="A Phone"/>
+            <Tool image={sleepingBag} tool="Sleeping Bag" alt="Sleeping Bag"/>
+            <Tool image={charger} tool="Chargers" alt="Chargers"/>
 
           </div>
         </div>
