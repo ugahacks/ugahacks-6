@@ -11,3 +11,37 @@
   transform: translate(-50%, -50%);
   margin: auto;
 }
+
+.headercontainer {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  text-align: center;
+}
+
+.headercontainer Button {
+  margin-top: 65px;
+  padding-left: 55px;
+  padding-right: 55px;
+  font-size: 1.3em;
+  font-weight: 600;
+  font-family: Poppins;
+  background-color: #fafafa;
+  border-radius: 50px;
+}
+
+@media only screen and (max-width: 480px) {
+  .splash {
+    background-image: url(./images/mobilesplash.svg);
+  }
+  .logo {
+    width: 85%;
+    top: 30%;
+  }
+  .headercontainer {
+    top: 55%;
+    width: 85%;
+  }
+}
