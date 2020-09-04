@@ -122,6 +122,20 @@
 }
 
 .covid-byte {
-  width: 650px;
+  width: 42%;
   height: auto;
+}
+
+@media only screen and (max-width: 480px) {
+  .covid-faq-container, .faq-container {
+    width: 90%;
+    margin: auto;
+  }
+  .covid-container {
+    flex-direction: column;
+  }
+  .covid-byte {
+    width: 80%;
+    margin: 0 auto 30px;
+  }
 }
