@@ -52,6 +52,10 @@
   flex-grow: 0;
 }
 
+.tool h3 {
+  margin-top: 5px;
+}
+
 .about-text {
   min-height: 100vh;
   display: flex;

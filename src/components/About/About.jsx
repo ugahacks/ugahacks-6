@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import sittingByte from './images/sittingbyte.svg';
+import laptop from './images/laptop.svg';
 import charger from './images/charger.svg';
 import phone from './images/phone.svg';
 import sleepingBag from './images/sleepingbag.svg';
@@ -40,7 +40,7 @@ function About(props) {
           <p>So come and join us to build the future!</p>
           <h2>The tools you'll need:</h2>
           <div className="tool-rack">
-            <Tool image={sittingByte} tool="Laptop" alt="Byte Winking"/>
+            <Tool image={laptop} tool="Laptop" alt="Laptop"/>
             <Tool image={phone} tool="Phone" alt="A Phone"/>
             <Tool image={sleepingBag} tool="Sleeping Bag" alt="Sleeping Bag"/>
             <Tool image={charger} tool="Chargers" alt="Chargers"/>
