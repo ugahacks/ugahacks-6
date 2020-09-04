@@ -13,10 +13,23 @@
   margin-left: 10%;
 }
 
+#commingsoonimg {
+  display: block;
+  margin: 100px auto;
+  width: 50%;
+}
+
 @media only screen and (max-width: 480px) {
   #scheduleheader {
     margin-left: 0%;
     text-align: center;
+  }
+  #commingsoonimg {
+    margin-top: 40%;
+    width: 90%;
+  }
+  .day-container img {
+    display: none;
   }
 }
 
@@ -26,6 +39,17 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.day-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.day-container img {
+  width: 10%;
 }
 
 .back-button{

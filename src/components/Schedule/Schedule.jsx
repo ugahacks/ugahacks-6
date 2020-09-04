@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import './Schedule.css';
 import '../../bootstrap.css'
 import { motion } from "framer-motion"
+import day1 from './images/day1.svg';
+import day2 from './images/day2.svg';
+import day3 from './images/day3.svg';
+import comingsoon from './images/comingsoon.svg';
 
 
 const buttonVariants = {
@@ -13,6 +17,14 @@ const buttonVariants = {
   }
 }
 
+function DayImg(props) {
+  return (
+      <img
+        src={props.image}
+        alt={props.alt}
+      />
+  );
+}
 
 function Schedule(props) {
 
@@ -40,6 +52,8 @@ function Schedule(props) {
   function renderDay() {
     if (day === 0) {
       return (
+        <>
+        <DayImg image={day1} alt="Day 1 banner"/>
         <div>
           <table>
             <tbody>
@@ -66,9 +80,12 @@ function Schedule(props) {
             </tbody>
           </table>
         </div>
+        </>
       );
     } else if (day === 1) {
       return (
+        <>
+        <DayImg image={day2} alt="Day 2 banner"/>
         <div>
           <table>
             <tbody>
@@ -107,11 +124,13 @@ function Schedule(props) {
             </tbody>
           </table>
         </div>
+        </>
       );
     } else {
       return (
-
-        <div >
+        <>
+        <DayImg image={day3} alt="Day 3 banner"/>
+        <div>
           <table>
             <tbody>
               <tr>
@@ -129,7 +148,7 @@ function Schedule(props) {
             </tbody>
           </table>
         </div>
-
+        </>
       );
     }
   }
@@ -143,39 +162,40 @@ function Schedule(props) {
   return (
     <>
       <section id='schedule' className=''>
-        
+      <h1 id="scheduleheader">Schedule</h1>
+      <img id="commingsoonimg" src={comingsoon} alt="Coming Soon banner"></img>
       </section>
     </>
   )
 
-  /**
-  return (
-    <>
-      <section id='schedule' className=''>
-        <div className="section-text schedule-text">
-          <h1 id="scheduleheader">Schedule</h1>
-          <div className="day-header">
-            <motion.button
-              onClick={() => changeDay(-1)}
-              className="back-button"
-              variants={buttonVariants}
-              whileHover="hover"
-              ></motion.button>
-            <h1>{dayMapping[day]} </h1>
-            <motion.button
-              onClick={() => changeDay(1)}
-              className="forward-button"
-              variants={buttonVariants}
-              whileHover="hover"
-              whileTap="tap"
-              > </motion.button>
-          </div>
-
-          {renderDay()}
-        </div>
-      </section>
-    </>
-  );*/
+//   return (
+//     <>
+//       <section id='schedule' className=''>
+//         <div className="section-text schedule-text">
+//           <h1 id="scheduleheader">Schedule</h1>
+//           <div className="day-header">
+//             <motion.button
+//               onClick={() => changeDay(-1)}
+//               className="back-button"
+//               variants={buttonVariants}
+//               whileHover="hover"
+//               ></motion.button>
+//             <h1>{dayMapping[day]} </h1>
+//             <motion.button
+//               onClick={() => changeDay(1)}
+//               className="forward-button"
+//               variants={buttonVariants}
+//               whileHover="hover"
+//               whileTap="tap"
+//               > </motion.button>
+//           </div>
+//           <div className="day-container">
+//           {renderDay()}
+//           </div>
+//         </div>
+//       </section>
+//     </>
+//   );
 }
 
 export default Schedule;
