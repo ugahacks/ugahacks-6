@@ -11,6 +11,17 @@
   width: 65%;
 }
 
+.sponsors-container Button {
+  margin-top: 25px;
+  padding-left: 55px;
+  padding-right: 55px;
+  font-size: 1.1em;
+  font-weight: 600;
+  font-family: Poppins;
+  background-color: #fafafa;
+  border-radius: 50px;
+}
+
 .packet-text {
   margin-top: 100px;
 }
@@ -20,13 +31,8 @@
 }
 
 .packet-text a {
-  color: #ffe401;
+  color: black;
   text-decoration: none;
-  transition: opacity 0.2s ease-in-out;
-}
-
-.packet-text a:hover {
-  opacity: 0.7;
 }
 
 @media only screen and (max-width: 480px) {
