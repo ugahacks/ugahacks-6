@@ -12,7 +12,7 @@ function CovidFAQ(props) {
 
   return (
     <>
-      <section class="section covid-faq-section">
+      <section class="section covid-faq-section" id="covidfaq">
         <div className="covid-container">
           <div className="covid-faq-container">
 

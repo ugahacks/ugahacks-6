@@ -5,7 +5,7 @@ import Button from '@material-ui/core/Button';
 function Sponsors(props) {
   return (
     <>
-      <section className='section sponsors-section'>
+      <section className='section sponsors-section' id="sponsors">
         <div className="sponsors-container">
           <h1>Sponsors</h1>
           <div className="packet-text">

@@ -1,28 +1,3 @@
-.nav {
-  position: fixed;
-  left: 25px;
-  top: 50%;
-  display: grid;
-}
-
-.nav-icon {
-  color: #223c9d;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.nav-white {
-  color: white;
-}
-
-.nav-icon:hover {
-  opacity: 0.7;
-}
-
-.site-content {
-  margin: auto;
-  max-width: 2200px;
-}
-
 .about {
   background-image: radial-gradient(rgba(250, 250, 250, 0.9), rgba(255, 255, 255, 0.9)), url(./images/toolpattern.svg);
   /**background-image: url(./images/colortools-01.svg);*/
@@ -68,10 +43,6 @@
 }
 
 @media only screen and (max-width: 480px) {
-  .nav {
-    display: none;
-  }
-
   .section-text {
     width: 90%;
   }

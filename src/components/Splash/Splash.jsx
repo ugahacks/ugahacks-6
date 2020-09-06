@@ -6,7 +6,7 @@ import Button from '@material-ui/core/Button';
 function Splash(props) {
   return (
     <>
-      <section className='splash'>
+      <section className='splash' id="splash">
         <img className='logo' src={sixLogo} alt="UGAHacks 6 Logo"/>
         <div className='headercontainer'>
         <h2>February 5-7, 2021 @ MLC</h2>
