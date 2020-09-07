@@ -37,12 +37,43 @@ function Nav(props) {
     <nav>
       <div className="dotstyle dotstyle-fillin">
         <div>
-          <div><CustomizedTooltip title="Home" placement="right" arrow><a href="#splash" className="current">Home</a></CustomizedTooltip></div>
-          <div><CustomizedTooltip title="About" placement="right" arrow><a href="#about">About</a></CustomizedTooltip></div>
-          <div><CustomizedTooltip title="Schedule" placement="right" arrow><a href="#schedule">Schedule</a></CustomizedTooltip></div>
-          <div><CustomizedTooltip title="FAQ" placement="right" arrow><a href="#faq">FAQ</a></CustomizedTooltip></div>
-          <div><CustomizedTooltip title="Covid FAQ" placement="right" arrow><a href="#covidfaq">Covid FAQ</a></CustomizedTooltip></div>
-          <div><CustomizedTooltip title="Sponsors" placement="right" arrow><a href="#sponsors">Sponsors</a></CustomizedTooltip></div>
+          
+          <div>
+            <CustomizedTooltip title="Home" placement="right" arrow>
+              <a href="#splash" className="current">Home</a>
+            </CustomizedTooltip>
+          </div>
+
+          <div>
+            <CustomizedTooltip title="About" placement="right" arrow>
+              <a href="#about">About</a>
+            </CustomizedTooltip>
+          </div>
+
+          <div>
+            <CustomizedTooltip title="Schedule" placement="right" arrow>
+              <a href="#schedule">Schedule</a>
+            </CustomizedTooltip>
+          </div>
+
+          <div>
+            <CustomizedTooltip title="FAQ" placement="right" arrow>
+              <a href="#faq">FAQ</a>
+            </CustomizedTooltip>
+          </div>
+
+          <div>
+            <CustomizedTooltip title="Covid FAQ" placement="right" arrow>
+              <a href="#covidfaq">Covid FAQ</a>
+            </CustomizedTooltip>
+          </div>
+
+          <div>
+            <CustomizedTooltip title="Sponsors" placement="right" arrow>
+              <a href="#sponsors">Sponsors</a>
+            </CustomizedTooltip>
+          </div>
+
         </div>
       </div>
     </nav>
