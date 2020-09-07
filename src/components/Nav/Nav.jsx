@@ -34,8 +34,7 @@ const InvertedTooltip = withStyles({
 
 function Nav(props) {
 
-  const [invertStyle, setInvertStyle] = useState(false);
-  // const [goDark, setGoDark] = useState(false);
+  const [invertStyle, setInvertStyle] = useState(true);
 
   const MINIMUM_SCROLL = 0;
   const TIMEOUT_DELAY = 400;
@@ -44,26 +43,23 @@ function Nav(props) {
   useDocumentScrollThrottled(callbackData => {
     const { previousScrollTop, currentScrollTop } = callbackData;
     const scrollTop = currentScrollTop;
-
+    var halfHeight = window.innerHeight / 2;
     function in_splash(scroll) {
-      return scroll >= 0 && scroll <= 500;
+      return scroll >= 0 && scroll <= halfHeight;
     }
 
     function in_schedule(scroll) {
-      return scroll >= 1500 && scroll <= 2500; // 1500 <= scroll <= 2500;
+      return scroll >= 3 * halfHeight && scroll <= 5 * halfHeight; // 1500 <= scroll <= 2500;
     }
 
     function in_sponser(scroll) {
-      return scroll >= 4500 && scroll <= 5500; // 4500 <= scroll <= 5500;
+      return scroll >= 9 * halfHeight && scroll <= 11 * halfHeight; // 4500 <= scroll <= 5500;
     }
 
     var timeToInvert = in_splash(scrollTop) || in_schedule(scrollTop) || in_sponser(scrollTop);
 
-    console.log(scrollTop, invertStyle);
-    // console.log(timeToInvert);
     /* Regular setters. */
     setInvertStyle(timeToInvert);
-    // setGoDark(isScrolledDown && isMinimumScrolled);
 
     /* Delayed setter. */
     /*
@@ -75,12 +71,12 @@ function Nav(props) {
   });
   
   /* These will be used to set dynamic classNames */
-  const invertedStyle = invertStyle ? 'dotstyle-fillin-inverted' : 'dotstyle-fillin'; 
+  const style = invertStyle ? 'dotstyle-fillin-inverted' : 'dotstyle-fillin'; 
 
   /* Stand-ins 'lightStyle' and 'darkStyle' will reference styles in Nav.css */
   return (
     <nav>
-      <div className={`dotstyle ${invertedStyle}`}>
+      <div className={`dotstyle ${style}`}>
         <div>
           
           <div>
