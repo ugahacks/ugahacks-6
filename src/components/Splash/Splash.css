@@ -21,16 +21,21 @@
   text-align: center;
 }
 
-.headercontainer Button {
+
+.countdown-registration {
   margin-top: 65px;
   padding-left: 55px;
   padding-right: 55px;
   font-size: 1.3em;
   font-weight: 600;
   font-family: Poppins;
-  background-color: #fafafa;
   border-radius: 50px;
 }
+
+.countdown-registration button {
+  background-color: #fafafa;
+}
+
 
 @media only screen and (max-width: 480px) {
   .splash {
