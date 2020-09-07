@@ -33,28 +33,38 @@ const InvertedTooltip = withStyles({
 })(Tooltip);
 
 function Nav(props) {
+  
   const [goLight, setGoLight] = useState(false);
   const [goDark, setGoDark] = useState(false);
 
   const MINIMUM_SCROLL = 0;
   const TIMEOUT_DELAY = 400;
 
+  /* Needs to be re-tooled for all views in our SPA. */
   useDocumentScrollThrottled(callbackData => {
     const { previousScrollTop, currentScrollTop } = callbackData;
+
     const isScrolledDown = previousScrollTop < currentScrollTop;
     const isMinimumScrolled = currentScrollTop > MINIMUM_SCROLL;
 
+    /* Regular setters. */
     setGoLight(currentScrollTop > 2);
+    setGoDark(isScrolledDown && isMinimumScrolled);
 
+    /* Delayed setter. */
+    /*
     setTimeout(() => {
       setGoDark(isScrolledDown && isMinimumScrolled);
     }, TIMEOUT_DELAY);
+    */
+
   });
   
   /* These will be used to set dynamic classNames */
   const lightStyle = goLight ? 'light' : ''; 
   const darkStyle = goDark ? 'dark' : '';
 
+  /* Stand-ins 'lightStyle' and 'darkStyle' will reference styles in Nav.css */
   return (
     <nav>
       <div className={`dotstyle dotstyle-fillin ${lightStyle} ${darkStyle}`}>
