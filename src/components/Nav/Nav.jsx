@@ -33,9 +33,9 @@ const InvertedTooltip = withStyles({
 })(Tooltip);
 
 function Nav(props) {
-  
-  const [goLight, setGoLight] = useState(false);
-  const [goDark, setGoDark] = useState(false);
+
+  const [invertStyle, setInvertStyle] = useState(false);
+  // const [goDark, setGoDark] = useState(false);
 
   const MINIMUM_SCROLL = 0;
   const TIMEOUT_DELAY = 400;
@@ -43,13 +43,27 @@ function Nav(props) {
   /* Needs to be re-tooled for all views in our SPA. */
   useDocumentScrollThrottled(callbackData => {
     const { previousScrollTop, currentScrollTop } = callbackData;
+    const scrollTop = currentScrollTop;
 
-    const isScrolledDown = previousScrollTop < currentScrollTop;
-    const isMinimumScrolled = currentScrollTop > MINIMUM_SCROLL;
+    function in_splash(scroll) {
+      return scroll >= 0 && scroll <= 500;
+    }
 
+    function in_schedule(scroll) {
+      return scroll >= 1500 && scroll <= 2500; // 1500 <= scroll <= 2500;
+    }
+
+    function in_sponser(scroll) {
+      return scroll >= 4500 && scroll <= 5500; // 4500 <= scroll <= 5500;
+    }
+
+    var timeToInvert = in_splash(scrollTop) || in_schedule(scrollTop) || in_sponser(scrollTop);
+
+    console.log(scrollTop, invertStyle);
+    // console.log(timeToInvert);
     /* Regular setters. */
-    setGoLight(currentScrollTop > 2);
-    setGoDark(isScrolledDown && isMinimumScrolled);
+    setInvertStyle(timeToInvert);
+    // setGoDark(isScrolledDown && isMinimumScrolled);
 
     /* Delayed setter. */
     /*
@@ -61,13 +75,12 @@ function Nav(props) {
   });
   
   /* These will be used to set dynamic classNames */
-  const lightStyle = goLight ? 'light' : ''; 
-  const darkStyle = goDark ? 'dark' : '';
+  const invertedStyle = invertStyle ? 'dotstyle-fillin-inverted' : 'dotstyle-fillin'; 
 
   /* Stand-ins 'lightStyle' and 'darkStyle' will reference styles in Nav.css */
   return (
     <nav>
-      <div className={`dotstyle dotstyle-fillin ${lightStyle} ${darkStyle}`}>
+      <div className={`dotstyle ${invertedStyle}`}>
         <div>
           
           <div>
