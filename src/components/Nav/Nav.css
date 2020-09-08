@@ -1,7 +1,7 @@
 nav {
   position: fixed;
-  left: 25px;
-  top: 45%;
+  left: 35px;
+  top: 45vh;
   display: grid;
 }
 
@@ -61,7 +61,7 @@ nav {
 }
 
 @media only screen and (max-width: 480px) {
-  .nav {
+  nav {
     display: none !important;
   }
 }
