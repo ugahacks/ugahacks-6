@@ -9,7 +9,7 @@ import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 import team_wand from "./media/wand.png"
 
 
-var path = "./media/wand.png"
+// var path = "./media/wand.png"
 
 
 class HallOfFame extends React.Component { //function HallOfFame(props) {

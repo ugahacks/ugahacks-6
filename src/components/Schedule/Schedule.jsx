@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import './Schedule.css';
 import '../../bootstrap.css'
-import { motion } from "framer-motion"
+// import { motion } from "framer-motion"
 import day1 from './images/day1.svg';
 import day2 from './images/day2.svg';
 import day3 from './images/day3.svg';
 import comingsoon from './images/comingsoon.svg';
 
-
+// eslint-disable-next-line
 const buttonVariants = {
   hover: {
     scale: 1.1,
@@ -28,6 +28,7 @@ function DayImg(props) {
 
 function Schedule(props) {
 
+  // eslint-disable-next-line
   const dayMapping = {
     0: "friday",
     1: "saturday",
@@ -49,6 +50,7 @@ function Schedule(props) {
     }
   }
 
+  // eslint-disable-next-line
   function renderDay() {
     if (day === 0) {
       return (
@@ -153,6 +155,7 @@ function Schedule(props) {
     }
   }
 
+  // eslint-disable-next-line
   function changeDay(increment) {
     if (day + increment >= 0 && day + increment <= 2) {
       setDay(day+increment);

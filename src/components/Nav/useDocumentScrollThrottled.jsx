@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { throttle } from 'lodash';
 
 function useDocumentScrollThrottled(callback) {
@@ -23,6 +23,7 @@ function useDocumentScrollThrottled(callback) {
     
     return () =>
       window.removeEventListener('scroll', handleDocumentScrollThrottled);
+    // eslint-disable-next-line
   }, []);
 }
 

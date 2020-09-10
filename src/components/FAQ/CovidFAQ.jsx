@@ -57,7 +57,7 @@ function CovidFAQ(props) {
                 {isOpen ? 'Show Less' : 'Show More'}
               </button>
           </div>
-          <img className="covid-byte" src={covidByte}/>
+          <img className="covid-byte" alt="" src={covidByte}/>
         </div>
 
       </section>

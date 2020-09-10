@@ -41,6 +41,7 @@ function Nav(props) {
 
 
   useDocumentScrollThrottled(callbackData => {
+    // eslint-disable-next-line
     const { previousScrollTop, currentScrollTop } = callbackData;
     const scrollTop = currentScrollTop;
     var halfHeight = window.innerHeight / 2;
@@ -107,42 +108,42 @@ function Nav(props) {
             
             <div>
               {invertToolTip
-                ? <InvertedTooltip   title="Home" placement={isBrowser ? "right" : "bottom"} arrow><a href="#splash" className={current[0] ? 'current' : ''}></a></InvertedTooltip>
+                ? <InvertedTooltip   title="Home" placement={isBrowser ? "right" : "bottom"} arrow><a href="#splash" className={current[0] ? 'current' : ''}>Home</a></InvertedTooltip>
                 : <CustomizedTooltip title="Home" placement={isBrowser ? "right" : "bottom"} arrow><a href="#splash" className={current[0] ? 'current' : ''}>Home</a></CustomizedTooltip>
               }
             </div>
 
             <div>
               {invertToolTip
-                ? <InvertedTooltip   title="About" placement={isBrowser ? "right" : "bottom"} arrow><a href="#about" className={current[1] ? 'current' : ''}></a></InvertedTooltip>
+                ? <InvertedTooltip   title="About" placement={isBrowser ? "right" : "bottom"} arrow><a href="#about" className={current[1] ? 'current' : ''}>About</a></InvertedTooltip>
                 : <CustomizedTooltip title="About" placement={isBrowser ? "right" : "bottom"} arrow><a href="#about" className={current[1] ? 'current' : ''}>About</a></CustomizedTooltip>
               }
             </div>
 
             <div>
               {invertToolTip
-                ? <InvertedTooltip   title="Schedule" placement={isBrowser ? "right" : "bottom"} arrow><a href="#schedule" className={current[2] ? 'current' : ''}></a></InvertedTooltip>
+                ? <InvertedTooltip   title="Schedule" placement={isBrowser ? "right" : "bottom"} arrow><a href="#schedule" className={current[2] ? 'current' : ''}>Schedule</a></InvertedTooltip>
                 : <CustomizedTooltip title="Schedule" placement={isBrowser ? "right" : "bottom"} arrow><a href="#schedule" className={current[2] ? 'current' : ''}>Schedule</a></CustomizedTooltip>
               }
             </div>
 
             <div>
               {invertToolTip
-                ? <InvertedTooltip   title="FAQ" placement={isBrowser ? "right" : "bottom"} arrow><a href="#faq" className={current[3] ? 'current' : ''}></a></InvertedTooltip>
+                ? <InvertedTooltip   title="FAQ" placement={isBrowser ? "right" : "bottom"} arrow><a href="#faq" className={current[3] ? 'current' : ''}>FAQ</a></InvertedTooltip>
                 : <CustomizedTooltip title="FAQ" placement={isBrowser ? "right" : "bottom"} arrow><a href="#faq" className={current[3] ? 'current' : ''}>FAQ</a></CustomizedTooltip>
               }
             </div>
 
             <div>
               {invertToolTip
-                ? <InvertedTooltip   title="Covid FAQ" placement={isBrowser ? "right" : "bottom"} arrow><a href="#covidfaq" className={current[4] ? 'current' : ''}></a></InvertedTooltip>
+                ? <InvertedTooltip   title="Covid FAQ" placement={isBrowser ? "right" : "bottom"} arrow><a href="#covidfaq" className={current[4] ? 'current' : ''}>Covid FAQ</a></InvertedTooltip>
                 : <CustomizedTooltip title="Covid FAQ" placement={isBrowser ? "right" : "bottom"} arrow><a href="#covidfaq" className={current[4] ? 'current' : ''}>Covid FAQ</a></CustomizedTooltip>
               }
             </div>
 
             <div>
               {invertToolTip
-                ? <InvertedTooltip   title="Sponsors" placement={isBrowser ? "right" : "bottom"} arrow><a href="#sponsors" className={current[5] ? 'current' : ''}></a></InvertedTooltip>
+                ? <InvertedTooltip   title="Sponsors" placement={isBrowser ? "right" : "bottom"} arrow><a href="#sponsors" className={current[5] ? 'current' : ''}>Sponsors</a></InvertedTooltip>
                 : <CustomizedTooltip title="Sponsors" placement={isBrowser ? "right" : "bottom"} arrow><a href="#sponsors" className={current[5] ? 'current' : ''}>Sponsors</a></CustomizedTooltip>
               }
             </div>
