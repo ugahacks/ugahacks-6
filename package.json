@@ -11,6 +11,7 @@
     "framer-motion": "^2.6.5",
     "react": "^16.13.1",
     "react-awesome-slider": "^4.1.0",
+    "react-device-detect": "^1.13.1",
     "react-dom": "^16.13.1",
     "react-responsive-carousel": "^3.2.9",
     "react-router": "^5.2.0",
