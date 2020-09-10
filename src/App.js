@@ -11,7 +11,7 @@ import Schedule from './components/Schedule/Schedule.jsx';
 import Sponsors from './components/Sponsors/Sponsors.jsx';
 
 
-
+/* LAG is definitely caused by the <FAQ/> component alone. */
 function App() {
   return (
     <div className="App">
@@ -19,7 +19,7 @@ function App() {
       <Splash/>
       <About/>
       <Schedule/>
-      <FAQ/>
+      <FAQ/> 
       <CovidFAQ/>
       <Sponsors/>
     </div>
