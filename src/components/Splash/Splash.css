@@ -43,10 +43,13 @@
   }
   .logo {
     width: 85%;
-    top: 30%;
+    top: 20%;
   }
   .headercontainer {
     top: 55%;
     width: 85%;
+  }
+  .countdown-registration {
+    padding: 0;
   }
 }

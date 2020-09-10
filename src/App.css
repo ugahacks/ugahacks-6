@@ -13,3 +13,10 @@ section {
   height: 100vh;
   padding-top: 50px;
 }
+
+@media only screen and (max-width: 480px) {
+  section {
+    height: auto;
+    min-height: 100vh;
+  }
+}
