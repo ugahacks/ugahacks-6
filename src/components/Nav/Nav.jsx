@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
 import './Nav.css';
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import { withStyles } from '@material-ui/core/styles';
 import Tooltip from '@material-ui/core/Tooltip';
-
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile
+} from "react-device-detect";
 import useDocumentScrollThrottled from './useDocumentScrollThrottled';
 
 
@@ -39,8 +44,8 @@ function Nav(props) {
   const [current, setCurrent] = useState({0: 1, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0});
 
 
-  const MINIMUM_SCROLL = 0;
-  const TIMEOUT_DELAY = 400;
+  // const MINIMUM_SCROLL = 0;
+  // const TIMEOUT_DELAY = 400;
 
   /* Needs to be re-tooled for all views in our SPA. */
   useDocumentScrollThrottled(callbackData => {
@@ -103,55 +108,57 @@ function Nav(props) {
 
   /* Stand-ins 'lightStyle' and 'darkStyle' will reference styles in Nav.css */
   return (
-    <nav>
-      <div className={`dotstyle ${style}`}>
-        <div>
-          
+    <BrowserView>
+      <nav>
+        <div className={`dotstyle ${style}`}>
           <div>
-            {invertToolTip
-              ? <InvertedTooltip   title="Home" placement="right" arrow><a href="#splash" className={current[0] ? 'current' : ''}></a></InvertedTooltip>
-              : <CustomizedTooltip title="Home" placement="right" arrow><a href="#splash" className={current[0] ? 'current' : ''}>Home</a></CustomizedTooltip>
-            }
-          </div>
+            
+            <div>
+              {invertToolTip
+                ? <InvertedTooltip   title="Home" placement="right" arrow><a href="#splash" className={current[0] ? 'current' : ''}></a></InvertedTooltip>
+                : <CustomizedTooltip title="Home" placement="right" arrow><a href="#splash" className={current[0] ? 'current' : ''}>Home</a></CustomizedTooltip>
+              }
+            </div>
 
-          <div>
-            {invertToolTip
-              ? <InvertedTooltip   title="About" placement="right" arrow><a href="#about" className={current[1] ? 'current' : ''}></a></InvertedTooltip>
-              : <CustomizedTooltip title="About" placement="right" arrow><a href="#about" className={current[1] ? 'current' : ''}>About</a></CustomizedTooltip>
-            }
-          </div>
+            <div>
+              {invertToolTip
+                ? <InvertedTooltip   title="About" placement="right" arrow><a href="#about" className={current[1] ? 'current' : ''}></a></InvertedTooltip>
+                : <CustomizedTooltip title="About" placement="right" arrow><a href="#about" className={current[1] ? 'current' : ''}>About</a></CustomizedTooltip>
+              }
+            </div>
 
-          <div>
-            {invertToolTip
-              ? <InvertedTooltip   title="Schedule" placement="right" arrow><a href="#schedule" className={current[2] ? 'current' : ''}></a></InvertedTooltip>
-              : <CustomizedTooltip title="Schedule" placement="right" arrow><a href="#schedule" className={current[2] ? 'current' : ''}>Schedule</a></CustomizedTooltip>
-            }
-          </div>
+            <div>
+              {invertToolTip
+                ? <InvertedTooltip   title="Schedule" placement="right" arrow><a href="#schedule" className={current[2] ? 'current' : ''}></a></InvertedTooltip>
+                : <CustomizedTooltip title="Schedule" placement="right" arrow><a href="#schedule" className={current[2] ? 'current' : ''}>Schedule</a></CustomizedTooltip>
+              }
+            </div>
 
-          <div>
-            {invertToolTip
-              ? <InvertedTooltip   title="FAQ" placement="right" arrow><a href="#faq" className={current[3] ? 'current' : ''}></a></InvertedTooltip>
-              : <CustomizedTooltip title="FAQ" placement="right" arrow><a href="#faq" className={current[3] ? 'current' : ''}>FAQ</a></CustomizedTooltip>
-            }
-          </div>
+            <div>
+              {invertToolTip
+                ? <InvertedTooltip   title="FAQ" placement="right" arrow><a href="#faq" className={current[3] ? 'current' : ''}></a></InvertedTooltip>
+                : <CustomizedTooltip title="FAQ" placement="right" arrow><a href="#faq" className={current[3] ? 'current' : ''}>FAQ</a></CustomizedTooltip>
+              }
+            </div>
 
-          <div>
-            {invertToolTip
-              ? <InvertedTooltip   title="Covid FAQ" placement="right" arrow><a href="#covidfaq" className={current[4] ? 'current' : ''}></a></InvertedTooltip>
-              : <CustomizedTooltip title="Covid FAQ" placement="right" arrow><a href="#covidfaq" className={current[4] ? 'current' : ''}>Covid FAQ</a></CustomizedTooltip>
-            }
-          </div>
+            <div>
+              {invertToolTip
+                ? <InvertedTooltip   title="Covid FAQ" placement="right" arrow><a href="#covidfaq" className={current[4] ? 'current' : ''}></a></InvertedTooltip>
+                : <CustomizedTooltip title="Covid FAQ" placement="right" arrow><a href="#covidfaq" className={current[4] ? 'current' : ''}>Covid FAQ</a></CustomizedTooltip>
+              }
+            </div>
 
-          <div>
-            {invertToolTip
-              ? <InvertedTooltip   title="Sponsors" placement="right" arrow><a href="#sponsors" className={current[5] ? 'current' : ''}></a></InvertedTooltip>
-              : <CustomizedTooltip title="Sponsors" placement="right" arrow><a href="#sponsors" className={current[5] ? 'current' : ''}>Sponsors</a></CustomizedTooltip>
-            }
-          </div>
+            <div>
+              {invertToolTip
+                ? <InvertedTooltip   title="Sponsors" placement="right" arrow><a href="#sponsors" className={current[5] ? 'current' : ''}></a></InvertedTooltip>
+                : <CustomizedTooltip title="Sponsors" placement="right" arrow><a href="#sponsors" className={current[5] ? 'current' : ''}>Sponsors</a></CustomizedTooltip>
+              }
+            </div>
 
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </BrowserView>
   );
 }
 
