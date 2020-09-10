@@ -49,27 +49,27 @@ function Nav(props) {
 
     /* Browser only section discipline. */
     function in_splash(scroll) { // 0 <= s <= 500
-      return scroll >= 0 * halfHeight && scroll <= 1 * halfHeight;
+      return scroll >= 0 * halfHeight && scroll < 1 * halfHeight;
     }
 
     function in_about(scroll) { // 500 <= s <= 1500;
-      return scroll >= 1 * halfHeight && scroll <= 3 * halfHeight;
+      return scroll >= 1 * halfHeight && scroll < 3 * halfHeight;
     }
 
     function in_schedule(scroll) { // 1500 <= scroll <= 2500;
-      return scroll >= 3 * halfHeight && scroll <= 5 * halfHeight; 
+      return scroll >= 3 * halfHeight && scroll < 5 * halfHeight; 
     }
 
     function in_faq(scroll) { // 2500 <= scroll <= 3500
-      return scroll >= 5 * halfHeight && scroll <= 7 * halfHeight; 
+      return scroll >= 5 * halfHeight && scroll < 7 * halfHeight; 
     }
 
     function in_covid(scroll) { // 3500 <= s <= 4500
-      return scroll >= 7 * halfHeight && scroll <= 9 * halfHeight;
+      return scroll >= 7 * halfHeight && scroll < 9 * halfHeight;
     }
 
     function in_sponser(scroll) {  // 4500 <= scroll <= 5500;
-      return scroll >= 9 * halfHeight && scroll <= 11 * halfHeight;
+      return scroll >= 9 * halfHeight && scroll < 11 * halfHeight;
     }
     /* End */
 
