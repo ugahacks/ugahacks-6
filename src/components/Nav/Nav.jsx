@@ -35,57 +35,51 @@ const InvertedTooltip = withStyles({
 function Nav(props) {
 
   /* Hooks and States. */
+  const sections = ["splash", "about", "schedule", "faq", "covidfaq", "sponsors"];
   const [invertStyle, setInvertStyle] = useState(true);
   const [invertToolTipStyle, setInvertToolTipStyle] = useState(true);
   const [current, setCurrent] = useState({0: 1, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0});
-
+  /* End */
 
   useDocumentScrollThrottled(callbackData => {
     // eslint-disable-next-line
     const { previousScrollTop, currentScrollTop } = callbackData;
-    const scrollTop = currentScrollTop;
+    const scrollTop = currentScrollTop
     var halfHeight = window.innerHeight / 2;
 
 
-    /* Browser only section discipline. */
-    function in_splash(scroll) { // 0 <= s <= 500
-      return scroll >= 0 * halfHeight && scroll < 1 * halfHeight;
+    function in_section(delta, curr_section, prev_section) {
+      var curr_sec_height = document.getElementById(sections[curr_section]).clientHeight;
+      var prev_sec_height = prev_section < 0 ? 0 : document.getElementById(sections[prev_section]).clientHeight;
+      
+      var upperMap = sections.slice(0, curr_section + 1)
+        .map((x) => document.getElementById(x).clientHeight);
+
+      var lowerMap = sections.slice(0, curr_section)
+        .map((x) => document.getElementById(x).clientHeight);
+
+      var upperHeight = upperMap.reduce((agg, x) => agg + x);
+      var lowerHeight = upperHeight - curr_sec_height; //lowerMap.reduce((agg, x) => agg + x);
+      var upper = delta + halfHeight <= upperHeight;
+      var lower = delta + halfHeight > lowerHeight;
+      return upper && lower;
     }
 
-    function in_about(scroll) { // 500 <= s <= 1500;
-      return scroll >= 1 * halfHeight && scroll < 3 * halfHeight;
-    }
-
-    function in_schedule(scroll) { // 1500 <= scroll <= 2500;
-      return scroll >= 3 * halfHeight && scroll < 5 * halfHeight; 
-    }
-
-    function in_faq(scroll) { // 2500 <= scroll <= 3500
-      return scroll >= 5 * halfHeight && scroll < 7 * halfHeight; 
-    }
-
-    function in_covid(scroll) { // 3500 <= s <= 4500
-      return scroll >= 7 * halfHeight && scroll < 9 * halfHeight;
-    }
-
-    function in_sponser(scroll) {  // 4500 <= scroll <= 5500;
-      return scroll >= 9 * halfHeight && scroll < 11 * halfHeight;
-    }
-    /* End */
-
-
-    var timeToInvert = in_splash(scrollTop) || in_schedule(scrollTop) || in_sponser(scrollTop);
+    var timeToInvert = in_section(scrollTop, 0, -1) ||
+                        in_section(scrollTop, 2, 1) || 
+                        in_section(scrollTop, 5, 4);
 
     /* Regular setters. */
     setInvertStyle(timeToInvert);
     setInvertToolTipStyle(timeToInvert);
+
     setCurrent({
-      0: in_splash(scrollTop),
-      1: in_about(scrollTop),
-      2: in_schedule(scrollTop),
-      3: in_faq(scrollTop),
-      4: in_covid(scrollTop),
-      5: in_sponser(scrollTop)
+      0: in_section(scrollTop, 0, -1),
+      1: in_section(scrollTop, 1, 0),
+      2: in_section(scrollTop, 2, 1),
+      3: in_section(scrollTop, 3, 2),
+      4: in_section(scrollTop, 4, 3),
+      5: in_section(scrollTop, 5, 4)
     });
 
     
