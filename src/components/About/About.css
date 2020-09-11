@@ -1,5 +1,5 @@
 .about {
-  background-image: radial-gradient(rgba(250, 250, 250, 0.9), rgba(255, 255, 255, 0.9)), url(./images/toolpattern.svg);
+  background-image: url('./images/finaltools.svg');
   /**background-image: url(./images/colortools-01.svg);*/
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -37,18 +37,37 @@
   flex-direction: column;
   justify-content: center;
   padding: 30px 0;
-  margin: auto;
+  margin: 0 0 0 10vw;
   width: 50%;
   font-size: 1.3em;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1180px) {
+  .about {
+    background-image: radial-gradient(rgba(250, 250, 250, 0.9), rgba(255, 255, 255, 0.9)), url(./images/toolpattern.svg);
+  }
+
+  .tool-rack > * {
+    padding-top: 2%;
+    padding-bottom: 2%;
+  } 
+
   .section-text {
-    width: 90%;
+    width: 80%;
+    text-align: center;
   }
 
   .tool-rack {
     margin-top: 0px;
     flex-direction: column;
   }
+}
+
+@media only screen and (max-width: px) {
+  .about {
+    background-image: radial-gradient(rgba(250, 250, 250, 0.9), rgba(255, 255, 255, 0.9)), url(./images/toolpattern.svg);
+  }
+  .section-text {
+      width: 90%;
+    }
 }

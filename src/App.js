@@ -19,7 +19,7 @@ function App() {
       <Splash/>
       <About/>
       <Schedule/>
-      <FAQ/> 
+      <FAQ/>
       <CovidFAQ/>
       <Sponsors/>
     </div>
