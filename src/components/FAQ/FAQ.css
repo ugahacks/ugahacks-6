@@ -11,6 +11,10 @@
   background-size: cover !important;
 }
 
+.title-text {
+  text-color: #FFE401;
+}
+
 .faq-container{
   min-height: 100vh;
   display: flex;
@@ -122,8 +126,8 @@
 }
 
 .covid-byte {
-  width: 42%;
-  height: auto;
+  width: auto;
+  height: 50%;
 }
 
 @media only screen and (max-width: 480px) {

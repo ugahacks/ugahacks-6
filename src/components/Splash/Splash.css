@@ -5,37 +5,52 @@
 }
 
 .logo {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: auto;
+  transform: scale(1.1);
 }
 
 .headercontainer {
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: auto;
+  padding-top: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-
-.countdown-registration {
-  margin-top: 65px;
-  padding-left: 55px;
-  padding-right: 55px;
-  font-size: 1.3em;
-  font-weight: 600;
-  font-family: Poppins;
-  border-radius: 50px;
+.countdown-registration > span {
+  font-size: 1.5em;
 }
+
+.countdown-registration > h1 {
+  font-size: 2em;
+}
+
 
 .countdown-registration button {
   background-color: #fafafa;
 }
 
+.subheader {
+  padding: 2%;
+}
+
+/* Lana codepen */
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+  color: #FFE401;
+  font-weight: 700;
+}
+
+li span {
+  display: block;
+  font-size: 3.5rem;
+  color: #FFFFFF;
+}
+/* END */
 
 @media only screen and (max-width: 480px) {
   .splash {

@@ -14,7 +14,7 @@ function FAQ(props) {
       <section className="section faq-section" id="faq">
         <div className="faq-container">
 
-            <h1>FAQ</h1>
+            <h1 className="title-text">FAQ</h1>
 
             <Question
               question="Where will the event be held this year?"

@@ -39,16 +39,14 @@ function Countdown(props) {
 
   Object.keys(timeLeft).forEach((interval) => {
     timerComponents.push(
-      <span>
-        {timeLeft[interval]} {interval}{" "}
-      </span>
+      <li><span>{timeLeft[interval]}</span>{interval}</li>
     );
   });
 
   return (
     <div className="countdown-registration">
-      <h1> Countdown until Registration</h1>
       {timerComponents.length ? timerComponents : <span>Time's up!</span>}
+      <h1> until registration</h1>
     </div>
   );
 
@@ -60,12 +58,11 @@ function Splash(props) {
   return (
     <>
       <section className="splash" id="splash">
-        <img className="logo" src={sixLogo} alt="UGAHacks 6 Logo"/>
         <div className="headercontainer">
+          <img className="logo" src={sixLogo} alt="UGAHacks 6 Logo"/>
           <h2 className="subheader">February 5-7, 2021 @ MLC</h2>
           <Countdown/>
         </div>
-
       </section>
     </>
 
