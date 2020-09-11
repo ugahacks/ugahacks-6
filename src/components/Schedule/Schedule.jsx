@@ -163,11 +163,9 @@ function Schedule(props) {
   }
 
   return (
-    <>
       <section id='schedule' className=''>
-      <img id="commingsoonimg" src={comingsoon} alt="Coming Soon banner"></img>
+        <img id="commingsoonimg" src={comingsoon} alt="Coming Soon banner"></img>
       </section>
-    </>
   )
 
 //   return (

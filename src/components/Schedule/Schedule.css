@@ -16,7 +16,8 @@
 #commingsoonimg {
   display: block;
   margin: 100px auto;
-  width: 50%;
+  width: 35%;
+  height: 65%;
 }
 
 @media only screen and (max-width: 480px) {
