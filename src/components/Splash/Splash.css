@@ -30,6 +30,13 @@
 
 .countdown-registration button {
   background-color: #fafafa;
+  padding-left: 55px;
+  padding-right: 55px;
+  font-size: 1.3em;
+  font-weight: 600;
+  font-family: Poppins;
+  background-color: #fafafa;
+  border-radius: 50px;
 }
 
 .subheader {

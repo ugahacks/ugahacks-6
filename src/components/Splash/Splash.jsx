@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Splash.css";
 import sixLogo from "./images/sixlogo-01.svg";
-// import Button from "@material-ui/core/Button";
+import Button from "@material-ui/core/Button";
 
 
 function Countdown(props) {
@@ -9,7 +9,7 @@ function Countdown(props) {
   const calculateTimeLeft = () => {
 
     //CHANGE DATE UNTIL REGISTRATION HERE:
-    const difference = +new Date("02/07/2021") - +new Date();
+    const difference = +new Date("8/30/2020") - +new Date();
 
     let timeLeft = {};
 
@@ -45,8 +45,8 @@ function Countdown(props) {
 
   return (
     <div className="countdown-registration">
-      {timerComponents.length ? timerComponents : <span>Time's up!</span>}
-      <h1> until registration</h1>
+      {timerComponents.length ? timerComponents : <Button variant="contained" size="large">Register Now</Button>}
+      {timerComponents.length ? <h1> until registration</h1> : <h1></h1>}
     </div>
   );
 
