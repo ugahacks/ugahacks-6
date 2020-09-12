@@ -122,12 +122,13 @@
 .covid-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .covid-byte {
-  width: auto;
-  height: 50%;
+  margin: auto 0;
+  max-width: 30vw;
+  height: 65vh;
 }
 
 @media only screen and (max-width: 480px) {
