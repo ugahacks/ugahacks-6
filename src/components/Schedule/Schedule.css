@@ -4,6 +4,7 @@
   background-attachment: fixed;
   background-size: cover !important;
   display: flex;
+  min-height: 100vh;
 }
 
 .schedule-text {
