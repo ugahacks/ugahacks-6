@@ -9,6 +9,10 @@
   background-image: url(./images/yellowbg-01.svg);
   background-repeat: no-repeat;
   background-size: cover !important;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .title-text {
@@ -26,7 +30,7 @@
 }
 
 .covid-faq-container {
-  min-height: 100vh;
+  /*min-height: 100vh;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -121,14 +125,32 @@
 
 .covid-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
+  width: 100%;
 }
 
 .covid-byte {
   margin: auto 0;
   max-width: 30vw;
   height: 65vh;
+}
+
+@media only screen and (max-width: 960px) {
+  .covid-faq-container {
+    width: 90%;
+    margin: auto;
+  }
+  .covid-container {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .covid-byte {
+    width: 80%;
+    height: 27.5vh;
+    min-height: 450px;
+    min-width: 350px;
+    margin: 0 auto 30px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
