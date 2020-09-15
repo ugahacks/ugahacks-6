@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./FAQ.css";
 import { motion } from "framer-motion";
+import Button from '@material-ui/core/Button';
 import Question from "./Questions";
 import {collapseVariants} from "./CommonVariants"
 
@@ -51,9 +52,8 @@ function FAQ(props) {
                 answer="The event will be held at UGA's Zell B. Miller Learning Center."
               />
             </motion.div>
-            <button className="show-more" onClick={() => setIsOpen(!isOpen)}>
-              {isOpen ? 'Show Less' : 'Show More'}
-            </button>
+            <Button id="show-more" className="show-more-yellow" variant="contained" size="large" onClick={() => setIsOpen(!isOpen)}><a>{isOpen ? 'Show Less' : 'Show More'}</a></Button>
+          
         </div>
 
       </section>
@@ -63,3 +63,8 @@ function FAQ(props) {
 }
 
 export default FAQ;
+
+/*
+            <button className="show-more" onClick={() => setIsOpen(!isOpen)}>
+              {isOpen ? 'Show Less' : 'Show More'}
+            </button>*/

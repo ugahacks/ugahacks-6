@@ -1,5 +1,5 @@
 .faq-section {
-  background-image: radial-gradient(rgba(250, 250, 250, 0.9), rgba(255, 255, 255, 0.9)), url(./images/screws-01.svg);
+  background-image: url(./images/finalscrews-bg.svg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover !important;
@@ -25,8 +25,8 @@
   flex-direction: column;
   justify-content: center;
   padding: 30px 0;
-  margin: 0 auto;
-  width: 60%;
+  margin: 0 0 0 10vw;
+  width: 50%;
 }
 
 .covid-faq-container {
@@ -97,30 +97,30 @@
   padding: 18px 18px;
 }
 
-.show-more {
-  font-family: 'Poppins', sans-serif;
-  font-size: 15px;
-  padding: 20px;
-  text-align: center;
-  background-color: #ffe401;
-  color: black;
-  cursor: pointer;
-  margin: 20px auto;
-  border-radius: 5px;
+#show-more {
+  margin-top: 25px;
+  font-size: 1.1em;
+  font-weight: 600;
+  font-family: Poppins;
+  border-radius: 50px;
+  color: white; 
+  width: 300px;
+  margin: 40px auto;
+  outline: none;
 }
 
-.show-more:after {
-  content: '\02795';
-  font-size: 15px;
-  color: white;
-  float: right;
-  margin-left: 5px;
-  order: 0
+.show-more-black {
+  background-color: black !important;
 }
+
+.show-more-yellow {
+  color: #444 !important ;
+  background-color: #ffe401 !important;
+}
+
 
 .hidden-questions {
   overflow: hidden;
-
 }
 
 .covid-container {
@@ -151,6 +151,18 @@
     min-width: 350px;
     margin: 0 auto 30px;
   }
+}
+
+@media only screen and (max-width: 1230px) {
+  .faq-section {
+    background-image: radial-gradient(rgba(250, 250, 250, 0.9), rgba(255, 255, 255, 0.9)), url(./images/screws-01.svg);
+  }
+
+  .faq-container {
+    margin: 0 auto;
+    width: 60%;
+  }
+
 }
 
 @media only screen and (max-width: 480px) {
