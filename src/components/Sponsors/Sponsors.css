@@ -51,5 +51,7 @@
   .sponsors-container {
     width: 90%;
   }
+  .packet-text p, .sponsors-container Button {
+    width: 100%;
+  }
 }
-
