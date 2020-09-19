@@ -69,6 +69,9 @@ function Countdown(props) {
 function Splash(props) {
   return (
     <>
+    <div className="covid-alert">
+      <a href="https://blog.ugahacks.com/full/8/">Click here to learn more about UGAHacks' Coronavirus safety measures and guidelines</a>
+    </div>
       <section className="splash" id="splash">
         <div className="headercontainer">
           <img className="logo" src={sixLogo} alt="UGAHacks 6 Logo"/>

@@ -32,6 +32,25 @@
   padding: 2%;
 }
 
+.covid-alert {
+  background-color: #fe3d40;
+  text-align: center;
+  margin: 0px;
+  padding: 10px;
+}
+
+.covid-alert a, .covid-alert a:visited {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.covid-alert a:hover {
+  opacity: 0.8;
+  text-decoration: none;
+  color: white;
+}
+
 /* Lana codepen */
 li {
   display: inline-block;
