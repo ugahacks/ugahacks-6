@@ -80,9 +80,13 @@ li span {
     font-size: 1.5em;
   }
   li {
-    font-size: 1.0em;
+    font-size: .875em;
   }
   li span {
-    font-size: 2.9rem;
+    font-size: 2.75em;
+  }
+
+  .countdown-registration > h1 {
+    margin-top: 30px;
   }
 }

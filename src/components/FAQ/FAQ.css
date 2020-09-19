@@ -6,9 +6,11 @@
 }
 
 .covid-faq-section {
-  background-image: url(./images/yellowbg-01.svg);
-  background-repeat: no-repeat;
+  background-image: url(./images/yellowbg-02.svg);
+  /*background-repeat: no-repeat;*/
   background-size: cover !important;
+  /*background-size: 100% auto;*/
+  /*position: absolute;*/
   align-items: center;
   display: flex;
   flex-direction: row;
