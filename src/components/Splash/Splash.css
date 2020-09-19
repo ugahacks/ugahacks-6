@@ -28,17 +28,6 @@
   letter-spacing: 0.2em;
 }
 
-
-.countdown-registration button {
-  background-color: #fafafa;
-  padding-left: 55px;
-  padding-right: 55px;
-  font-size: 1.3em;
-  font-weight: 600;
-  font-family: Poppins;
-  border-radius: 50px;
-}
-
 .subheader {
   padding: 2%;
 }

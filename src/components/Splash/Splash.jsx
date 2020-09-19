@@ -2,7 +2,19 @@ import React, { useEffect, useState } from "react";
 import "./Splash.css";
 import sixLogo from "./images/sixlogo-01.svg";
 import Button from "@material-ui/core/Button";
+import { withStyles } from '@material-ui/core/styles';
 
+const CustomButton = withStyles({
+  root: {
+    backgroundColor: '#fafafa',
+    paddingLeft: '55px',
+    paddingRight: '55px',
+    fontSize: '1.3em',
+    fontWeight: 600,
+    fontFamily: 'Poppins',
+    borderRadius: '50px'
+  }
+})(Button);
 
 function Countdown(props) {
 
@@ -27,7 +39,6 @@ function Countdown(props) {
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
-
   useEffect(() => {
     const timer = setTimeout(() => {
       setTimeLeft(calculateTimeLeft());
@@ -43,9 +54,10 @@ function Countdown(props) {
     );
   });
 
+  // Replace button link to schedule post-registration
   return (
     <div className="countdown-registration">
-      {timerComponents.length ? timerComponents : <Button variant="contained" size="large">Register Now</Button>}
+      {timerComponents.length ? timerComponents : <CustomButton variant="contained" size="large" href="https://my.ugahacks.com/">Register Now</CustomButton>}
       {timerComponents.length ? <h1> until registration</h1> : <h1></h1>}
     </div>
   );
