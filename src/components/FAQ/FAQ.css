@@ -9,6 +9,7 @@
   background-image: url(./images/yellowbg-02.svg);
   /*background-repeat: no-repeat;*/
   background-size: cover !important;
+  /*background-position: center;*/
   /*background-size: 100% auto;*/
   /*position: absolute;*/
   align-items: center;
@@ -167,16 +168,28 @@
 
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 800px) {
   .covid-faq-container, .faq-container {
     width: 90%;
     margin: auto;
   }
+
+  .covid-faq-section {
+    background-image: url(./images/yellowbg-02-mobile.svg);
+    /*background-position: center;*/
+  }
+
+  .covid-faq-container > h1 {
+    margin-top: 30px;
+    color: #21232c;
+  }
+
   .covid-container {
     flex-direction: column;
   }
   .covid-byte {
     width: 80%;
     margin: 0 auto 30px;
+    min-width: 250px;
   }
 }

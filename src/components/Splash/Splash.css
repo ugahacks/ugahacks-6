@@ -61,9 +61,13 @@ li span {
 }
 /* END */
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1280px) {
   .splash {
     background-image: url(./images/mobilesplash.svg);
+  }
+
+  .logo {
+    transform: scale(1);
   }
 }
 
