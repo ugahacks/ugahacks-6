@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import "./FAQ.css";
-import { motion } from "framer-motion"
-import {collapseVariants, hoverVariants} from "./CommonVariants"
+import { motion } from "framer-motion";
+import {collapseVariants, hoverVariants} from "./CommonVariants";
+import screw from "./images/screw-01.svg";
+
+const screwVariants = {
+  open: { rotate: 45 },
+  closed: { rotate: 0 },
+};
 
 function Question(props) {
 
@@ -14,7 +20,15 @@ function Question(props) {
         onClick={() => setIsOpen(!isOpen)}
         variants={hoverVariants}
         whileHover="hover"
-      >{props.question}</motion.button>
+      >{props.question}
+      <motion.img
+        className="screw"
+        src={screw} width="15"
+        height="15"
+        variants={screwVariants}
+        animate={isOpen ? "open": "closed"}
+        />
+      </motion.button>
       <motion.div
         className="faq-answer"
         variants={collapseVariants}
