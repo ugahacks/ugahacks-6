@@ -10,19 +10,52 @@ import CovidFAQ from './components/FAQ/CovidFAQ.jsx'
 import Schedule from './components/Schedule/Schedule.jsx';
 import Sponsors from './components/Sponsors/Sponsors.jsx';
 
+import { FullPage, Slide } from 'react-full-page';
+import { BrowserView, MobileView } from 'react-device-detect';
+
 
 /* LAG is definitely caused by the <FAQ/> component alone. */
 function App() {
   return (
-    <div className="App">
-      <Nav/>
-      <Splash/>
-      <About/>
-      <Schedule/>
-      <FAQ/>
-      <CovidFAQ/>
-      <Sponsors/>
-    </div>
+    <>
+    <BrowserView>
+      <div className="App">
+        <Nav/>  
+        <FullPage scrollMode="full-page">  
+          <Slide>
+            <Splash/>
+          </Slide>
+          <Slide>
+            <About/>
+          </Slide>
+          <Slide>
+            <Schedule/>
+          </Slide>
+          <Slide>
+            <FAQ/>  
+          </Slide>
+          <Slide>
+            <CovidFAQ/>
+          </Slide>
+          <Slide>
+            <Sponsors/>
+          </Slide>
+        </FullPage>
+      </div>
+    </BrowserView>
+
+    <MobileView>
+      <div className="App">
+        <Nav/>  
+        <Splash/>
+        <About/>
+        <Schedule/>
+        <FAQ/>
+        <CovidFAQ/>
+        <Sponsors/>
+      </div>
+    </MobileView>
+    </>
   );
 }
 
