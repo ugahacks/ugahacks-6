@@ -4,35 +4,16 @@
   background-attachment: fixed;
   background-size: cover !important;
   display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
 }
 
-.schedule-text {
+.schedule-container {
   font-size: 1.2em;
+  padding: 30px;
 }
 
-#scheduleheader {
-  margin-left: 10%;
-}
-
-#commingsoonimg {
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-}
-
-@media only screen and (max-width: 480px) {
-  #scheduleheader {
-    margin-left: 0%;
-    text-align: center;
-  }
-  #commingsoonimg {
-    width: 90%;
-  }
-  .day-container img {
-    display: none;
-  }
-}
 
 .day-header {
   font-size: 1.7em;
@@ -45,12 +26,12 @@
 .day-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
 .day-container img {
-  width: 10%;
+  width: 30%;
+  max-width: 200px;
 }
 
 .back-button{
@@ -120,4 +101,29 @@ h2 {
   font-weight: 600;
   letter-spacing: 2px;
   margin: 25px 0px;
+}
+
+#commingsoonimg {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 480px) {
+  #scheduleheader {
+    margin: 30px auto;
+    text-align: center;
+  }
+  #commingsoonimg {
+    width: 90%;
+  }
+  .day-container img {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 770px) {
+  .schedule-container {
+    width: 90%;
+  }
 }
