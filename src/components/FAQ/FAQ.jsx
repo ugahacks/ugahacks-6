@@ -51,6 +51,34 @@ function FAQ(props) {
                 question="Where will the event be held this year?"
                 answer="The event will be held at UGA's Zell B. Miller Learning Center."
               />
+              <Question
+                question="Where will the event be held this year?"
+                answer="The event will be held at UGA's Zell B. Miller Learning Center."
+              />
+
+              <Question
+                question="Where will the event be held this year?"
+                answer="The event will be held at UGA's Zell B. Miller Learning Center."
+              />
+
+              <Question
+                question="Where will the event be held this year?"
+                answer="The event will be held at UGA's Zell B. Miller Learning Center."
+              />
+              <Question
+                question="Where will the event be held this year?"
+                answer="The event will be held at UGA's Zell B. Miller Learning Center."
+              />
+
+              <Question
+                question="Where will the event be held this year?"
+                answer="The event will be held at UGA's Zell B. Miller Learning Center."
+              />
+
+              <Question
+                question="Where will the event be held this year?"
+                answer="The event will be held at UGA's Zell B. Miller Learning Center."
+              />
             </motion.div>
             <Button id="show-more" className="show-more-yellow" variant="contained" size="large" onClick={() => setIsOpen(!isOpen)}><a>{isOpen ? 'Show Less' : 'Show More'}</a></Button>
           
