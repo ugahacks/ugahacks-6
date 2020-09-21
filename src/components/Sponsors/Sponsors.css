@@ -25,12 +25,10 @@
   width: 75vw;
 }
 
-.packet-text {
-  /*margin-top: 100px;*/
-}
-
 .packet-text p {
   font-size: 1.3em;
+  width: 72%;
+  margin: auto;
 }
 
 .packet-text a {
@@ -38,14 +36,9 @@
   text-decoration: none;
 }
 
-.packet-text h3 {
+.packet-text h2 {
   font-weight: 700;
   font-size: 3em;
-}
-
-.packet-text p {
-  width: 72%;
-  margin: auto;
 }
 
 @media only screen and (max-width: 480px) {

@@ -13,7 +13,7 @@ function CovidFAQ(props) {
 
   return (
     <>
-      <section class="section covid-faq-section" id="covidfaq">
+      <section className="section covid-faq-section" id="covidfaq">
         <div className="covid-container">
           <div className="covid-faq-container">
 
@@ -54,7 +54,7 @@ function CovidFAQ(props) {
                   answer="The event will be held at UGA's Zell B. Miller Learning Center."
                 />
               </motion.div>
-              <Button id="show-more" className="show-more-black" variant="contained" size="large" onClick={() => setIsOpen(!isOpen)}><a>{isOpen ? 'Show Less' : 'Show More'}</a></Button>
+              <Button id="show-more" className="show-more-black" variant="contained" size="large" onClick={() => setIsOpen(!isOpen)}>{isOpen ? 'Show Less' : 'Show More'}</Button>
           </div>
           <img className="covid-byte" alt="" src={covidByte}/>
         </div>
