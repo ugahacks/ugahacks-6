@@ -15,8 +15,9 @@ function FAQ(props) {
       <section className="section faq-section" id="faq">
         <div className="faq-container">
 
-            <h1 className="title-text">FAQ</h1>
+          <h1 className="title-text">FAQ</h1>
 
+          <div className="faq-question-wrapper">
             <Question
               question="Where will the event be held this year?"
               answer="The event will be held at UGA's Zell B. Miller Learning Center."
@@ -32,56 +33,50 @@ function FAQ(props) {
               answer="The event will be held at UGA's Zell B. Miller Learning Center."
             />
 
-            <motion.div
-              className="hidden-questions"
-              variants={collapseVariants}
-              animate={isOpen ? "open" : "closed"}
-              >
-              <Question
-                question="Where will the event be held this year?"
-                answer="The event will be held at UGA's Zell B. Miller Learning Center."
-              />
+            <Question
+              question="Where will the event be held this year?"
+              answer="The event will be held at UGA's Zell B. Miller Learning Center."
+            />
 
-              <Question
-                question="Where will the event be held this year?"
-                answer="The event will be held at UGA's Zell B. Miller Learning Center."
-              />
+            <Question
+              question="Where will the event be held this year?"
+              answer="The event will be held at UGA's Zell B. Miller Learning Center."
+            />
 
-              <Question
-                question="Where will the event be held this year?"
-                answer="The event will be held at UGA's Zell B. Miller Learning Center."
-              />
-              <Question
-                question="Where will the event be held this year?"
-                answer="The event will be held at UGA's Zell B. Miller Learning Center."
-              />
+            <Question
+              question="Where will the event be held this year?"
+              answer="The event will be held at UGA's Zell B. Miller Learning Center."
+            />
+            <Question
+              question="Where will the event be held this year?"
+              answer="The event will be held at UGA's Zell B. Miller Learning Center."
+            />
 
-              <Question
-                question="Where will the event be held this year?"
-                answer="The event will be held at UGA's Zell B. Miller Learning Center."
-              />
+            <Question
+              question="Where will the event be held this year?"
+              answer="The event will be held at UGA's Zell B. Miller Learning Center."
+            />
 
-              <Question
-                question="Where will the event be held this year?"
-                answer="The event will be held at UGA's Zell B. Miller Learning Center."
-              />
-              <Question
-                question="Where will the event be held this year?"
-                answer="The event will be held at UGA's Zell B. Miller Learning Center."
-              />
+            <Question
+              question="Where will the event be held this year?"
+              answer="The event will be held at UGA's Zell B. Miller Learning Center."
+            />
+            <Question
+              question="Where will the event be held this year?"
+              answer="The event will be held at UGA's Zell B. Miller Learning Center."
+            />
 
-              <Question
-                question="Where will the event be held this year?"
-                answer="The event will be held at UGA's Zell B. Miller Learning Center."
-              />
+            <Question
+              question="Where will the event be held this year?"
+              answer="The event will be held at UGA's Zell B. Miller Learning Center."
+            />
 
-              <Question
-                question="Where will the event be held this year?"
-                answer="The event will be held at UGA's Zell B. Miller Learning Center."
-              />
-            </motion.div>
-            <Button id="show-more" className="show-more-yellow" variant="contained" size="large" onClick={() => setIsOpen(!isOpen)}><a>{isOpen ? 'Show Less' : 'Show More'}</a></Button>
-          
+            <Question
+              question="Where will the event be held this year?"
+              answer="The event will be held at UGA's Zell B. Miller Learning Center."
+            />
+          </div>
+            
         </div>
 
       </section>
