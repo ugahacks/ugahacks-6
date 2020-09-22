@@ -11,15 +11,16 @@ import Schedule from './components/Schedule/Schedule.jsx';
 import Sponsors from './components/Sponsors/Sponsors.jsx';
 import Footer from './components/Footer/Footer.jsx';
 
+
 import { FullPage, Slide } from 'react-full-page';
-import { BrowserView, MobileView } from 'react-device-detect';
+import { BrowserView, MobileView, isMobile } from 'react-device-detect';
 
 
 /* LAG is definitely caused by the <FAQ/> component alone. */
 function App() {
-  return (
-    <>
-    <BrowserView>
+  if (!isMobile) {
+    return (
+      <>
       <div className="App">
         <Nav/>
         <FullPage scrollMode="full-page">
@@ -44,9 +45,11 @@ function App() {
           <Footer/>
         </FullPage>
       </div>
-    </BrowserView>
-
-    <MobileView>
+      </>
+    );
+  } else {
+    return(
+      <>
       <div className="App">
         <Nav/>
         <Splash/>
@@ -57,9 +60,9 @@ function App() {
         <Sponsors/>
         <Footer/>
       </div>
-    </MobileView>
-    </>
-  );
+      </>
+    );  
+  }
 }
 
 export default App;
