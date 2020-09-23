@@ -168,34 +168,34 @@ function Schedule(props) {
       </section>
   )
 
-//   return (
-//     <>
-//       <section id='schedule' className=''>
-//         <div className="section-text schedule-text">
-//           <h1 id="scheduleheader">Schedule</h1>
-//           <div className="day-header">
-//             <motion.button
-//               onClick={() => changeDay(-1)}
-//               className="back-button"
-//               variants={buttonVariants}
-//               whileHover="hover"
-//               ></motion.button>
-//             <h1>{dayMapping[day]} </h1>
-//             <motion.button
-//               onClick={() => changeDay(1)}
-//               className="forward-button"
-//               variants={buttonVariants}
-//               whileHover="hover"
-//               whileTap="tap"
-//               > </motion.button>
-//           </div>
-//           <div className="day-container">
-//           {renderDay()}
-//           </div>
-//         </div>
-//       </section>
-//     </>
-//   );
+  // return (
+  //   <>
+  //     <section id='schedule' className=''>
+  //       <div className="section-text schedule-text">
+  //         <h1 id="scheduleheader">Schedule</h1>
+  //         <div className="day-header">
+  //           <motion.button
+  //             onClick={() => changeDay(-1)}
+  //             className="back-button"
+  //             variants={buttonVariants}
+  //             whileHover="hover"
+  //             ></motion.button>
+  //           <h1>{dayMapping[day]} </h1>
+  //           <motion.button
+  //             onClick={() => changeDay(1)}
+  //             className="forward-button"
+  //             variants={buttonVariants}
+  //             whileHover="hover"
+  //             whileTap="tap"
+  //             > </motion.button>
+  //         </div>
+  //         <div className="day-container">
+  //         {renderDay()}
+  //         </div>
+  //       </div>
+  //     </section>
+  //   </>
+  // );
 }
 
 export default Schedule;

@@ -4,7 +4,7 @@ import facebook from './images/facebook.svg';
 import github from './images/github.svg';
 import instagram from './images/insta.svg';
 import twitter from './images/twitter.svg';
-import orgsite from './images/orgsite.png';
+import orgsite from './images/byteicon.svg';
 import BugReportIcon from '@material-ui/icons/BugReport';
 
 function Footer(props) {
