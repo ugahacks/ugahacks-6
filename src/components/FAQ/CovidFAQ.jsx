@@ -10,6 +10,7 @@ import covidByte from "./images/covidbyte-01.svg"
 function CovidFAQ(props) {
 
   const [isOpen, setIsOpen] = useState(false);
+  const COVID_LEARN_MORE = "Read more about our COVID-19 guidelines.";
 
   return (
     <>
@@ -48,8 +49,8 @@ function CovidFAQ(props) {
               question="How will maintain social distance guidelines?"
               answer="Groups will be called alphabetically via Discord to check-in once check-in starts. If the group after your assigned group is called, you will need to check-in after all other groups are called."
               />
-            </div>
-              
+            </div> 
+            <Button className="show-more-black" variant="contained" size="large" id="show-more" href="https://blog.ugahacks.com/full/8/">{COVID_LEARN_MORE}</Button>  
           </div>
           <img className="covid-byte" alt="" src={covidByte}/>
         </div>

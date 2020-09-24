@@ -61,8 +61,8 @@ function FAQ(props) {
               question="Can I volunteer/mentor at UGAHacks?"
               answer="We love your enthusiasm! Volunteers and mentors can apply via the registration form above! If you have any questions regarding the position, please contact us at hello@ugahacks.com - Be sure to mention the specific position in the subject of the email. See you at the event!"
             />
-          </div>
-            
+
+          </div>            
         </div>
 
       </section>
