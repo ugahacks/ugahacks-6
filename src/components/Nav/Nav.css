@@ -60,6 +60,12 @@ nav {
 	box-shadow: inset 0 0 0 9px white;
 }
 
+@media only screen and (max-width: 800px) {
+	.dotstyle div a {
+		left: -25px;
+	}
+}
+
 @media only screen and (max-width: 480px) {
   nav {
     display: none !important;
