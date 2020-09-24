@@ -13,6 +13,11 @@ const CustomButton = withStyles({
     borderRadius: '50px',
     marginTop: '25px',
     maxWidth: '500px',
+    width: '75vw',
+    ['@media (max-width:480px)']: {
+      width: '100%',
+      fontSize: '0.95em',
+    }
   }
 })(Button);
 
