@@ -9,6 +9,7 @@ const CustomButton = withStyles({
     backgroundColor: '#fafafa',
     paddingLeft: '55px',
     paddingRight: '55px',
+    marginTop: '25px',
     fontSize: '1.3em',
     fontWeight: 600,
     fontFamily: 'Poppins',
@@ -59,6 +60,7 @@ function Countdown(props) {
     <div className="countdown-registration">
       {timerComponents.length ? timerComponents : <CustomButton variant="contained" size="large" href="https://my.ugahacks.com/">Register Now</CustomButton>}
       {timerComponents.length ? <h1> until registration</h1> : <h1></h1>}
+      {timerComponents.length ? <CustomButton variant="contained" size="medium" href="https://ugeorgia.ca1.qualtrics.com/jfe/form/SV_8x05NF3a2OkoMeh">Interest Form</CustomButton> : <p></p>}
     </div>
   );
 
@@ -72,7 +74,10 @@ function Splash(props) {
       <section className="splash" id="splash">
         <div className="headercontainer">
           <img className="logo" src={sixLogo} alt="UGAHacks 6 Logo"/>
-          <h2 className="subheader">February 5-7, 2021 @ MLC</h2>
+          <div className="subheader">
+            <h2 id="tagline"><b>BOOT UP YOUR DREAMS.<span className="eventline"> BUILD THE FUTURE.</span></b></h2>
+            <h2 id="eventdate">February 5-7, 2021 @ MLC</h2>
+          </div>
           <Countdown/>
         </div>
       </section>

@@ -9,6 +9,14 @@
   transform: scale(1.1);
 }
 
+.eventline {
+  color: #FFE401;
+}
+
+#eventdate {
+  margin-top: 25px;
+}
+
 .headercontainer {
   padding-top: 25vh;
   display: flex;
@@ -29,7 +37,7 @@
 }
 
 .subheader {
-  padding: 2%;
+  padding: 2% 2% 0;
 }
 
 .covid-alert {
@@ -69,7 +77,7 @@ li span {
 }
 /* END */
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1600px) {
   .splash {
     background-image: url(./images/mobilesplash.svg);
   }
@@ -84,12 +92,17 @@ li span {
     padding-top: 0;
     min-height: 100vh;
   }
-  
+
   .logo {
     width: 85%;
   }
+  #eventdate {
+    padding-top: 6%;
+  }
   .subheader {
-    padding: 6%;
+    padding: 6% 3%;
+  }
+  .subheader > h2 {
     font-size: 1.5em;
   }
   li {

@@ -10,7 +10,7 @@ import covidByte from "./images/covidbyte-01.svg"
 function CovidFAQ(props) {
 
   const [isOpen, setIsOpen] = useState(false);
-  const COVID_LEARN_MORE = "Read more about our COVID-19 guidelines.";
+  const COVID_LEARN_MORE = "Read more about our COVID-19 guidelines";
 
   return (
     <>
