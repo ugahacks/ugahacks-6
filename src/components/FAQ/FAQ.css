@@ -49,8 +49,7 @@
 }
 
 .faq-question-wrapper::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 1px solid slategrey;
+  background-color: #3a4146;
 }
 
 /* FIREFOX: */
