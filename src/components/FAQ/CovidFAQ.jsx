@@ -1,15 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
+// import { useState } from "react";
 import "./FAQ.css";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import Button from '@material-ui/core/Button';
 import Question from "./Questions";
-import {collapseVariants} from "./CommonVariants";
+// import {collapseVariants} from "./CommonVariants";
 import covidByte from "./images/covidbyte-01.svg"
 
 
 function CovidFAQ(props) {
 
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
   const COVID_LEARN_MORE = "Read more about our COVID-19 guidelines";
 
   return (
@@ -34,7 +35,7 @@ function CovidFAQ(props) {
               question="Will I still be able to sleep at the venue for UGAHacks?"
               answer="This year UGAHacks will not be providing sleeping areas at the venue."
               />
-                
+
               <Question
               question="How do I access a virtual workshop?"
               answer="There will be a page that lists links for workshops. This page will be easily accessible on MyUGAHacks!"

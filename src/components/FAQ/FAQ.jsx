@@ -1,14 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
+// import { useState } from "react";
 import "./FAQ.css";
-import { motion } from "framer-motion";
-import Button from '@material-ui/core/Button';
+// import { motion } from "framer-motion";
+// import Button from '@material-ui/core/Button';
 import Question from "./Questions";
-import {collapseVariants} from "./CommonVariants"
+// import {collapseVariants} from "./CommonVariants"
 
 
 function FAQ(props) {
 
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>

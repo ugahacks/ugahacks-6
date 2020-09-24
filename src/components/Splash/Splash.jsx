@@ -59,7 +59,7 @@ function Countdown(props) {
   return (
     <div className="countdown-registration">
       {timerComponents.length ? timerComponents : <CustomButton variant="contained" size="large" href="https://my.ugahacks.com/">Register Now</CustomButton>}
-      {timerComponents.length ? <h1> until registration</h1> : <h1></h1>}
+      {timerComponents.length ? <h1> until registration</h1> : <p></p>}
       {timerComponents.length ? <CustomButton variant="contained" size="medium" href="https://ugeorgia.ca1.qualtrics.com/jfe/form/SV_8x05NF3a2OkoMeh">Interest Form</CustomButton> : <p></p>}
     </div>
   );

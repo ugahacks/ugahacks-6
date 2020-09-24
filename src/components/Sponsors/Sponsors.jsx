@@ -14,7 +14,7 @@ const CustomButton = withStyles({
     marginTop: '25px',
     maxWidth: '500px',
     width: '75vw',
-    ['@media (max-width:480px)']: {
+    '@media (max-width:480px)': {
       width: '100%',
       fontSize: '1em',
       paddingRight: '10px',
