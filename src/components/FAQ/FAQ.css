@@ -52,6 +52,14 @@
   outline: 1px solid slategrey;
 }
 
+/* FIREFOX: */
+
+.faq-question-wrapper {
+  scrollbar-width: thin;
+  scrollbar-color: slategrey rbga(0, 0, 0, 0);
+}
+
+
 .covid-faq-container {
   /*min-height: 100vh;*/
   display: flex;
