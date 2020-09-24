@@ -16,7 +16,9 @@ const CustomButton = withStyles({
     width: '75vw',
     ['@media (max-width:480px)']: {
       width: '100%',
-      fontSize: '0.95em',
+      fontSize: '1em',
+      paddingRight: '10px',
+      paddingLeft: '10px',
     }
   }
 })(Button);
