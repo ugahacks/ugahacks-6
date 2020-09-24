@@ -16,45 +16,40 @@ function CovidFAQ(props) {
       <section className="section covid-faq-section" id="covidfaq">
         <div className="covid-container">
           <div className="covid-faq-container">
-
-              <h1>Covid FAQ</h1>
+            <h1>Covid FAQ</h1>
+            <div className="faq-question-wrapper">
 
               <Question
-                question="Where will the event be held this year?"
-                answer="The event will be held at UGA's Zell B. Miller Learning Center."
+                question="Will masks be required at UGAHacks 6?"
+                answer="Yes, masks will be required throughout the event."
               />
 
               <Question
-                question="Where will the event be held this year?"
-                answer="The event will be held at UGA's Zell B. Miller Learning Center."
+                question="Will I still be able to hangout with my team and friends safely?"
+                answer="Yes, there will be safe socially distanced areas where you can meet up with your team to work and to eat."
               />
 
               <Question
-                question="Where will the event be held this year?"
-                answer="The event will be held at UGA's Zell B. Miller Learning Center."
+              question="Will I still be able to sleep at the venue for UGAHacks?"
+              answer="This year UGAHacks will not be providing sleeping areas at the venue."
+              />
+                
+              <Question
+              question="How do I access a virtual workshop?"
+              answer="There will be a page that lists links for workshops. This page will be easily accessible on MyUGAHacks!"
               />
 
-              <motion.div
-                className="hidden-questions"
-                variants={collapseVariants}
-                animate={isOpen ? "open" : "closed"}
-                >
-                <Question
-                  question="Where will the event be held this year?"
-                  answer="The event will be held at UGA's Zell B. Miller Learning Center."
-                />
+              <Question
+              question="How will we help ensure the safety of participants?"
+              answer="Groups will be how participants are split up in order to prevent overcrowding during different events during our event."
+              />
 
-                <Question
-                  question="Where will the event be held this year?"
-                  answer="The event will be held at UGA's Zell B. Miller Learning Center."
-                />
-
-                <Question
-                  question="Where will the event be held this year?"
-                  answer="The event will be held at UGA's Zell B. Miller Learning Center."
-                />
-              </motion.div>
-              <Button id="show-more" className="show-more-black" variant="contained" size="large" onClick={() => setIsOpen(!isOpen)}>{isOpen ? 'Show Less' : 'Show More'}</Button>
+              <Question
+              question="How will maintain social distance guidelines?"
+              answer="Groups will be called alphabetically via Discord to check-in once check-in starts. If the group after your assigned group is called, you will need to check-in after all other groups are called."
+              />
+            </div>
+              
           </div>
           <img className="covid-byte" alt="" src={covidByte}/>
         </div>
