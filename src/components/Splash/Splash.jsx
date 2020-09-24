@@ -70,9 +70,6 @@ function Splash(props) {
   return (
     <>
       <section className="splash" id="splash">
-        <div className="covid-alert">
-          <a href="https://blog.ugahacks.com/full/8/">Click here to learn more about UGAHacks' Coronavirus safety measures and guidelines</a>
-        </div>
         <div className="headercontainer">
           <img className="logo" src={sixLogo} alt="UGAHacks 6 Logo"/>
           <h2 className="subheader">February 5-7, 2021 @ MLC</h2>
