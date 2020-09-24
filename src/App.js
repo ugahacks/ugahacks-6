@@ -12,13 +12,30 @@ import Sponsors from './components/Sponsors/Sponsors.jsx';
 import Footer from './components/Footer/Footer.jsx';
 
 
-import { FullPage, Slide } from 'react-full-page';
-import { BrowserView, MobileView, isMobile } from 'react-device-detect';
+// import { FullPage, Slide } from 'react-full-page';
+// import { BrowserView, MobileView, isMobile } from 'react-device-detect';
 
 
 /* LAG is definitely caused by the <FAQ/> component alone. */
 function App() {
-  if (!isMobile) {
+  return(
+    <div className="App">
+      <Nav/>
+      <Splash/>
+      <About/>
+      <Schedule/>
+      <FAQ/>
+      <CovidFAQ/>
+      <Sponsors/>
+      <Footer/>
+    </div>
+  );
+}
+
+export default App;
+
+/* 
+if (!isMobile) {
     return (
       <>
       <div className="App">
@@ -63,6 +80,4 @@ function App() {
       </>
     );  
   }
-}
-
-export default App;
+*/
