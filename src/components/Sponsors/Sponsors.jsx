@@ -1,6 +1,20 @@
 import React from 'react';
 import './Sponsors.css';
 import Button from '@material-ui/core/Button';
+import { withStyles } from '@material-ui/core/styles';
+
+const CustomButton = withStyles({
+  root: {
+    backgroundColor: '#fafafa',
+    paddingLeft: '55px',
+    paddingRight: '55px',
+    fontWeight: 600,
+    fontFamily: 'Poppins',
+    borderRadius: '50px',
+    marginTop: '25px',
+    maxWidth: '500px',
+  }
+})(Button);
 
 function Sponsors(props) {
   return (
@@ -10,9 +24,9 @@ function Sponsors(props) {
           <h2>Interested in sponsoring us?</h2>
           <p>By sponsoring UGAHacks, your company will have the opportunity to inspire new programmers while also reaching
           out to and recruiting the rising stars of the tech industry.</p>
-          <Button variant="contained" size="large"><a href="https://www.ugahacks.com/sponsorship-packet" target="_blank" rel="noopener noreferrer">See Our Sponsorship Packet</a></Button>
+          <CustomButton variant="contained" size="large" href="https://www.ugahacks.com/sponsorship-packet">See Our Sponsorship Packet</CustomButton>
           <br></br>
-          <Button variant="contained" size="large"><a href="mailto:sponsor@ugahacks.com">Contact our sponsorship team</a></Button>
+          <CustomButton variant="contained" size="large" href="mailto:sponsor@ugahacks.com">Contact our sponsorship team</CustomButton>
         </div>
       </div>
     </section>
