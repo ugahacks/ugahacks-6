@@ -3,6 +3,11 @@
   background-repeat: no-repeat;
   background-size: cover !important;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .logo {
@@ -17,15 +22,6 @@
   margin-top: 25px;
 }
 
-.headercontainer {
-  padding-top: 25vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
 .countdown-registration > span {
   font-size: 1.5em;
 }
@@ -37,7 +33,7 @@
 }
 
 .subheader {
-  padding: 2% 2% 0;
+  padding: 4% 3px 0;
 }
 
 .covid-alert {
@@ -88,11 +84,6 @@ li span {
 }
 
 @media only screen and (max-width: 480px) {
-  .headercontainer {
-    padding-top: 0;
-    min-height: 100vh;
-  }
-
   .logo {
     width: 85%;
   }
@@ -114,5 +105,6 @@ li span {
 
   .countdown-registration > h1 {
     margin-top: 30px;
+    font-size: 1.5em;
   }
 }
