@@ -20,14 +20,20 @@ function Question(props) {
         onClick={() => setIsOpen(!isOpen)}
         variants={hoverVariants}
         whileHover="hover"
-      >{props.question}
-      <motion.img
-        className="screw"
-        src={screw} width="15"
-        height="15"
-        variants={screwVariants}
-        animate={isOpen ? "open": "closed"}
-        />
+      >
+        {props.question}
+        <div className="screw-wrapper">
+          <motion.img
+            className="screw"
+            src={screw} width="15"
+            height="15"
+            variants={screwVariants}
+            animate={isOpen ? "open": "closed"}
+            />
+        </div>
+
+
+
       </motion.button>
       <motion.div
         className="faq-answer"

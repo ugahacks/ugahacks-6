@@ -6,6 +6,14 @@
   /*min-height: 200vh;*/
 }
 
+.question-wrapper {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+}
+
 .covid-faq-section {
   background-image: url(./images/yellowbg-02.svg);
   /*background-repeat: no-repeat;*/
@@ -36,7 +44,7 @@
 
 .faq-question-wrapper {
   overflow-y: scroll;
-  height: 50vh; 
+  height: 50vh;
 }
 
 .faq-question-wrapper::-webkit-scrollbar {
@@ -97,7 +105,6 @@
   border: none;
   text-align: left;
   outline: none;
-  order: -1;
 }
 
 .active .faq-question:hover {
@@ -179,8 +186,13 @@
   height: 65vh;
 }
 
-.screw {
+.screw-wrapper {
   float: right;
+}
+
+.screw img{
+  float: right;
+  margin: auto 0;
 }
 
 @media only screen and (max-width: 960px) {
@@ -198,6 +210,12 @@
     min-height: 450px;
     min-width: 350px;
     margin: 0 auto 30px;
+  }
+  .faq-question {
+    font-size: .6em;
+  }
+  .screw {
+    height: 12px;
   }
 }
 
