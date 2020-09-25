@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c078af8cbc6f8b46d5b73c58c18a3211",
+    "revision": "876b9d54eaa32ba451dab60d95513b6a",
     "url": "/index.html"
   },
   {
-    "revision": "dddbe92ac3d236462436",
-    "url": "/static/css/main.b84b9ff7.chunk.css"
+    "revision": "3635fe85803a7945d9b4",
+    "url": "/static/css/main.18c34761.chunk.css"
   },
   {
     "revision": "e55c033647db110f8dc3",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.0c2ff54e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dddbe92ac3d236462436",
-    "url": "/static/js/main.4aead7f7.chunk.js"
+    "revision": "3635fe85803a7945d9b4",
+    "url": "/static/js/main.2d0b5a5f.chunk.js"
   },
   {
     "revision": "1732638071bab48d3055",
@@ -32,16 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/arrow_forward_ios-24dp.947912f4.svg"
   },
   {
-    "revision": "e718307005cca155e6a768de2c3f52a1",
-    "url": "/static/media/bp1_mobile.e7183070.png"
-  },
-  {
     "revision": "8604f0cbf7669ccfdfcffda64ab56ecd",
     "url": "/static/media/bp1animated.8604f0cb.svg"
-  },
-  {
-    "revision": "7e6f7f252661921fe9f421b2b762c928",
-    "url": "/static/media/bp2_mobile.7e6f7f25.png"
   },
   {
     "revision": "36d5d6af331d0faf16999893033aed2b",
@@ -80,8 +72,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/facebook.d28fda64.svg"
   },
   {
-    "revision": "caa653bd2e1e210d51364a7619928de0",
-    "url": "/static/media/finalscrews-bg.caa653bd.svg"
+    "revision": "4acc53cb660e51cc2dc512a44e91c4f7",
+    "url": "/static/media/finalscrews-bg.4acc53cb.svg"
   },
   {
     "revision": "31fe472a5fe4b6e301e430d5047b8cd0",
@@ -108,8 +100,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/phone.71bb7c8e.svg"
   },
   {
-    "revision": "22274c5fee9f59228bb7dc3841b7dec1",
-    "url": "/static/media/screw-01.22274c5f.svg"
+    "revision": "e3719e1d63d3da547d3d8b4177cbe2e1",
+    "url": "/static/media/screw-01.e3719e1d.svg"
   },
   {
     "revision": "d922bcd60ddd0975d61f6e49c3defff0",
@@ -128,8 +120,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/splash.cb8bacf2.svg"
   },
   {
-    "revision": "15dae0884953eff01d7f3968c30dce7b",
-    "url": "/static/media/toolpattern.15dae088.png"
+    "revision": "c0347671af2146f2810831f32ba5b950",
+    "url": "/static/media/toolpattern.c0347671.svg"
   },
   {
     "revision": "bbf1a0bf7daaa1192aecadf1d1f8b941",

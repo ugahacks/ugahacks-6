@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.b84b9ff7.chunk.css",
-    "main.js": "/static/js/main.4aead7f7.chunk.js",
-    "main.js.map": "/static/js/main.4aead7f7.chunk.js.map",
+    "main.css": "/static/css/main.18c34761.chunk.css",
+    "main.js": "/static/js/main.2d0b5a5f.chunk.js",
+    "main.js.map": "/static/js/main.2d0b5a5f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.dc2f0862.js",
     "runtime-main.js.map": "/static/js/runtime-main.dc2f0862.js.map",
     "static/js/2.0c2ff54e.chunk.js": "/static/js/2.0c2ff54e.chunk.js",
     "static/js/2.0c2ff54e.chunk.js.map": "/static/js/2.0c2ff54e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.6234beb8a096af3a4077b54675aeda0c.js": "/precache-manifest.6234beb8a096af3a4077b54675aeda0c.js",
+    "precache-manifest.24cff36994ffd08ae1cb8df4ed90c329.js": "/precache-manifest.24cff36994ffd08ae1cb8df4ed90c329.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.b84b9ff7.chunk.css.map": "/static/css/main.b84b9ff7.chunk.css.map",
+    "static/css/main.18c34761.chunk.css.map": "/static/css/main.18c34761.chunk.css.map",
     "static/js/2.0c2ff54e.chunk.js.LICENSE.txt": "/static/js/2.0c2ff54e.chunk.js.LICENSE.txt",
     "static/media/Schedule.css": "/static/media/bp1animated.8604f0cb.svg",
     "static/media/Sponsors.css": "/static/media/bp2animated.36d5d6af.svg",
@@ -23,13 +23,13 @@
     "static/media/day3.svg": "/static/media/day3.bb65f62e.svg",
     "static/media/facebook.svg": "/static/media/facebook.d28fda64.svg",
     "static/media/FAQ.css": "/static/media/yellowbg-02.76644bb5.svg",
-    "static/media/About.css": "/static/media/toolpattern.15dae088.png",
+    "static/media/About.css": "/static/media/toolpattern.c0347671.svg",
     "static/media/github.svg": "/static/media/github.7feba7d2.svg",
     "static/media/insta.svg": "/static/media/insta.c563d174.svg",
     "static/media/laptop.svg": "/static/media/laptop.5012bc82.svg",
     "static/media/Splash.css": "/static/media/splash.cb8bacf2.svg",
     "static/media/phone.svg": "/static/media/phone.71bb7c8e.svg",
-    "static/media/screw-01.svg": "/static/media/screw-01.22274c5f.svg",
+    "static/media/screw-01.svg": "/static/media/screw-01.e3719e1d.svg",
     "static/media/sixlogo-01.svg": "/static/media/sixlogo-01.8e4209d9.svg",
     "static/media/sleepingbag.svg": "/static/media/sleepingbag.c1c21a5d.svg",
     "static/media/twitter.svg": "/static/media/twitter.bbf1a0bf.svg"
@@ -37,7 +37,7 @@
   "entrypoints": [
     "static/js/runtime-main.dc2f0862.js",
     "static/js/2.0c2ff54e.chunk.js",
-    "static/css/main.b84b9ff7.chunk.css",
-    "static/js/main.4aead7f7.chunk.js"
+    "static/css/main.18c34761.chunk.css",
+    "static/js/main.2d0b5a5f.chunk.js"
   ]
 }
