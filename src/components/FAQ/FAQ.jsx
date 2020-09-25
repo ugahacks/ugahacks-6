@@ -7,6 +7,8 @@ import Question from "./Questions";
 // import {collapseVariants} from "./CommonVariants"
 
 
+
+
 function FAQ(props) {
 
   // const [isOpen, setIsOpen] = useState(false);

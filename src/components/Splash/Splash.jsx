@@ -71,7 +71,7 @@ function Countdown(props) {
 function Splash(props) {
   return (
     <>
-      <section className="splash" id="splash">
+      <section className="section splash" id="splash">
         <div className="headercontainer">
           <img className="logo" src={sixLogo} alt="UGAHacks 6 Logo"/>
           <div className="subheader">

@@ -37,6 +37,7 @@
 .faq-question-wrapper {
   overflow-y: scroll;
   height: 50vh; 
+  z-index: 99;
 }
 
 .faq-question-wrapper::-webkit-scrollbar {

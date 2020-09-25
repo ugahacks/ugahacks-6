@@ -30,7 +30,7 @@ function Tool(props) {
 function About(props) {
   return (
     <>
-      <section className="about" id="about">
+      <section className="section about" id="about">
         <div className="section-text about-text">
           <h2>What is UGAHacks?</h2>
           <p>UGAHacks is an annual hackathon organized by fellow students at the University of Georgia in Athens, Georgia. Hackathons are all about groups of dedicated people coming together to create something amazing in an epic 36-hour programming

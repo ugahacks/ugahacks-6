@@ -11,6 +11,7 @@ html {
 
 section {
   min-height: 100vh;
+  background-attachment: initial !important;
   /*padding-top: 50px;*/
 }
 

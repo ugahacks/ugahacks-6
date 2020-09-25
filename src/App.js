@@ -14,19 +14,34 @@ import Footer from './components/Footer/Footer.jsx';
 
 // import { FullPage, Slide } from 'react-full-page';
 // import { BrowserView, MobileView, isMobile } from 'react-device-detect';
-
+import ReactFullPage from '@fullpage/react-fullpage';
 
 /* LAG is definitely caused by the <FAQ/> component alone. */
 function App() {
   return(
     <div className="App">
-      <Nav/>
-      <Splash/>
-      <About/>
-      <Schedule/>
-      <FAQ/>
-      <CovidFAQ/>
-      <Sponsors/>
+      <ReactFullPage
+        debug
+        navigation = {true}
+        navigationPosition = {'left'}
+        navigationTooltips = {['Splash', 'About', 'Schedule', 'FAQ', 'COVID FAQ', 'Sponsors']}
+        licenseKey = {'OPEN-SOURCE-GPLV3-LICENSE'}
+        // menu = {'#navbar'}
+        scrollingSpeed = {1000}
+        normalScrollElements = {'.faq-question-wrapper'} // :)
+        // anchors={['splash', 'about', 'schedule', 'faq', 'covidfaq', 'sponsors']}
+
+        render={comp => (
+            <ReactFullPage.Wrapper>
+              <Splash/>
+              <About/>
+              <Schedule/>
+              <FAQ/>
+              <CovidFAQ/>
+              <Sponsors/>
+            </ReactFullPage.Wrapper>
+        )}
+      />
       <Footer/>
     </div>
   );

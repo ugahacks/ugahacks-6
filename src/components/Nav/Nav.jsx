@@ -96,7 +96,7 @@ function Nav(props) {
   const invertToolTip = invertToolTipStyle;
 
   return (
-      <nav>
+      <nav id="navbar">
         <div className={`dotstyle ${style}`}>
           <div>
             

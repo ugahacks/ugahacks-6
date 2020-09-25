@@ -3,6 +3,7 @@ nav {
   left: 35px;
   top: 40vh;
   display: grid;
+  z-index: 1000;
 }
 
 .dotstyle div {
