@@ -56,13 +56,33 @@ function Countdown(props) {
   });
 
   // Replace button link to schedule post-registration
-  return (
-    <div className="countdown-registration">
-      {timerComponents.length ? timerComponents : <CustomButton variant="contained" size="large" href="https://my.ugahacks.com/">Register Now</CustomButton>}
-      {timerComponents.length ? <h1> until registration</h1> : <p></p>}
-      {timerComponents.length ? <CustomButton variant="contained" size="medium" href="https://ugeorgia.ca1.qualtrics.com/jfe/form/SV_8x05NF3a2OkoMeh">Interest Form</CustomButton> : <p></p>}
-    </div>
-  );
+
+  if (timerComponents.length) {
+    return (
+      <>
+      <div className="subheader">
+        <h2 id="eventdate">February 5-7, 2021 @ MLC</h2>
+      </div>
+      <div className="countdown-registration">
+        {timerComponents}
+        <h1> until registration</h1>
+        <CustomButton variant="contained" size="medium" href="https://ugeorgia.ca1.qualtrics.com/jfe/form/SV_8x05NF3a2OkoMeh">Interest Form</CustomButton>
+      </div>
+      </>
+    );
+  } else {
+    return (
+      <>
+      <div className="subheader">
+        <h2 id="tagline"><b>BOOT UP YOUR DREAMS.<span className="eventline"> BUILD THE FUTURE.</span></b></h2>
+        <h2 id="eventdate">February 5-7, 2021 @ MLC</h2>
+      </div>
+      <div className="countdown-registration">
+        <CustomButton variant="contained" size="large" href="https://my.ugahacks.com/">Register Now</CustomButton>
+      </div>
+      </>
+    );
+  }
 
 
 }
@@ -74,10 +94,6 @@ function Splash(props) {
       <section className="splash" id="splash">
         <div className="headercontainer">
           <img className="logo" src={sixLogo} alt="UGAHacks 6 Logo"/>
-          <div className="subheader">
-            <h2 id="tagline"><b>BOOT UP YOUR DREAMS.<span className="eventline"> BUILD THE FUTURE.</span></b></h2>
-            <h2 id="eventdate">February 5-7, 2021 @ MLC</h2>
-          </div>
           <Countdown/>
         </div>
       </section>
