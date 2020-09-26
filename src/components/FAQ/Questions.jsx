@@ -25,7 +25,7 @@ function Question(props) {
         <div className="screw-wrapper">
           <motion.img
             className="screw"
-            src={screw} width="15"
+            src={screw} alt="screw" width="15"
             height="15"
             variants={screwVariants}
             animate={isOpen ? "open": "closed"}
