@@ -12,7 +12,7 @@ import Sponsors from './components/Sponsors/Sponsors.jsx';
 import Footer from './components/Footer/Footer.jsx';
 
 import ReactFullPage from '@fullpage/react-fullpage';
-// import { BrowserView, MobileView, isMobile } from 'react-device-detect';
+import { isMobile } from 'react-device-detect';
 
 
 /* LAG is definitely caused by the <FAQ/> component alone.
@@ -33,33 +33,48 @@ function App() {
 */
 
 function App() {
-  return(
-    <div className="App">
-      <ReactFullPage
-        debug
-        navigation = {true}
-        navigationPosition = {'left'}
-        navigationTooltips = {['Splash', 'About', 'Schedule', 'FAQ', 'COVID FAQ', 'Sponsors']}
-        licenseKey = {'OPEN-SOURCE-GPLV3-LICENSE'}
-        // menu = {'#navbar'}
-        scrollingSpeed = {1000}
-        normalScrollElements = {'.faq-question-wrapper'} // :)
-        // anchors={['splash', 'about', 'schedule', 'faq', 'covidfaq', 'sponsors']}
+  if (!isMobile) {
+    return(
+      <div className="App">
+        <ReactFullPage
+          debug
+          navigation = {true}
+          navigationPosition = {'left'}
+          navigationTooltips = {['Splash', 'About', 'Schedule', 'FAQ', 'COVID FAQ', 'Sponsors']}
+          licenseKey = {'OPEN-SOURCE-GPLV3-LICENSE'}
+          // menu = {'#navbar'}
+          scrollingSpeed = {1000}
+          normalScrollElements = {'.faq-question-wrapper'} // :)
+          // anchors={['splash', 'about', 'schedule', 'faq', 'covidfaq', 'sponsors']}
 
-        render={comp => (
-            <ReactFullPage.Wrapper>
-              <Splash/>
-              <About/>
-              <Schedule/>
-              <FAQ/>
-              <CovidFAQ/>
-              <Sponsors/>
-              <Footer/>
-            </ReactFullPage.Wrapper>
-        )}
-      />
-    </div>
-  );
+          render={comp => (
+              <ReactFullPage.Wrapper>
+                <Splash/>
+                <About/>
+                <Schedule/>
+                <FAQ/>
+                <CovidFAQ/>
+                <Sponsors/>
+                <Footer/>
+              </ReactFullPage.Wrapper>
+          )}
+        />
+      </div>
+    );
+  } else {
+    return(
+      <div className="App">
+        <Nav/>
+        <Splash/>
+        <About/>
+        <Schedule/>
+        <FAQ/>
+        <CovidFAQ/>
+        <Sponsors/>
+        <Footer/>
+      </div>
+    );
+  }
 }
 
 export default App;
