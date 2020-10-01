@@ -1,5 +1,6 @@
 import React from 'react';
 // import logo from './logo.svg';
+import { hotjar } from 'react-hotjar';
 import './App.css';
 import Nav from './components/Nav/Nav.jsx'
 import Splash from './components/Splash/Splash.jsx';
@@ -33,6 +34,7 @@ function App() {
 */
 
 function App() {
+  hotjar.initialize(1566634,6);
   if (!isMobile) {
     return(
       <div className="App">
