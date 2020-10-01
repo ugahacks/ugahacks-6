@@ -3,10 +3,15 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover !important;
-  display: flex;
+  /*display: flex;*/
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+}
+
+/* Working within the confines of fullpage.js */
+#schedule .fp-tableCell {
+  text-align: center;
 }
 
 .schedule-container {
@@ -104,9 +109,10 @@ h2 {
 }
 
 #commingsoonimg {
-    margin: auto;
-    justify-content: center;
-    align-items: center;
+  /*margin-left: 12.5vw;*/
+  /*margin: auto;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
 }
 
 @media only screen and (max-width: 480px) {
