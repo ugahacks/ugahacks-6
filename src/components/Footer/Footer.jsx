@@ -9,7 +9,7 @@ import BugReportIcon from '@material-ui/icons/BugReport';
 
 function Footer(props) {
   return (
-        <footer>
+        <footer className='section fp-auto-height'>
             <a href="https://github.com/ugahacks/" target="_blank" rel="noopener noreferrer" className="footericons"><img src={github} alt="Ugahacks Github"></img></a>
             <a href="https://www.facebook.com/ugahacks/" target="_blank" rel="noopener noreferrer" className="footericons"><img src={facebook} alt="Ugahacks Facebook"></img></a>
             <a href="https://twitter.com/ugahacks" target="_blank" rel="noopener noreferrer" className="footericons"><img src={twitter} alt="Ugahacks Twitter"></img></a>
