@@ -163,7 +163,7 @@ function Schedule(props) {
   }
 
   return (
-      <section id='schedule' className=''>
+      <section id='schedule' className='section'>
         <img id="commingsoonimg" src={comingsoon} alt="Coming Soon banner"></img>
       </section>
   )

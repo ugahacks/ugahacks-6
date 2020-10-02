@@ -9,6 +9,7 @@ const CustomButton = withStyles({
     paddingLeft: '55px',
     paddingRight: '55px',
     fontWeight: 600,
+    fontSize: '1.1em',
     fontFamily: 'Poppins',
     borderRadius: '50px',
     marginTop: '25px',

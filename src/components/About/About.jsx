@@ -30,10 +30,10 @@ function Tool(props) {
 function About(props) {
   return (
     <>
-      <section className="about" id="about">
+      <section className="section about" id="about">
         <div className="section-text about-text">
           <h2>What is UGAHacks?</h2>
-          <p>UGAHacks is an annual hackathon organized by fellow students at the University of Georgia in Athens, Georgia. Hackathons are all about groups of dedicated people coming together to create something amazing in an epic 36-hour programming
+          <p>UGAHacks is an annual hackathon organized by fellow students at the University of Georgia in Athens, Georgia. Hackathons are all about groups of dedicated people coming together to create something amazing in an epic 48-hour programming
             sleepover.</p>
           <p>Even though submitting a project is the main objective, that's not all there is. We'll have mentors, free food, video game competitions, workshops and more. There's even a workshop at the event for anyone that still needs to find some
             teammates!</p>

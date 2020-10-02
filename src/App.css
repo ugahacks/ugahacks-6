@@ -11,7 +11,61 @@ html {
 
 section {
   min-height: 100vh;
-  /*padding-top: 50px;*/
+  background-attachment: initial !important;
+
+}
+
+/* All nav based CSS configurations */
+
+#fp-nav {
+  margin-top: 200px;
+}
+
+#fp-nav li {
+  padding: 0.25em;
+}
+
+#fp-nav ul li a span {
+  background: #fff !important;
+}
+
+.fp-tooltip {
+  font-family: "Poppins" !important;
+  font-weight: bold;
+}
+
+
+.fp-viewing-1 #fp-nav ul li a span {
+  background: #223c9d !important;
+}
+
+.fp-viewing-1 .fp-tooltip {
+  color: #223c9d !important;
+}
+
+
+.fp-viewing-3 #fp-nav ul li a span {
+  background: #223c9d !important;
+}
+
+.fp-viewing-3 .fp-tooltip {
+  color: #223c9d !important;
+}
+
+
+.fp-viewing-4 #fp-nav ul li a span {
+  background: #223c9d !important;
+}
+
+.fp-viewing-4 .fp-tooltip {
+  color: #223c9d !important;
+}
+
+
+
+/* remove that weird underline thing. */
+.active:after {
+  content: none !important;
 }
 
 @media only screen and (max-width: 480px) {

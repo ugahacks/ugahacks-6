@@ -66,6 +66,13 @@
     margin-top: 0px;
     flex-direction: column;
   }
+
+  @supports (-moz-appearance:meterbar) {
+      .tool-rack {
+        display: grid;
+        margin: auto;
+      }
+  }
 }
 
 /*
