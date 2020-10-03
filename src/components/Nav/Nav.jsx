@@ -50,13 +50,13 @@ function Nav(props) {
 
     function in_section(delta, curr_section, prev_section) {
       var curr_sec_height = document.getElementById(sections[curr_section]).clientHeight;
-      var prev_sec_height = prev_section < 0 ? 0 : document.getElementById(sections[prev_section]).clientHeight;
-      
+      // var prev_sec_height = prev_section < 0 ? 0 : document.getElementById(sections[prev_section]).clientHeight;
+
       var upperMap = sections.slice(0, curr_section + 1)
         .map((x) => document.getElementById(x).clientHeight);
 
-      var lowerMap = sections.slice(0, curr_section)
-        .map((x) => document.getElementById(x).clientHeight);
+      // var lowerMap = sections.slice(0, curr_section)
+      //   .map((x) => document.getElementById(x).clientHeight);
 
       var upperHeight = upperMap.reduce((agg, x) => agg + x);
       var lowerHeight = upperHeight - curr_sec_height; //lowerMap.reduce((agg, x) => agg + x);

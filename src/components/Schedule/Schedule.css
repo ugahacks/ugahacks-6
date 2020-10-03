@@ -3,7 +3,6 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover !important;
-  /*display: flex;*/
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -116,6 +115,9 @@ h2 {
 }
 
 @media only screen and (max-width: 480px) {
+  #schedule {
+    display: flex;
+  }
   #scheduleheader {
     margin: 30px auto;
     text-align: center;
