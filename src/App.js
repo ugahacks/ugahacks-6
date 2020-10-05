@@ -20,12 +20,12 @@ function App() {
   hotjar.initialize(1566634,6);
 
   const Desktop = ({ children }) => {
-    const isDesktop = useMediaQuery({ minWidth: 1439 });
+    const isDesktop = useMediaQuery({ minWidth: 1281 });
     return isDesktop ? children : null;
   }
 
   const Tablet = ({ children }) => {
-    const isTablet = useMediaQuery({ minWidth: 50, maxWidth: 1438 })
+    const isTablet = useMediaQuery({ minWidth: 50, maxWidth: 1280 })
     return isTablet ? children : null
   }
 
