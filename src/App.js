@@ -13,36 +13,30 @@ import Sponsors from './components/Sponsors/Sponsors.jsx';
 import Footer from './components/Footer/Footer.jsx';
 
 import ReactFullPage from '@fullpage/react-fullpage';
-import { isMobile } from 'react-device-detect';
+import { useMediaQuery } from 'react-responsive'
 
-
-/* LAG is definitely caused by the <FAQ/> component alone.
-function App() {
-  return(
-    <div className="App">
-      <Nav/>
-      <Splash/>
-      <About/>
-      <Schedule/>
-      <FAQ/>
-      <CovidFAQ/>
-      <Sponsors/>
-      <Footer/>
-    </div>
-  );
-}
-*/
 
 function App() {
   hotjar.initialize(1566634,6);
-  if (!isMobile) {
-    return(
-      <div className="App">
+
+  const Desktop = ({ children }) => {
+    const isDesktop = useMediaQuery({ minWidth: 1281 });
+    return isDesktop ? children : null;
+  }
+
+  const Tablet = ({ children }) => {
+    const isTablet = useMediaQuery({ minWidth: 50, maxWidth: 1280 })
+    return isTablet ? children : null
+  }
+
+  return(
+    <div className="App">
+      <Desktop>
         <ReactFullPage
           debug
           navigation = {true}
           navigationPosition = {'left'}
-          navigationTooltips = {['Splash', 'About', 'Schedule', 'FAQ', 'COVID FAQ', 'Sponsors']}
+          navigationTooltips = {['', 'About', 'Schedule', 'FAQ', 'COVID FAQ', 'Sponsors']}
           licenseKey = {'OPEN-SOURCE-GPLV3-LICENSE'}
           // menu = {'#navbar'}
           scrollingSpeed = {1000}
@@ -61,11 +55,9 @@ function App() {
               </ReactFullPage.Wrapper>
           )}
         />
-      </div>
-    );
-  } else {
-    return(
-      <div className="App">
+      </Desktop>
+
+      <Tablet>
         <Nav/>
         <Splash/>
         <About/>
@@ -74,57 +66,9 @@ function App() {
         <CovidFAQ/>
         <Sponsors/>
         <Footer/>
-      </div>
-    );
-  }
+      </Tablet>
+    </div>
+  );
 }
 
 export default App;
-
-/* 
-if (!isMobile) {
-    return (
-      <>
-      <div className="App">
-        <Nav/>
-        <FullPage scrollMode="full-page">
-          <Slide>
-            <Splash/>
-          </Slide>
-          <Slide>
-            <About/>
-          </Slide>
-          <Slide>
-            <Schedule/>
-          </Slide>
-          <Slide>
-            <FAQ/>
-          </Slide>
-          <Slide>
-            <CovidFAQ/>
-          </Slide>
-          <Slide>
-            <Sponsors/>
-          </Slide>
-          <Footer/>
-        </FullPage>
-      </div>
-      </>
-    );
-  } else {
-    return(
-      <>
-      <div className="App">
-        <Nav/>
-        <Splash/>
-        <About/>
-        <Schedule/>
-        <FAQ/>
-        <CovidFAQ/>
-        <Sponsors/>
-        <Footer/>
-      </div>
-      </>
-    );  
-  }
-*/
