@@ -36,7 +36,7 @@ function App() {
           debug
           navigation = {true}
           navigationPosition = {'left'}
-          navigationTooltips = {['Splash', 'About', 'Schedule', 'FAQ', 'COVID FAQ', 'Sponsors']}
+          navigationTooltips = {['', 'About', 'Schedule', 'FAQ', 'COVID FAQ', 'Sponsors']}
           licenseKey = {'OPEN-SOURCE-GPLV3-LICENSE'}
           // menu = {'#navbar'}
           scrollingSpeed = {1000}
