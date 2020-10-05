@@ -107,11 +107,19 @@ h2 {
   margin: 25px 0px;
 }
 
-#commingsoonimg {
-  /*margin-left: 12.5vw;*/
-  /*margin: auto;*/
-  /*justify-content: center;*/
-  /*align-items: center;*/
+
+@media only screen and (max-width: 1280px) {
+
+  #schedule {
+    display: flex;
+  }
+
+  #commingsoonimg {
+    margin-left: 12.5vw;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media only screen and (max-width: 480px) {
