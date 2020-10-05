@@ -72,25 +72,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-/* OLD PRODUCTION RENDER
-// LAG is definitely caused by the <FAQ/> component alone.
-function App() {
-  return(
-    <div className="App">
-      <Nav/>
-      <Splash/>
-      <About/>
-      <Schedule/>
-      <FAQ/>
-      <CovidFAQ/>
-      <Sponsors/>
-      <Footer/>
-    </div>
-  );
-}
-*/
