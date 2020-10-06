@@ -47,11 +47,11 @@ function CovidFAQ(props) {
               />
 
               <Question
-              question="How will maintain social distance guidelines?"
+              question="How will we maintain social distance guidelines?"
               answer="Groups will be called alphabetically via Discord to check-in once check-in starts. If the group after your assigned group is called, you will need to check-in after all other groups are called."
               />
-            </div> 
-            <Button className="show-more-black" variant="contained" size="large" id="show-more" href="https://blog.ugahacks.com/full/8/">{COVID_LEARN_MORE}</Button>  
+            </div>
+            <Button className="show-more-black" variant="contained" size="large" id="show-more" href="https://blog.ugahacks.com/full/8/">{COVID_LEARN_MORE}</Button>
           </div>
           <img className="covid-byte" alt="" src={covidByte}/>
         </div>
