@@ -1,3 +1,8 @@
+<p align="center">
+  <img alt="UGAHacks 6" src="public/sixlogoreadme.png" width="80%"/>
+</p>
+
+---
 ## BASIC SCRIPTS
 
 In the project directory, you can run:
