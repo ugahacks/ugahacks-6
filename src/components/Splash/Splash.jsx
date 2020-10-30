@@ -22,7 +22,7 @@ function Countdown(props) {
   const calculateTimeLeft = () => {
 
     //CHANGE DATE UNTIL REGISTRATION HERE:
-    const difference = +new Date("10/30/2020") - +new Date();
+    const difference = +new Date("10/30/2020 12:00:00") - +new Date();
 
     let timeLeft = {};
 
