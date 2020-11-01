@@ -30,6 +30,11 @@ function FAQ(props) {
             />
 
             <Question
+              question="Can I apply for travel reimbursements?"
+              answer="No, we will not be providing reimbursements for travel this year because of the personal choice of the participant to work virtually or in-person with the Hybrid Model."
+            />
+
+            <Question
               question="Can I start working on my project before the event?"
               answer="No. All UGAHacks projects must begin at the hackathon. You are not permitted to begin a hackathon project before this event. Feel free to bring ideas, but no code!"
             />
