@@ -21,7 +21,7 @@ function FAQ(props) {
           <div className="faq-question-wrapper">
             <Question
               question="Where will it be held this year?"
-              answer="At the Zell B. Miller Learning Center, University of Georgia, Athens, GA."
+              answer="Due to Covid-19, UGAHacks 6 will be held virtually."
             />
 
             <Question
@@ -31,7 +31,7 @@ function FAQ(props) {
 
             <Question
               question="Can I apply for travel reimbursements?"
-              answer="No, we will not be providing reimbursements for travel this year because of the personal choice of the participant to work virtually or in-person with the Hybrid Model."
+              answer="No, we will not be providing reimbursements for travel this year because the event will be held virtually."
             />
 
             <Question
@@ -68,7 +68,7 @@ function FAQ(props) {
               answer="We love your enthusiasm! Volunteers and mentors can apply via the registration form above! If you have any questions regarding the position, please contact us at hello@ugahacks.com - Be sure to mention the specific position in the subject of the email. See you at the event!"
             />
 
-          </div>            
+          </div>
         </div>
 
       </section>
