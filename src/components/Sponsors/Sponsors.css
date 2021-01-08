@@ -14,6 +14,40 @@
   width: 65%;
 }
 
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+}
+
+.apartment, .penthouse, .mansion, .partner {
+  margin: 10px;
+  filter: brightness(0) invert(1);
+}
+
+.penthouse {
+  width: 275px;
+}
+
+.apartment {
+    width: 200px;
+}
+
+.mansion {
+  width: 400px;
+}
+
+.partner {
+  width: 150px;
+}
+
+#ugacombologo {
+  width: 500px;
+}
+
 .sponsors-container Button {
   margin-top: 25px;
   font-size: 1.1em;
@@ -36,20 +70,51 @@
   text-decoration: none;
 }
 
-.packet-text h2 {
+.sponsors-container h2 {
   font-weight: 700;
   font-size: 3em;
+}
+
+.sponsors-container h2:first-of-type {
+  margin-top: 30px;
 }
 
 @media only screen and (max-width: 480px) {
   .sponsors-container {
     width: 90%;
   }
+
+  .mansion {
+    width: 90%;
+  }
+
+  .penthouse {
+    width: 60%;
+  }
+
+  .logo-container {
+    flex-direction: column;
+  }
+
+  .sponsors-container h2 {
+    font-size: 2.2em;
+  }
+
+  #ugacombologo {
+    width: 100%;
+  }
+
   .packet-text p, .sponsors-container Button {
     width: 100%;
   }
 
   .sponsors-container Button {
     font-size: 0.95em;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1750px) {
+  .sponsors-container {
+    width: 80%;
   }
 }
