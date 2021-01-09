@@ -18,6 +18,11 @@
   padding: 30px;
 }
 
+#scheduleheader {
+  font-weight: 700;
+  font-size: 3em;
+  margin-bottom: 30px;
+}
 
 .day-header {
   font-size: 1.7em;
@@ -60,8 +65,8 @@ table {
 }
 
 td {
-  padding: 15px 35px;
-  width: 70%;
+  padding: 25px 15px;
+  font-size: 1.2em;
 }
 
 td:last-child {
@@ -135,6 +140,9 @@ h2 {
   }
   .day-container img {
     display: none;
+  }
+  .day-container {
+    margin-bottom: 30px;
   }
 }
 

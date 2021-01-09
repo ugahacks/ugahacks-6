@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './Schedule.css';
 import '../../bootstrap.css'
-// import { motion } from "framer-motion"
+import { motion } from "framer-motion"
 import day1 from './images/day1.svg';
 import day2 from './images/day2.svg';
 import day3 from './images/day3.svg';
-import comingsoon from './images/comingsoon.svg';
+// import comingsoon from './images/comingsoon.svg';
 
 // eslint-disable-next-line
 const buttonVariants = {
@@ -60,24 +60,24 @@ function Schedule(props) {
           <table>
             <tbody>
               <tr>
-                <td>What's big data? - Example Sponsor (Room 101)</td>
-                <td>9:00 am</td>
+                <td>Opening Ceremony</td>
+                <td>6:30 pm</td>
               </tr>
               <tr>
-                <td>Workshops</td>
-                <td>10:00 am</td>
+                <td>Dinner and Check-in Closes</td>
+                <td>7:00 pm</td>
               </tr>
               <tr>
-                <td>More Workshops</td>
-                <td>11:00 am</td>
+                <td>First Time Hakcer/Team Building Workshop</td>
+                <td>8:00 pm</td>
               </tr>
               <tr>
-                <td>Even More Workshops</td>
-                <td>11:30 am</td>
+                <td>Art Contest</td>
+                <td>8:00 pm</td>
               </tr>
               <tr>
-                <td>Lunch</td>
-                <td>12:00 pm</td>
+                <td>Workshop - NCR</td>
+                <td>9:00 pm</td>
               </tr>
             </tbody>
           </table>
@@ -93,35 +93,35 @@ function Schedule(props) {
             <tbody>
               <tr>
                 <td>Breakfast</td>
-                <td>8:00 am</td>
+                <td>9:00 am</td>
               </tr>
               <tr>
-                <td>Workshops</td>
-                <td>10:00 am</td>
-              </tr>
-              <tr>
-                <td>The latest Byte - Example Sponsor (Room 101)</td>
-                <td>11:00 am</td>
-              </tr>
-              <tr>
-                <td>Even More Workshops</td>
-                <td>11:30 am</td>
-              </tr>
-              <tr>
-                <td>Lunch</td>
+                <td>Break (15 mins)</td>
                 <td>12:00 pm</td>
               </tr>
               <tr>
-                <td>Cup Stacking - Example Sponsor (Room 101)</td>
-                <td>1:00 pm</td>
+                <td>NCR Live Interviews</td>
+                <td>1:15 pm</td>
+              </tr>
+              <tr>
+                <td>Lunch</td>
+                <td>2:15 pm</td>
+              </tr>
+              <tr>
+                <td>Break (15 mins)</td>
+                <td>5:15 pm</td>
               </tr>
               <tr>
                 <td>Dinner</td>
-                <td>6:00 pm</td>
+                <td>8:00 pm</td>
               </tr>
               <tr>
-                <td>Join the UGAHacks team!</td>
-                <td>7:00 pm</td>
+                <td>Join the UGAHacks Team + Hacker Initiatives Workshop</td>
+                <td>9:00 pm</td>
+              </tr>
+              <tr>
+                <td>Among Us</td>
+                <td>10:15 pm</td>
               </tr>
             </tbody>
           </table>
@@ -136,16 +136,20 @@ function Schedule(props) {
           <table>
             <tbody>
               <tr>
-                <td>Brekafast</td>
+                <td>Breakfast and Submissions Due</td>
                 <td>9:00 am</td>
               </tr>
               <tr>
-                <td>Judging</td>
+                <td>Judging Expo</td>
                 <td>10:00 am</td>
               </tr>
               <tr>
-                <td>Closing Ceremony</td>
+                <td>Lunch</td>
                 <td>1:00 pm</td>
+              </tr>
+              <tr>
+                <td>Closing Ceremony</td>
+                <td>2:00 pm</td>
               </tr>
             </tbody>
           </table>
@@ -162,40 +166,40 @@ function Schedule(props) {
     }
   }
 
-  return (
-      <section id='schedule' className='section'>
-        <img id="commingsoonimg" src={comingsoon} alt="Coming Soon banner"></img>
-      </section>
-  )
-
   // return (
-  //   <>
-  //     <section id='schedule' className=''>
-  //       <div className="section-text schedule-text">
-  //         <h1 id="scheduleheader">Schedule</h1>
-  //         <div className="day-header">
-  //           <motion.button
-  //             onClick={() => changeDay(-1)}
-  //             className="back-button"
-  //             variants={buttonVariants}
-  //             whileHover="hover"
-  //             ></motion.button>
-  //           <h1>{dayMapping[day]} </h1>
-  //           <motion.button
-  //             onClick={() => changeDay(1)}
-  //             className="forward-button"
-  //             variants={buttonVariants}
-  //             whileHover="hover"
-  //             whileTap="tap"
-  //             > </motion.button>
-  //         </div>
-  //         <div className="day-container">
-  //         {renderDay()}
-  //         </div>
-  //       </div>
+  //     <section id='schedule' className='section'>
+  //       <img id="commingsoonimg" src={comingsoon} alt="Coming Soon banner"></img>
   //     </section>
-  //   </>
-  // );
+  // )
+
+  return (
+    <>
+      <section id='schedule' className='section'>
+        <div className="section-text schedule-text">
+          <h1 id="scheduleheader">Schedule</h1>
+          <div className="day-header">
+            <motion.button
+              onClick={() => changeDay(-1)}
+              className="back-button"
+              variants={buttonVariants}
+              whileHover="hover"
+              ></motion.button>
+            <h1>{dayMapping[day]} </h1>
+            <motion.button
+              onClick={() => changeDay(1)}
+              className="forward-button"
+              variants={buttonVariants}
+              whileHover="hover"
+              whileTap="tap"
+              > </motion.button>
+          </div>
+          <div className="day-container">
+          {renderDay()}
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }
 
 export default Schedule;
