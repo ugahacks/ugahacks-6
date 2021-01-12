@@ -1,27 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b836b7ec3676eddc880aa6f4b4b0f56b",
+    "revision": "862a014eb89357ce6b1da46732305e8d",
     "url": "/index.html"
   },
   {
-    "revision": "21f0af97a4b030219084",
-    "url": "/static/css/main.f2f63c78.chunk.css"
+    "revision": "ea5bd7ed1f3aed0ff39f",
+    "url": "/static/css/main.f90beb86.chunk.css"
   },
   {
-    "revision": "3a45e249a3ea49281ef7",
-    "url": "/static/js/2.858c690d.chunk.js"
+    "revision": "c7f2890844377f20a29d",
+    "url": "/static/js/2.35f4f393.chunk.js"
   },
   {
     "revision": "5edef25b26b16a74c5a4a1d87e78f837",
-    "url": "/static/js/2.858c690d.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.35f4f393.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "21f0af97a4b030219084",
-    "url": "/static/js/main.dfa890cc.chunk.js"
+    "revision": "ea5bd7ed1f3aed0ff39f",
+    "url": "/static/js/main.52c40e77.chunk.js"
   },
   {
     "revision": "1732638071bab48d3055",
     "url": "/static/js/runtime-main.dc2f0862.js"
+  },
+  {
+    "revision": "5b36cc735e5541a8a8411001f4420685",
+    "url": "/static/media/DigitalOcean.5b36cc73.svg"
+  },
+  {
+    "revision": "e3f109bb3ee54cdb4676570125652eac",
+    "url": "/static/media/ENTR.e3f109bb.png"
+  },
+  {
+    "revision": "10b562db3b22b62ebacd7d163fc4dd14",
+    "url": "/static/media/NCR.10b562db.png"
   },
   {
     "revision": "64430fcda37bfd3b2216f8cf3ebad7eb",
@@ -48,10 +60,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/charger.2ffea829.svg"
   },
   {
-    "revision": "122582bf51a3299779b14b32c31e46c5",
-    "url": "/static/media/comingsoon.122582bf.svg"
-  },
-  {
     "revision": "1944d2a807e90f75fbc2ac5bb58e4a72",
     "url": "/static/media/covidbyte-01.1944d2a8.svg"
   },
@@ -66,6 +74,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "bb65f62e2f27846f58163abac74c3f56",
     "url": "/static/media/day3.bb65f62e.svg"
+  },
+  {
+    "revision": "5c8997cd356bdd03bdce5bfc6bf2fa55",
+    "url": "/static/media/echoAR.5c8997cd.png"
+  },
+  {
+    "revision": "40a0885671b072adc82d664e4d5d0c62",
+    "url": "/static/media/equifax.40a08856.png"
   },
   {
     "revision": "0a52e3dc64d0c06566692dc4d23fc1ef",
@@ -120,12 +136,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/splash.cb8bacf2.svg"
   },
   {
+    "revision": "5fe1406e6bb792df5e6dd85098a14dc7",
+    "url": "/static/media/statefarm.5fe1406e.png"
+  },
+  {
+    "revision": "e651142ed9ad2be86b6b42a36c5fb606",
+    "url": "/static/media/stickermule.e651142e.svg"
+  },
+  {
     "revision": "c0347671af2146f2810831f32ba5b950",
     "url": "/static/media/toolpattern.c0347671.svg"
   },
   {
     "revision": "fb764dcebe23f4673870657ecde0e59e",
     "url": "/static/media/twitter.fb764dce.svg"
+  },
+  {
+    "revision": "5ac8c15d736a85446be72bdde9ac6944",
+    "url": "/static/media/uga-combo.5ac8c15d.png"
   },
   {
     "revision": "72ef9466e6909323bac82bad7818d5d6",
