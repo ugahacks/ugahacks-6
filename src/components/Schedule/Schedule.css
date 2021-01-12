@@ -21,7 +21,7 @@
 #scheduleheader {
   font-weight: 700;
   font-size: 3em;
-  margin-bottom: 30px;
+  margin: 30px auto;
 }
 
 .day-header {
@@ -65,7 +65,7 @@ table {
 }
 
 td {
-  padding: 25px 15px;
+  padding: 15px;
   font-size: 1.2em;
 }
 
@@ -130,10 +130,6 @@ h2 {
 @media only screen and (max-width: 480px) {
   #schedule {
     display: flex;
-  }
-  #scheduleheader {
-    margin: 30px auto;
-    text-align: center;
   }
   #commingsoonimg {
     width: 90%;

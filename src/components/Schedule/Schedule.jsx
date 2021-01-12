@@ -68,7 +68,7 @@ function Schedule(props) {
                 <td>7:00 pm</td>
               </tr>
               <tr>
-                <td>First Time Hakcer/Team Building Workshop</td>
+                <td>First Time Hacker/Team Building Workshop</td>
                 <td>8:00 pm</td>
               </tr>
               <tr>
@@ -78,6 +78,14 @@ function Schedule(props) {
               <tr>
                 <td>Workshop - NCR</td>
                 <td>9:00 pm</td>
+              </tr>
+              <tr>
+                <td>Workshop - Equifax</td>
+                <td>10:30 pm</td>
+              </tr>
+              <tr>
+                <td>Workshop - Statefarm</td>
+                <td>10:30 pm</td>
               </tr>
             </tbody>
           </table>
@@ -101,11 +109,19 @@ function Schedule(props) {
               </tr>
               <tr>
                 <td>NCR Live Interviews</td>
+                <td>12:15 pm</td>
+              </tr>
+              <tr>
+                <td>Equifax/Statefarm Live Interviews</td>
                 <td>1:15 pm</td>
               </tr>
               <tr>
                 <td>Lunch</td>
                 <td>2:15 pm</td>
+              </tr>
+              <tr>
+                <td>Git/Angular Workshop - Cengiz Günay and Anca Doloc-Mihu</td>
+                <td>3:15 pm</td>
               </tr>
               <tr>
                 <td>Break (15 mins)</td>
@@ -196,6 +212,7 @@ function Schedule(props) {
           <div className="day-container">
           {renderDay()}
           </div>
+          <p><i>All times are in Eastern Standard Time</i></p>
         </div>
       </section>
     </>
