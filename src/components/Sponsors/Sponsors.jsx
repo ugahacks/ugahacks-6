@@ -4,6 +4,7 @@ import SponsorLogo from './SponsorLogo';
 import ncr from './images/sponsorlogos/NCR.png';
 import digitalOcean from './images/sponsorlogos/DigitalOcean.svg';
 import stickerMule from './images/sponsorlogos/stickermule.svg';
+import blackRock from './images/sponsorlogos/blackrock.svg';
 import echoAR from './images/sponsorlogos/echoAR.png';
 import entreProg from './images/sponsorlogos/ENTR.png';
 import equifax from './images/sponsorlogos/equifax.png';
@@ -40,9 +41,10 @@ function Sponsors(props) {
         <h2>Sponsors</h2>
         <SponsorLogo image={ncr} alt="NCR logo" tier="mansion" link="https://www.ncr.com/" />
         <div className="logo-container">
-          <SponsorLogo image={statefarm} alt="StateFarm" tier="penthouse" link="https://www.statefarm.com/about-us" />
-          <SponsorLogo image={equifax} alt="Equifax" tier="penthouse" link="https://www.equifax.com/personal/" />
-          <SponsorLogo image={entreProg} alt="UGA Entrepreneurship Program" tier="apartment" link="https://www.terry.uga.edu/academics/entrepreneurship/index.php" />
+          <SponsorLogo image={blackRock} alt="BlackRock" tier="penthouse" link="https://www.blackrock.com/corporate/about-us" />
+          <SponsorLogo image={statefarm} alt="StateFarm" tier="apartment" link="https://www.statefarm.com/about-us" />
+          <SponsorLogo image={equifax} alt="Equifax" tier="doghouse" link="https://www.equifax.com/personal/" />
+          <SponsorLogo image={entreProg} alt="UGA Entrepreneurship Program" tier="doghouse" link="https://www.terry.uga.edu/academics/entrepreneurship/index.php" />
           <SponsorLogo id="ugacombologo" image={uga} alt="UGA Department of Computer Science, Parents Leadership Council, Resident Hall Association, Student Government Association" tier="apartment" link="https://www.cs.uga.edu/" />
         </div>
         <h2>Partners</h2>
