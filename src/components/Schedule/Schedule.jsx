@@ -84,7 +84,7 @@ function Schedule(props) {
                 <td>10:30 pm</td>
               </tr>
               <tr>
-                <td>Workshop - Statefarm</td>
+                <td>Workshop - BlackRock</td>
                 <td>10:30 pm</td>
               </tr>
             </tbody>
@@ -122,6 +122,10 @@ function Schedule(props) {
               <tr>
                 <td>Git/Angular Workshop - Cengiz Günay and Anca Doloc-Mihu</td>
                 <td>3:15 pm</td>
+              </tr>
+              <tr>
+                <td>Workshop - Statefarm</td>
+                <td>4:15 pm</td>
               </tr>
               <tr>
                 <td>Break (15 mins)</td>
