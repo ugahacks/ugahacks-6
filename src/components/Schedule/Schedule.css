@@ -69,6 +69,10 @@ td {
   font-size: 1.2em;
 }
 
+.daytwo td {
+  padding: 7px 15px;
+}
+
 td:last-child {
   color: #ffe401;
 }

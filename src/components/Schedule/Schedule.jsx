@@ -69,18 +69,22 @@ function Schedule(props) {
               </tr>
               <tr>
                 <td>First Time Hacker/Team Building Workshop</td>
-                <td>8:00 pm</td>
+                <td>7:30 pm</td>
               </tr>
               <tr>
                 <td>Art Contest</td>
-                <td>8:00 pm</td>
+                <td>7:30 pm</td>
+              </tr>
+              <tr>
+                <td>Sponsor Fair</td>
+                <td>8:30 pm</td>
               </tr>
               <tr>
                 <td>Workshop - NCR</td>
-                <td>9:00 pm</td>
+                <td>9:30 pm</td>
               </tr>
               <tr>
-                <td>Workshop - Equifax</td>
+                <td>Workshop - NCR</td>
                 <td>10:30 pm</td>
               </tr>
               <tr>
@@ -97,22 +101,34 @@ function Schedule(props) {
         <>
         <DayImg image={day2} alt="Day 2 banner"/>
         <div>
-          <table>
+          <table className="daytwo">
             <tbody>
               <tr>
                 <td>Breakfast</td>
                 <td>9:00 am</td>
               </tr>
               <tr>
+                <td>Web Architecture 101 - Paul Hansa</td>
+                <td>10:00 am</td>
+              </tr>
+              <tr>
+                <td>Building an API w/ FastAPI - Paul Hansa and Workshop - TSYS</td>
+                <td>11:00 am</td>
+              </tr>
+              <tr>
                 <td>Break (15 mins)</td>
                 <td>12:00 pm</td>
               </tr>
               <tr>
-                <td>NCR Live Interviews</td>
+                <td>NCR Q&A and BlackRock Live Interviews</td>
                 <td>12:15 pm</td>
               </tr>
               <tr>
-                <td>Equifax/Statefarm Live Interviews</td>
+                <td>Equifax/Statefarm/TSYS Live Interviews</td>
+                <td>1:15 pm</td>
+              </tr>
+              <tr>
+                <td>How to give a presentation - Penn Hansa</td>
                 <td>1:15 pm</td>
               </tr>
               <tr>
@@ -132,7 +148,15 @@ function Schedule(props) {
                 <td>5:15 pm</td>
               </tr>
               <tr>
-                <td>Dinner</td>
+                <td>Workshop - Equifax</td>
+                <td>5:30 pm</td>
+              </tr>
+              <tr>
+                <td>NCR Mini Event/Raffle</td>
+                <td>7:30 pm</td>
+              </tr>
+              <tr>
+                <td>Dinner and Workshop - BlackRock</td>
                 <td>8:00 pm</td>
               </tr>
               <tr>
