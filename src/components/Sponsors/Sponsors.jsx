@@ -9,6 +9,8 @@ import echoAR from './images/sponsorlogos/echoAR.png';
 import entreProg from './images/sponsorlogos/ENTR.png';
 import equifax from './images/sponsorlogos/equifax.png';
 import statefarm from './images/sponsorlogos/statefarm.png';
+import capitalone from './images/sponsorlogos/capitalone.png';
+import tsys from './images/sponsorlogos/tsys.png';
 import uga from './images/sponsorlogos/uga-combo.png';
 // import Button from '@material-ui/core/Button';
 // import { withStyles } from '@material-ui/core/styles';
@@ -43,6 +45,8 @@ function Sponsors(props) {
         <div className="logo-container">
           <SponsorLogo image={blackRock} alt="BlackRock" tier="penthouse" link="https://www.blackrock.com/corporate/about-us" />
           <SponsorLogo image={statefarm} alt="StateFarm" tier="apartment" link="https://www.statefarm.com/about-us" />
+          <SponsorLogo image={capitalone} alt="Capital One" tier="apartment" link="https://campus.capitalone.com/" />
+          <SponsorLogo image={tsys} alt="TSYS" tier="apartment" link="https://www.tsys.com/" />
           <SponsorLogo image={equifax} alt="Equifax" tier="doghouse" link="https://www.equifax.com/personal/" />
           <SponsorLogo image={entreProg} alt="UGA Entrepreneurship Program" tier="doghouse" link="https://www.terry.uga.edu/academics/entrepreneurship/index.php" />
           <SponsorLogo id="ugacombologo" image={uga} alt="UGA Department of Computer Science, Parents Leadership Council, Resident Hall Association, Student Government Association" tier="apartment" link="https://www.cs.uga.edu/" />
