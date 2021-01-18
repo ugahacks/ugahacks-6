@@ -108,7 +108,7 @@ function Schedule(props) {
                 <td>9:00 am</td>
               </tr>
               <tr>
-                <td>Web Architecture 101 - Paul Hansa</td>
+                <td>How to start building your web app - Paul Hansa</td>
                 <td>10:00 am</td>
               </tr>
               <tr>
@@ -164,8 +164,12 @@ function Schedule(props) {
                 <td>9:00 pm</td>
               </tr>
               <tr>
+                <td>Tips and tricks for a broke college dev - Paul Hansa</td>
+                <td>10:00 pm</td>
+              </tr>
+              <tr>
                 <td>Among Us</td>
-                <td>10:15 pm</td>
+                <td>11:15 pm</td>
               </tr>
             </tbody>
           </table>
