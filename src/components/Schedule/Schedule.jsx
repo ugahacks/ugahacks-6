@@ -100,7 +100,7 @@ function Schedule(props) {
       return (
         <>
         <DayImg image={day2} alt="Day 2 banner"/>
-        <div>
+        <div className="daytwo-wrapper">
           <table className="daytwo">
             <tbody>
               <tr>
@@ -109,6 +109,10 @@ function Schedule(props) {
               </tr>
               <tr>
                 <td>How to start building your web app - Paul Hansa</td>
+                <td>10:00 am</td>
+              </tr>
+              <tr>
+                <td>How to Test Your Website with Selenium WebDriver - Safiyullah Khan </td>
                 <td>10:00 am</td>
               </tr>
               <tr>
@@ -128,7 +132,7 @@ function Schedule(props) {
                 <td>1:15 pm</td>
               </tr>
               <tr>
-                <td>How to give a presentation - Penn Hansa</td>
+                <td>Life After College is Hard: This Session can Help - Malinda Inthirath</td>
                 <td>1:15 pm</td>
               </tr>
               <tr>
@@ -136,7 +140,11 @@ function Schedule(props) {
                 <td>2:15 pm</td>
               </tr>
               <tr>
-                <td>Git/Angular Workshop - Cengiz Günay and Anca Doloc-Mihu</td>
+                <td>Git/Angular Workshop - Anca Doloc-Mihu</td>
+                <td>3:15 pm</td>
+              </tr>
+              <tr>
+                <td>Pitch Perfect: Communicating your ideas quickly,<br></br> succinctly, and compellingly - Penn Hansa</td>
                 <td>3:15 pm</td>
               </tr>
               <tr>
@@ -144,11 +152,15 @@ function Schedule(props) {
                 <td>4:15 pm</td>
               </tr>
               <tr>
+                <td>Getting Started with Angular - Chris Martinez</td>
+                <td>4:15 pm</td>
+              </tr>
+              <tr>
                 <td>Break (15 mins)</td>
                 <td>5:15 pm</td>
               </tr>
               <tr>
-                <td>Workshop - Equifax</td>
+                <td>Mainupulating Cloud Data - Equifax</td>
                 <td>5:30 pm</td>
               </tr>
               <tr>

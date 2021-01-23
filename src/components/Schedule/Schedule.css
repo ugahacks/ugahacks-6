@@ -69,8 +69,28 @@ td {
   font-size: 1.2em;
 }
 
-.daytwo td {
-  padding: 6px 15px;
+.daytwo-wrapper {
+  overflow-y: scroll;
+  height: 70vh;
+}
+
+.daytwo-wrapper::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.daytwo-wrapper::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+
+.daytwo-wrapper::-webkit-scrollbar-thumb {
+  background-color: #ffe401;
+}
+
+/* FIREFOX: */
+
+.daytwo-wrapper {
+  scrollbar-width: thin;
+  scrollbar-color: #ffe401;
 }
 
 td:last-child {
@@ -143,6 +163,10 @@ h2 {
   }
   .day-container {
     margin-bottom: 30px;
+  }
+  td {
+    padding: 5px;
+    font-size: 1.1em;
   }
 }
 
