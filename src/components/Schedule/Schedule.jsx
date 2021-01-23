@@ -180,6 +180,10 @@ function Schedule(props) {
                 <td>10:00 pm</td>
               </tr>
               <tr>
+                <td>Break (15 mins)</td>
+                <td>11:00 pm</td>
+              </tr>
+              <tr>
                 <td>Among Us</td>
                 <td>11:15 pm</td>
               </tr>
@@ -256,7 +260,7 @@ function Schedule(props) {
           <div className="day-container">
           {renderDay()}
           </div>
-          <p><i>All times are in Eastern Standard Time</i></p>
+          <p id="timecaption"><i>All times are in Eastern Standard Time</i></p>
         </div>
       </section>
     </>

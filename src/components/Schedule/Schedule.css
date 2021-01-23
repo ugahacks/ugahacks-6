@@ -9,7 +9,7 @@
 }
 
 /* Working within the confines of fullpage.js */
-#schedule .fp-tableCell {
+#schedule .fp-tableCell, #timecaption {
   text-align: center;
 }
 
