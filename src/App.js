@@ -7,7 +7,8 @@ import Splash from './components/Splash/Splash.jsx';
 // import HallOfFame from './components/HallOfFame/HallOfFame.jsx';
 import About from './components/About/About.jsx';
 import FAQ from './components/FAQ/FAQ.jsx';
-import CovidFAQ from './components/FAQ/CovidFAQ.jsx'
+// import CovidFAQ from './components/FAQ/CovidFAQ.jsx';
+import Tracks from './components/Tracks/Tracks.jsx';
 import Schedule from './components/Schedule/Schedule.jsx';
 import Sponsors from './components/Sponsors/Sponsors.jsx';
 import Footer from './components/Footer/Footer.jsx';
@@ -36,7 +37,7 @@ function App() {
           debug
           navigation = {true}
           navigationPosition = {'left'}
-          navigationTooltips = {['', 'About', 'Schedule', 'FAQ', 'COVID FAQ', 'Sponsors']}
+          navigationTooltips = {['', 'About', 'Schedule', 'FAQ', 'Tracks', 'Sponsors']}
           licenseKey = {'OPEN-SOURCE-GPLV3-LICENSE'}
           // menu = {'#navbar'}
           scrollingSpeed = {1000}
@@ -49,7 +50,7 @@ function App() {
                 <About/>
                 <Schedule/>
                 <FAQ/>
-                <CovidFAQ/>
+                <Tracks/>
                 <Sponsors/>
                 <Footer/>
               </ReactFullPage.Wrapper>
@@ -63,7 +64,7 @@ function App() {
         <About/>
         <Schedule/>
         <FAQ/>
-        <CovidFAQ/>
+        <Tracks/>
         <Sponsors/>
         <Footer/>
       </Tablet>

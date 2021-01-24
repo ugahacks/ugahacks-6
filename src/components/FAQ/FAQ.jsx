@@ -35,6 +35,11 @@ function FAQ(props) {
             />
 
             <Question
+            question="How do I access a virtual workshop?"
+            answer="There will be a page that lists Google Meet links for workshops, which will be easily accessible on MyUGAHacks!"
+            />
+
+            <Question
               question="Can I start working on my project before the event?"
               answer="No. All UGAHacks projects must begin at the hackathon. You are not permitted to begin a hackathon project before this event. Feel free to bring ideas, but no code!"
             />

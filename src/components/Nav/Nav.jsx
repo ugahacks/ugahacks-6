@@ -35,7 +35,7 @@ const InvertedTooltip = withStyles({
 function Nav(props) {
 
   /* Hooks and States. */
-  const sections = ["splash", "about", "schedule", "faq", "covidfaq", "sponsors"];
+  const sections = ["splash", "about", "schedule", "faq", "tracks", "sponsors"];
   const [invertStyle, setInvertStyle] = useState(true);
   const [invertToolTipStyle, setInvertToolTipStyle] = useState(true);
   const [current, setCurrent] = useState({0: 1, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0});
@@ -66,7 +66,7 @@ function Nav(props) {
     }
 
     var timeToInvert = in_section(scrollTop, 0, -1) ||
-                        in_section(scrollTop, 2, 1) || 
+                        in_section(scrollTop, 2, 1) ||
                         in_section(scrollTop, 5, 4);
 
     /* Regular setters. */
@@ -82,7 +82,7 @@ function Nav(props) {
       5: in_section(scrollTop, 5, 4)
     });
 
-    
+
     /* DELAYED SETTER
     setTimeout(() => {
       setGoDark(isScrolledDown && isMinimumScrolled);
@@ -90,7 +90,7 @@ function Nav(props) {
     */
 
   });
-  
+
   /* These will be used to set dynamic classNames */
   const style = invertStyle ? 'dotstyle-fillin-inverted' : 'dotstyle-fillin';
   const invertToolTip = invertToolTipStyle;
@@ -99,7 +99,7 @@ function Nav(props) {
       <nav>
         <div className={`dotstyle ${style}`}>
           <div>
-            
+
             <div>
               {invertToolTip
                 ? <InvertedTooltip   title="Home" placement={isBrowser ? "right" : "bottom"} arrow><a href="#splash" className={current[0] ? 'current' : ''}>Home</a></InvertedTooltip>
@@ -130,8 +130,8 @@ function Nav(props) {
 
             <div>
               {invertToolTip
-                ? <InvertedTooltip   title="Covid FAQ" placement={isBrowser ? "right" : "bottom"} arrow><a href="#covidfaq" className={current[4] ? 'current' : ''}>Covid FAQ</a></InvertedTooltip>
-                : <CustomizedTooltip title="Covid FAQ" placement={isBrowser ? "right" : "bottom"} arrow><a href="#covidfaq" className={current[4] ? 'current' : ''}>Covid FAQ</a></CustomizedTooltip>
+                ? <InvertedTooltip   title="Tracks" placement={isBrowser ? "right" : "bottom"} arrow><a href="#tracks" className={current[4] ? 'current' : ''}>Tracks</a></InvertedTooltip>
+                : <CustomizedTooltip title="Tracks" placement={isBrowser ? "right" : "bottom"} arrow><a href="#tracks" className={current[4] ? 'current' : ''}>Tracks</a></CustomizedTooltip>
               }
             </div>
 
