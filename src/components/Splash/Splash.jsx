@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Splash.css";
-import sixLogo from "./images/sixlogo-01.svg";
+import sixLogo from "./images/sixlogoncr.svg";
 import Button from "@material-ui/core/Button";
 import { withStyles } from '@material-ui/core/styles';
 

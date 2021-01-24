@@ -90,14 +90,11 @@ li span {
   }
 
   .logo {
-    transform: scale(1);
+    width: 85%;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .logo {
-    width: 85%;
-  }
   #eventdate {
     padding-top: 6%;
   }
