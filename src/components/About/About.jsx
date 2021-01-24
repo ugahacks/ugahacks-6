@@ -3,7 +3,8 @@ import './About.css';
 import laptop from './images/laptop.svg';
 import charger from './images/charger.svg';
 import phone from './images/phone.svg';
-import sleepingBag from './images/sleepingbag.svg';
+// import sleepingBag from './images/sleepingbag.svg';
+import slack from './images/slack.svg';
 import { motion } from "framer-motion";
 
 const toolVariants = {
@@ -42,7 +43,7 @@ function About(props) {
           <div className="tool-rack">
             <Tool image={laptop} tool="Laptop" alt="Laptop"/>
             <Tool image={phone} tool="Phone" alt="A Phone"/>
-            <Tool image={sleepingBag} tool="Sleeping Bag" alt="Sleeping Bag"/>
+            <Tool image={slack} tool="Slack" alt="Slack"/>
             <Tool image={charger} tool="Chargers" alt="Chargers"/>
 
           </div>
