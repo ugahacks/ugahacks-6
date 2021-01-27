@@ -5,7 +5,7 @@ const repoURL = "https://github.com/ugahacks/ugahacks-6.git";
 ghpages.publish(
   pathname,
   {
-    branch: "react-hacks-build",
+    branch: "react-hacks-build-test",
     repo: repoURL,
   },
   (err) => {
