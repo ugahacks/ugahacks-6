@@ -108,7 +108,7 @@ function Schedule(props) {
                 <td>9:00 am</td>
               </tr>
               <tr>
-                <td>How to start building your web app - Paul Hansa</td>
+                <td>How to Start Building Your Web App - Paul Hansa</td>
                 <td>10:00 am</td>
               </tr>
               <tr>
@@ -132,11 +132,11 @@ function Schedule(props) {
                 <td>12:15 pm</td>
               </tr>
               <tr>
-                <td>Equifax/Statefarm/TSYS 1-on-1s</td>
+                <td>Equifax/State Farm/TSYS 1-on-1s</td>
                 <td>1:15 pm</td>
               </tr>
               <tr>
-                <td>Life After College is Hard: This Session can Help - Malinda Inthirath</td>
+                <td>Life After College is Hard: This Session Can Help - Malinda Inthirath</td>
                 <td>1:15 pm</td>
               </tr>
               <tr>
@@ -148,11 +148,11 @@ function Schedule(props) {
                 <td>3:15 pm</td>
               </tr>
               <tr>
-                <td>Pitch Perfect: Communicating your ideas quickly, succinctly, <br></br> and compellingly - Penn Hansa</td>
+                <td>Pitch Perfect: Communicating Your Ideas Quickly, Succinctly, <br></br> and Compellingly - Penn Hansa</td>
                 <td>3:15 pm</td>
               </tr>
               <tr>
-                <td>AWS at Statefarm Workshop</td>
+                <td>AWS at State Farm Workshop</td>
                 <td>4:15 pm</td>
               </tr>
               <tr>
@@ -184,7 +184,7 @@ function Schedule(props) {
                 <td>9:00 pm</td>
               </tr>
               <tr>
-                <td>Tips and tricks for a broke college dev - Paul Hansa</td>
+                <td>Tips and Tricks for a Broke College Dev - Paul Hansa</td>
                 <td>10:00 pm</td>
               </tr>
               <tr>
