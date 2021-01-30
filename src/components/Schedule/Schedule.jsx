@@ -116,7 +116,11 @@ function Schedule(props) {
                 <td>10:00 am</td>
               </tr>
               <tr>
-                <td>Building an API w/ FastAPI - Paul Hansa and Workshop - TSYS</td>
+                <td>Building an API w/ FastAPI - Paul Hansa</td>
+                <td>11:00 am</td>
+              </tr>
+              <tr>
+                <td>Workshop - TSYS</td>
                 <td>11:00 am</td>
               </tr>
               <tr>
@@ -124,11 +128,11 @@ function Schedule(props) {
                 <td>12:00 pm</td>
               </tr>
               <tr>
-                <td>NCR Q&A and BlackRock Live Interviews</td>
+                <td>NCR Q&A/1-on-1s and BlackRock Q&A/1-on-1s</td>
                 <td>12:15 pm</td>
               </tr>
               <tr>
-                <td>Equifax/Statefarm/TSYS Live Interviews</td>
+                <td>Equifax/Statefarm/TSYS 1-on-1s</td>
                 <td>1:15 pm</td>
               </tr>
               <tr>
@@ -140,15 +144,15 @@ function Schedule(props) {
                 <td>2:15 pm</td>
               </tr>
               <tr>
-                <td>Git/Angular Workshop - Anca Doloc-Mihu</td>
+                <td>Git(Hub) Basics Workshop - Shaun Mitchell</td>
                 <td>3:15 pm</td>
               </tr>
               <tr>
-                <td>Pitch Perfect: Communicating your ideas quickly,<br></br> succinctly, and compellingly - Penn Hansa</td>
+                <td>Pitch Perfect: Communicating your ideas quickly, succinctly, <br></br> and compellingly - Penn Hansa</td>
                 <td>3:15 pm</td>
               </tr>
               <tr>
-                <td>Workshop - Statefarm</td>
+                <td>AWS at Statefarm Workshop</td>
                 <td>4:15 pm</td>
               </tr>
               <tr>
@@ -160,8 +164,12 @@ function Schedule(props) {
                 <td>5:15 pm</td>
               </tr>
               <tr>
-                <td>Mainupulating Cloud Data - Equifax</td>
+                <td>Manipulating Cloud Data - Equifax</td>
                 <td>5:30 pm</td>
+              </tr>
+              <tr>
+                <td>Building Serverless Applications with AWS - Nick Tang</td>
+                <td>6:30 pm</td>
               </tr>
               <tr>
                 <td>NCR Mini Event/Raffle</td>
@@ -209,11 +217,11 @@ function Schedule(props) {
               </tr>
               <tr>
                 <td>Lunch</td>
-                <td>1:00 pm</td>
+                <td>2:00 pm</td>
               </tr>
               <tr>
                 <td>Closing Ceremony</td>
-                <td>2:00 pm</td>
+                <td>3:00 pm</td>
               </tr>
             </tbody>
           </table>

@@ -36,7 +36,7 @@ function FAQ(props) {
 
             <Question
             question="How do I access a virtual workshop?"
-            answer="There will be a page that lists Google Meet links for workshops, which will be easily accessible on MyUGAHacks!"
+            answer="We'll announce the Google Meet link for workshops on Slack ahead of time."
             />
 
             <Question
