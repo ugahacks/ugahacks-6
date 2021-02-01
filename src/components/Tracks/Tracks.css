@@ -56,7 +56,6 @@
 .winner-byte {
   margin: auto 0;
   max-width: 30vw;
-  height: 65vh;
 }
 
 @media only screen and (max-width: 960px) {
@@ -73,8 +72,6 @@
   }
   .winner-byte {
     width: 80%;
-    height: 27.5vh;
-    min-height: 450px;
     min-width: 350px;
     margin: 0 auto 30px;
   }
