@@ -16,9 +16,11 @@ import Footer from './components/Footer/Footer.jsx';
 import ReactFullPage from '@fullpage/react-fullpage';
 import { useMediaQuery } from 'react-responsive'
 
+import { Switch, Route, Redirect } from 'react-router-dom';
+import pre_event_packet_pdf from './media/pre_event_packet.pdf'
 
-function App() {
-  hotjar.initialize(1566634,6);
+
+function SPA() {
 
   const Desktop = ({ children }) => {
     const isDesktop = useMediaQuery({ minWidth: 1281 });
@@ -31,7 +33,7 @@ function App() {
   }
 
   return(
-    <div className="App">
+    <div>
       <Desktop>
         <ReactFullPage
           debug
@@ -68,6 +70,33 @@ function App() {
         <Sponsors/>
         <Footer/>
       </Tablet>
+    </div>
+  );
+}
+
+function EventPacket() {
+  // this is cheeky as heck
+  window.open(pre_event_packet_pdf, '_blank');
+  return (
+    <Redirect to='/' />
+  );
+}
+
+const EventSite = () => (
+  <Switch>
+    <Route exact path='/' component={SPA}></Route>
+    <Route exact path='/guide'>
+      {EventPacket}
+    </Route>
+  </Switch>
+);
+
+function App() {
+  hotjar.initialize(1566634,6);
+
+  return(
+    <div className="App">
+      <EventSite />
     </div>
   );
 }

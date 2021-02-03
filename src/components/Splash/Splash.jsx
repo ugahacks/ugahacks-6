@@ -13,7 +13,8 @@ const CustomButton = withStyles({
     fontSize: '1.3em',
     fontWeight: 600,
     fontFamily: 'Poppins',
-    borderRadius: '50px'
+    borderRadius: '50px',
+    width: '300px'
   }
 })(Button);
 
@@ -80,6 +81,7 @@ function Countdown(props) {
       <div className="countdown-registration">
         <CustomButton variant="contained" size="large" href="https://my.ugahacks.com/">Register Now</CustomButton>
       </div>
+      <CustomButton variant="contained" size="large" href="/guide">Pre-event Guide</CustomButton>
       </>
     );
   }
