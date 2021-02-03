@@ -57,6 +57,8 @@ function FAQ(props) {
             <Question
               question="What are the rules all attendees must abide by?"
               answer="UGAHacks will be following the MLH Code of Conduct. By participating in UGAHacks, you are agreeing to follow the Code of Conduct throughout the duration of the event."
+              link="https://hackp.ac/coc"
+              linktxt="Check out the MLH Code of Conduct"
             />
             <Question
               question="How many people can I have on my team?"

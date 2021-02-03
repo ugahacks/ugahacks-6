@@ -41,7 +41,7 @@ function Question(props) {
         animate={isOpen ? "open" : "closed"}
 
       >
-        <p>{props.answer}</p>
+        <p>{props.answer} <a href={props.link}>{props.linktxt}</a></p>
       </motion.div>
     </>
 
