@@ -81,7 +81,7 @@ function Countdown(props) {
       <div className="countdown-registration">
         <CustomButton variant="contained" size="large" href="https://my.ugahacks.com/">Register Now</CustomButton>
       </div>
-      <CustomButton variant="contained" size="large" href="/guide">Pre-event Guide</CustomButton>
+      <CustomButton variant="contained" size="large" href="https://6.ugahacks.com/static/media/pre_event_packet.091f31bd.pdf" target="_blank">Pre-event Guide</CustomButton>
       </>
     );
   }

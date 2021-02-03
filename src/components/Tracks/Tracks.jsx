@@ -18,7 +18,7 @@ function Tracks(props) {
             <p>In addition to tracks, some sponsors will even have their own challenges geared around a specific theme/tool for hackers to participate in.
             <b> There may even be a chance to score some sweet prizes!</b></p>
             <p>Stay tuned to the opening cermony where more details will be revealed!</p>
-            <Button className="show-more-black" variant="contained" size="large" id="show-more" href="/guide">Check Out Our Pre-event Guide</Button>
+            <Button className="show-more-black" variant="contained" size="large" id="show-more" href="https://6.ugahacks.com/static/media/pre_event_packet.091f31bd.pdf" target="_blank">Check Out Our Pre-event Guide</Button>
           </div>
           <img className="winner-byte" alt="Winner Byte" src={winnerByte}/>
         </div>
