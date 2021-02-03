@@ -168,7 +168,15 @@ function Schedule(props) {
                 <td>5:30 pm</td>
               </tr>
               <tr>
+                <td>Data Base with Data Lake & Blockchain - Jose Alexandro Acha Gomes</td>
+                <td>5:30 pm</td>
+              </tr>
+              <tr>
                 <td>Building Serverless Applications with AWS - Nick Tang</td>
+                <td>6:30 pm</td>
+              </tr>
+              <tr>
+                <td>Patient Health History Record System - Jose Alexandro Acha Gomes</td>
                 <td>6:30 pm</td>
               </tr>
               <tr>
@@ -185,6 +193,10 @@ function Schedule(props) {
               </tr>
               <tr>
                 <td>Tips and Tricks for a Broke College Dev - Paul Hansa</td>
+                <td>10:00 pm</td>
+              </tr>
+              <tr>
+                <td>Git - Akash Veerappan</td>
                 <td>10:00 pm</td>
               </tr>
               <tr>
