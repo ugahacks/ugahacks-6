@@ -23,7 +23,7 @@
   align-items: center;
 }
 
-.apartment, .penthouse,.doghouse, .mansion, .partner {
+.loft, .apartment, .penthouse,.doghouse, .mansion, .partner {
   margin: 10px;
   filter: brightness(0) invert(1);
 }
@@ -38,6 +38,10 @@
 
 .doghouse {
     width: 200px;
+}
+
+.loft {
+  width: 125px;
 }
 
 .mansion {
@@ -102,6 +106,10 @@
 
   .doghouse {
     width: 45%;
+  }
+
+  .loft {
+    width: 35%;
   }
 
   .logo-container {

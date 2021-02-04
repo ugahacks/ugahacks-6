@@ -12,6 +12,7 @@ import statefarm from './images/sponsorlogos/statefarm.png';
 import capitalone from './images/sponsorlogos/capitalone.png';
 import tsys from './images/sponsorlogos/tsys.png';
 import uga from './images/sponsorlogos/uga-combo.png';
+import credera from './images/sponsorlogos/credera.png';
 // import Button from '@material-ui/core/Button';
 // import { withStyles } from '@material-ui/core/styles';
 
@@ -50,6 +51,7 @@ function Sponsors(props) {
           <SponsorLogo image={equifax} alt="Equifax" tier="doghouse" link="https://www.equifax.com/personal/" />
           <SponsorLogo image={entreProg} alt="UGA Entrepreneurship Program" tier="doghouse" link="https://www.terry.uga.edu/academics/entrepreneurship/index.php" />
           <SponsorLogo id="ugacombologo" image={uga} alt="UGA Department of Computer Science, Parents Leadership Council, Resident Hall Association, Student Government Association" tier="apartment" link="https://www.cs.uga.edu/" />
+          <SponsorLogo image={credera} alt="Credera" tier="loft" link="https://www.credera.com/" />
         </div>
         <h2>Partners</h2>
         <div className="logo-container">
