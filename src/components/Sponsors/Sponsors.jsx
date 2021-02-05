@@ -13,6 +13,7 @@ import capitalone from './images/sponsorlogos/capitalone.png';
 import tsys from './images/sponsorlogos/tsys.png';
 import uga from './images/sponsorlogos/uga-combo.png';
 import credera from './images/sponsorlogos/credera.png';
+import acm from './images/sponsorlogos/acm.png';
 // import Button from '@material-ui/core/Button';
 // import { withStyles } from '@material-ui/core/styles';
 
@@ -58,6 +59,7 @@ function Sponsors(props) {
           <SponsorLogo image={digitalOcean} alt="Digital Ocean logo" tier="partner" link="https://www.digitalocean.com/" />
           <SponsorLogo image={echoAR} alt="echoAR Logo" tier="partner" link="https://www.echoar.xyz/" />
           <SponsorLogo image={stickerMule} alt="StickerMule" tier="partner" link="https://hackp.ac/mlh-stickermule-hackathons" />
+          <SponsorLogo id="acm" image={acm} alt="ACM" tier="partner" link="https://uga.campuslabs.com/engage/organization/acm" />
         </div>
         <p><i>This event is supported in part by the President's Venture Fund through the generous gifts of University of Georgia donors.</i></p>
       </div>

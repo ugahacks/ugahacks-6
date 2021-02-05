@@ -28,6 +28,10 @@
   filter: brightness(0) invert(1);
 }
 
+#acm {
+  filter: none;
+}
+
 .penthouse {
   width: 325px;
 }
