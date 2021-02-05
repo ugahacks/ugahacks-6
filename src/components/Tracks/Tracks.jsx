@@ -17,7 +17,7 @@ function Tracks(props) {
             UGAHacks will not be providing any hardware materials this year, but you can purchase your own materials and your group may be eligible for a reimbursement from UGAHacks. More details can be found on page 14 of the pre-event guide!</p>
             <p>In addition to tracks, some sponsors will even have their own challenges geared around a specific theme/tool for hackers to participate in.
             <b> There may even be a chance to score some sweet prizes!</b></p>
-            <Button className="show-more-black" variant="contained" size="large" id="show-more" href="https://6.ugahacks.com/static/media/pre_event_packet.091f31bd.pdf" target="_blank">Check Out Our Pre-event Guide</Button>
+            <Button className="show-more-black" variant="contained" size="large" id="show-more" href="https://6.ugahacks.com/static/media/pre_event_packet.99c85e96.pdf" target="_blank">Check Out Our Pre-event Guide</Button>
           </div>
           <img className="winner-byte" alt="Winner Byte" src={winnerByte}/>
         </div>

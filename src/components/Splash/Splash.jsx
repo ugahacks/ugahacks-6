@@ -78,7 +78,7 @@ function Countdown(props) {
         <h2 id="tagline"><b>BOOT UP YOUR DREAMS.<span className="eventline"> BUILD THE FUTURE.</span></b></h2>
         <h2 id="eventdate">February 5-7, 2021 Online</h2>
       </div>
-      <CustomButton variant="contained" size="large" href="https://6.ugahacks.com/static/media/pre_event_packet.091f31bd.pdf" target="_blank">Pre-event Guide</CustomButton>
+      <CustomButton variant="contained" size="large" href="https://6.ugahacks.com/static/media/pre_event_packet.99c85e96.pdf" target="_blank">Pre-event Guide</CustomButton>
       </>
     );
   }
