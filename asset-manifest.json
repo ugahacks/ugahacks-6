@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.1d880541.chunk.css",
-    "main.js": "/static/js/main.d1601707.chunk.js",
-    "main.js.map": "/static/js/main.d1601707.chunk.js.map",
+    "main.css": "/static/css/main.1999b479.chunk.css",
+    "main.js": "/static/js/main.2c5cec1e.chunk.js",
+    "main.js.map": "/static/js/main.2c5cec1e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.dc2f0862.js",
     "runtime-main.js.map": "/static/js/runtime-main.dc2f0862.js.map",
-    "static/js/2.523ceb5c.chunk.js": "/static/js/2.523ceb5c.chunk.js",
-    "static/js/2.523ceb5c.chunk.js.map": "/static/js/2.523ceb5c.chunk.js.map",
+    "static/js/2.6843cf9a.chunk.js": "/static/js/2.6843cf9a.chunk.js",
+    "static/js/2.6843cf9a.chunk.js.map": "/static/js/2.6843cf9a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.138ee66752f3914c0b22caf7d9c26363.js": "/precache-manifest.138ee66752f3914c0b22caf7d9c26363.js",
+    "precache-manifest.88d67df1fe784a7a967b5d24089a44b2.js": "/precache-manifest.88d67df1fe784a7a967b5d24089a44b2.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.1d880541.chunk.css.map": "/static/css/main.1d880541.chunk.css.map",
-    "static/js/2.523ceb5c.chunk.js.LICENSE.txt": "/static/js/2.523ceb5c.chunk.js.LICENSE.txt",
+    "static/css/main.1999b479.chunk.css.map": "/static/css/main.1999b479.chunk.css.map",
+    "static/js/2.6843cf9a.chunk.js.LICENSE.txt": "/static/js/2.6843cf9a.chunk.js.LICENSE.txt",
     "static/media/DigitalOcean.svg": "/static/media/DigitalOcean.5b36cc73.svg",
     "static/media/ENTR.png": "/static/media/ENTR.e3f109bb.png",
     "static/media/NCR.png": "/static/media/NCR.10b562db.png",
@@ -27,7 +27,7 @@
     "static/media/echoAR.png": "/static/media/echoAR.5c8997cd.png",
     "static/media/equifax.png": "/static/media/equifax.40a08856.png",
     "static/media/facebook.svg": "/static/media/facebook.0a52e3dc.svg",
-    "static/media/FAQ.css": "/static/media/screws-01.d922bcd6.svg",
+    "static/media/FAQ.css": "/static/media/yellowbg-02.76644bb5.svg",
     "static/media/About.css": "/static/media/toolpattern.c0347671.svg",
     "static/media/github.svg": "/static/media/github.5a7c898a.svg",
     "static/media/insta.svg": "/static/media/insta.e39fd235.svg",
@@ -44,12 +44,12 @@
     "static/media/twitter.svg": "/static/media/twitter.fb764dce.svg",
     "static/media/uga-combo.png": "/static/media/uga-combo.5ac8c15d.png",
     "static/media/winnerbyte-01.png": "/static/media/winnerbyte-01.e09c6c1d.png",
-    "static/media/Tracks.css": "/static/media/yellowbg-02.76644bb5.svg"
+    "static/media/Tracks.css": "/static/media/yellowbg-02.f76d1477.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.dc2f0862.js",
-    "static/js/2.523ceb5c.chunk.js",
-    "static/css/main.1d880541.chunk.css",
-    "static/js/main.d1601707.chunk.js"
+    "static/js/2.6843cf9a.chunk.js",
+    "static/css/main.1999b479.chunk.css",
+    "static/js/main.2c5cec1e.chunk.js"
   ]
 }
