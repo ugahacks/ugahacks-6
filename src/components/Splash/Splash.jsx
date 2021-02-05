@@ -14,7 +14,7 @@ const CustomButton = withStyles({
     fontWeight: 600,
     fontFamily: 'Poppins',
     borderRadius: '50px',
-    width: '300px'
+    width: '320px'
   }
 })(Button);
 
@@ -77,9 +77,6 @@ function Countdown(props) {
       <div className="subheader">
         <h2 id="tagline"><b>BOOT UP YOUR DREAMS.<span className="eventline"> BUILD THE FUTURE.</span></b></h2>
         <h2 id="eventdate">February 5-7, 2021 Online</h2>
-      </div>
-      <div className="countdown-registration">
-        <CustomButton variant="contained" size="large" href="https://my.ugahacks.com/">Register Now</CustomButton>
       </div>
       <CustomButton variant="contained" size="large" href="https://6.ugahacks.com/static/media/pre_event_packet.091f31bd.pdf" target="_blank">Pre-event Guide</CustomButton>
       </>

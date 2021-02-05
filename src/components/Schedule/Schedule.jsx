@@ -88,7 +88,7 @@ function Schedule(props) {
                 <td>10:30 pm</td>
               </tr>
               <tr>
-                <td>Workshop - BlackRock</td>
+                <td>BlackRock: Sustainable Investing Challenge + API Demo</td>
                 <td>10:30 pm</td>
               </tr>
             </tbody>
@@ -116,7 +116,7 @@ function Schedule(props) {
                 <td>10:00 am</td>
               </tr>
               <tr>
-                <td>Building an API w/ FastAPI - Paul Hansa</td>
+                <td>Building an API w/ Python and FastAPI - Paul Hansa</td>
                 <td>11:00 am</td>
               </tr>
               <tr>
@@ -144,7 +144,7 @@ function Schedule(props) {
                 <td>2:15 pm</td>
               </tr>
               <tr>
-                <td>Git(Hub) Basics Workshop - Shaun Mitchell</td>
+                <td>BlackRock: Journey to FinTech - Aladdin</td>
                 <td>3:15 pm</td>
               </tr>
               <tr>
@@ -184,8 +184,12 @@ function Schedule(props) {
                 <td>7:30 pm</td>
               </tr>
               <tr>
-                <td>Dinner and Workshop - BlackRock</td>
+                <td>Dinner</td>
                 <td>8:00 pm</td>
+              </tr>
+              <tr>
+                <td>Git(Hub) Basics: Git + GitHub Concepts - Shaun Mitchell</td>
+                <td>9:00 pm</td>
               </tr>
               <tr>
                 <td>Join the UGAHacks Team + Hacker Initiatives Workshop</td>
