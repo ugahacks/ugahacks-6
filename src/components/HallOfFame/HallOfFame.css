@@ -1,3 +1,41 @@
-#HallOfFame {
-  height: 100vh;
+.hof-section {
+  /*background-image: url(./images/bp2animated.svg);*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover !important;
+  min-height: 100vh;
+  margin: auto;
+  /*display: flex;*/
+}
+
+.header {
+  color: black;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.subheader {
+  color: black;
+  text-align: center;
+  margin-top: -1.5em;
+  margin-bottom: 2em;
+}
+
+.title {
+  color: black;
+  text-align: center;
+}
+
+.carousel {
+  margin-top: 1vh;
+  /*max-width: ;*/
+  /*margin-left: 5vw;*/
+}
+
+.carousel li {
+  padding: 0.2em;
+}
+
+.alice-carousel__dots {
+  margin: 10px 3px 5px !important;
 }

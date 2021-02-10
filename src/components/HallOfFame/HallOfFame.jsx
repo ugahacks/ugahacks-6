@@ -1,32 +1,46 @@
 import React from 'react';
-
-import AwesomeSlider from 'react-awesome-slider';
-// import AwsSliderStyles from 'react-awesome-slider/src/styles.scss';
 import './HallOfFame.css';
-import 'react-awesome-slider/dist/styles.css';
-import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
+
+import AliceCarousel from 'react-alice-carousel';
+import "react-alice-carousel/lib/alice-carousel.css";
 
 import team_wand from "./media/wand.png"
 
+const handleDragStart = (e) => e.preventDefault();
 
-// var path = "./media/wand.png"
+const responsive = {
+    0: { items: 1 },
+    568: { items: 2 },
+    1024: { items: 3 },
+    2400: { items: 5 },
+    3400: { items: 6 },
+};
 
+const items = [
+  <img src={team_wand} />,
+  <img src={team_wand} />,
+  <img src={team_wand} />,
+  <img src={team_wand} />,
+  <img src={team_wand} />,
+  <img src={team_wand} />,
+];
 
-class HallOfFame extends React.Component { //function HallOfFame(props) {
-  render() {
-    return (
-      <div id="HallOfFame" className="">
-        <AwesomeSlider
-          animation="cubeAnimation"
-        >
-          <div data-src={team_wand} />
-          <div data-src={team_wand} />
-          <div data-src={team_wand} />
-        </AwesomeSlider>
+const HallOfFame = () => {
+  return (
+    <div id="HallOfFame" className="section hof-section" id="hof">
+      <h1 className="header">HALL OF FAME</h1>
+      <h2 className="subheader">Congratulations to Our Winners!</h2>
+      <div className="carousel overall-winners">
+        <h3 className="title">Overall Winners</h3>
+        <AliceCarousel mouseTracking responsive={responsive} items={items} />
       </div>
-    );
-  }
+      <div className="carousel art-winners">
+        <h3 className="title">Categorey Winners</h3>
+        <AliceCarousel mouseTracking responsive={responsive} items={items} />
+      </div>
+    </div>
+  );
 }
 
-// ReactDOM.render(<Carousel />, document.querySelector('.demo-carousel'));
+
 export default HallOfFame;
