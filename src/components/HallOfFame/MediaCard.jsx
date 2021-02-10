@@ -8,7 +8,6 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-import team_wand from "./media/wand.png"
 
 const useStyles = makeStyles({
   root: {
@@ -44,7 +43,7 @@ export default function MediaCard(props) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={team_wand}
+          image={props.teamImage}
           title="Winner"
         />
         <CardContent className={classes.cardcontent}>
