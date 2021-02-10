@@ -25,6 +25,7 @@ const useStyles = makeStyles({
   btext: {
     size: '1em',
     textAlign: 'center',
+    color: '#fff',
   },
   button: {
     color: 'black',
@@ -57,8 +58,8 @@ export default function MediaCard(props) {
       </CardActionArea>
       <CardActions className={classes.button}>
         <Button variant="contained" size="small" color="primary" href={props.devpost}>
-          <Typography variant="button text" component="h5" className={classes.btext}>
-            Devpost
+          <Typography variant="subtitle1" component="buttontext" className={classes.btext}>
+            {"See on Devpost"}
           </Typography>
         </Button>
       </CardActions>

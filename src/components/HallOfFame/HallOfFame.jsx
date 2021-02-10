@@ -39,7 +39,7 @@ const HallOfFame = () => {
           <AliceCarousel disableButtonsControls mouseTracking responsive={responsive} items={items} />
         </div>
         <div className="carousel art-winners">
-          <h3 className="title">Categorey Winners</h3>
+          <h3 className="title">Category Winners</h3>
           <AliceCarousel disableButtonsControls mouseTracking responsive={responsive} items={items} />
         </div>
       </div>
