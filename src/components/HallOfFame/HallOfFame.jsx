@@ -23,9 +23,9 @@ const items = [
   <MediaCard placement="1st Place" teamName="WAND" devpost="https://gooogle.com" />,
   <MediaCard placement="2nd Place" teamName="WAND2" devpost="https://gooogle.com" />,
   <MediaCard placement="3rd Place" teamName="WAND3" devpost="https://gooogle.com" />,
-  <MediaCard />,
-  <MediaCard />,
-  <MediaCard />,
+  <MediaCard placement="[Art] 1st Place" teamName="ART1" devpost="https://gooogle.com" />,
+  <MediaCard placement="[Art] 2nd Place" teamName="ART2" devpost="https://gooogle.com" />,
+  <MediaCard placement="[Art] 3rd Place" teamName="ART3" devpost="https://gooogle.com" />,
 ];
 
 const HallOfFame = () => {
