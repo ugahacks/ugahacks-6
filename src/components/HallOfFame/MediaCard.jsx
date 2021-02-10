@@ -56,9 +56,9 @@ export default function MediaCard(props) {
         </CardContent>
       </CardActionArea>
       <CardActions className={classes.button}>
-        <Button variant="contained" size="small" color="primary" href={props.devpost}>
+        <Button variant="contained" size="small" color="primary" href={props.link}>
           <Typography variant="subtitle1" component="buttontext" className={classes.btext}>
-            {"See on Devpost"}
+            {props.buttonText}
           </Typography>
         </Button>
       </CardActions>
