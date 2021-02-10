@@ -14,8 +14,9 @@ const responsive = {
     0: { items: 1 },
     568: { items: 2 },
     1024: { items: 4 },
-    2400: { items: 5 },
-    3400: { items: 6 },
+    2400: { items: 6},
+    2800: { items: 8 },
+    3400: { items: 10 },
 };
 
 const overall_items = [
