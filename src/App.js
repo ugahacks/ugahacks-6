@@ -8,7 +8,7 @@ import HallOfFame from './components/HallOfFame/HallOfFame.jsx';
 import About from './components/About/About.jsx';
 import FAQ from './components/FAQ/FAQ.jsx';
 // import CovidFAQ from './components/FAQ/CovidFAQ.jsx';
-import Tracks from './components/Tracks/Tracks.jsx';
+// import Tracks from './components/Tracks/Tracks.jsx';
 import Schedule from './components/Schedule/Schedule.jsx';
 import Sponsors from './components/Sponsors/Sponsors.jsx';
 import Footer from './components/Footer/Footer.jsx';
