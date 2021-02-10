@@ -39,7 +39,7 @@ function SPA() {
           debug
           navigation = {true}
           navigationPosition = {'left'}
-          navigationTooltips = {['', 'Hall of Fame', 'About', 'Schedule', 'FAQ', 'Tracks', 'Sponsors']}
+          navigationTooltips = {['', 'Hall of Fame', 'About', 'Schedule', 'FAQ', 'Sponsors']}
           licenseKey = {'OPEN-SOURCE-GPLV3-LICENSE'}
           // menu = {'#navbar'}
           scrollingSpeed = {1000}
@@ -53,7 +53,6 @@ function SPA() {
                 <About/>
                 <Schedule/>
                 <FAQ/>
-                <Tracks/>
                 <Sponsors/>
                 <Footer/>
               </ReactFullPage.Wrapper>
@@ -68,7 +67,6 @@ function SPA() {
         <About/>
         <Schedule/>
         <FAQ/>
-        <Tracks/>
         <Sponsors/>
         <Footer/>
       </Tablet>
