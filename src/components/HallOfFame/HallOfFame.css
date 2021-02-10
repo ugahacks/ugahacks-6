@@ -1,5 +1,5 @@
 .hof-section {
-  /*background-image: url(./images/bp2animated.svg);*/
+  background-image: url(./media/bp2animated.svg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover !important;
@@ -9,27 +9,27 @@
 }
 
 .header {
-  color: black;
+  color: white;
   text-align: center;
-  margin-top: 1em;
+  padding-top: 1em;
 }
 
 .subheader {
-  color: black;
+  color: #FFE401;
   text-align: center;
   margin-top: -1.5em;
   margin-bottom: 2em;
 }
 
 .title {
-  color: black;
+  color: white;
   text-align: center;
 }
 
 .carousel {
   margin-top: 1vh;
-  /*max-width: ;*/
-  /*margin-left: 5vw;*/
+  max-width: 90vw;
+  margin-left: 5vw;
 }
 
 .carousel li {
