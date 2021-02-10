@@ -13,7 +13,7 @@
     "framer-motion": "^2.6.5",
     "fullpage.js": "^3.0.9",
     "react": "^16.13.1",
-    "react-awesome-slider": "^4.1.0",
+    "react-alice-carousel": "^2.3.0",
     "react-device-detect": "^1.13.1",
     "react-dom": "^16.13.1",
     "react-full-page": "^0.1.11",
