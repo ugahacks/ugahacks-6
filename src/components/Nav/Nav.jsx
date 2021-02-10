@@ -35,7 +35,7 @@ const InvertedTooltip = withStyles({
 function Nav(props) {
 
   /* Hooks and States. */
-  const sections = ["splash", "about", "schedule", "faq", "tracks", "sponsors"];
+  const sections = ["splash", "hof", "about", "schedule", "faq", "sponsors"];
   const [invertStyle, setInvertStyle] = useState(true);
   const [invertToolTipStyle, setInvertToolTipStyle] = useState(true);
   const [current, setCurrent] = useState({0: 1, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0});
