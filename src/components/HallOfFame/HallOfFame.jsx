@@ -7,6 +7,26 @@ import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
 
 import team_wand from "./media/wand.png"
+import reading_buddy from "./media/reading_buddy.png";
+import astrodog from "./media/astrodog.png";
+import luxstra from "./media/luxstra.png";
+import octocat from "./media/octocat.png";
+import macro from "./media/macro.png";
+import sign_assist from "./media/sign_assist.png";
+import inventrack from "./media/inventrack.png";
+import chopchop from "./media/chopchop.png";
+import atm_pal from "./media/atm_pal.png";
+import landr from "./media/landr.png";
+import solvit_sus from "./media/solvit_sus.png";
+import oz from "./media/oz.png";
+import magic from "./media/magic.png";
+import food_1 from "./media/food_1.png";
+import food_2 from "./media/food_2.png";
+import food_3 from "./media/food_3.png";
+import workspace_1 from "./media/workspace_1.png";
+import workspace_2 from "./media/workspace_2.png";
+import workspace_3 from "./media/workspace_3.png";
+
 
 
 
@@ -21,126 +41,126 @@ const responsive = {
 
 const overall_items = [
   <MediaCard
-    teamImage={team_wand}
+    teamImage={reading_buddy}
     placement="[UGAHacks] 1st"
     teamName="Reading Buddy"
-    link="https://gooogle.com"
+    link="https://devpost.com/software/reading-buddy-0idbug"
     buttonText="See on Devpost"
   />,
   <MediaCard
-    teamImage={team_wand}
+    teamImage={astrodog}
     placement="[UGAHacks] 2nd"
     teamName="AstroDog"
-    link="https://gooogle.com"
+    link="https://devpost.com/software/astrodog"
     buttonText="See on Devpost"
   />,
   <MediaCard
-    teamImage={team_wand}
+    teamImage={luxstra}
     placement="[UGAHacks] 3rd"
     teamName="Luxstra"
-    link="https://gooogle.com"
+    link="https://devpost.com/software/luxstra"
     buttonText="See on Devpost"
   />,
   <MediaCard
-    teamImage={team_wand}
-    placement="[Byte Fan Art] 1st"
+    teamImage={oz}
+    placement="[Art Contest] 1st"
     teamName="Danielle Mawson"
     link="https://gooogle.com"
     buttonText="See Artwork"
   />,
   <MediaCard
-    teamImage={team_wand}
-    placement="[Byte Fan Art] 2nd"
+    teamImage={magic}
+    placement="[Art Contest] 2nd"
     teamName="Lauren Lin"
     link="https://gooogle.com"
     buttonText="See Artwork"
   />,
   <MediaCard
-    teamImage={team_wand}
+    teamImage={octocat}
     placement="Best Octocat Drawing"
     teamName="@ThePigOverlord"
-    link="https://gooogle.com"
+    link="https://twitter.com/ThePigOverlord/status/1357845688743124993?s=20"
     buttonText="See Tweet"
   />,
   <MediaCard
-    teamImage={team_wand}
+    teamImage={macro}
     placement="Best Domain"
     teamName="m4cro.space"
     link="https://m4cro.space"
     buttonText="Go to Wesbite"
   />,
   <MediaCard
-    teamImage={team_wand}
+    teamImage={reading_buddy}
     placement="Best Solo Hack"
     teamName="Reading Buddy"
-    link="https://gooogle.com"
+    link="https://devpost.com/software/reading-buddy-0idbug"
     buttonText="See on Devpost"
   />,
   <MediaCard
-    teamImage={team_wand}
+    teamImage={sign_assist}
     placement="Best First Time Hacker"
     teamName="Sign Assist"
-    link="https://gooogle.com"
+    link="https://devpost.com/software/sign-assist"
     buttonText="See on Devpost"
   />,
   <MediaCard
-    teamImage={team_wand}
+    teamImage={sign_assist}
     placement="[Digi Key] 1st"
     teamName="Sign Assist"
-    link="https://gooogle.com"
+    link="https://devpost.com/software/sign-assist"
     buttonText="See on Devpost"
   />,
   <MediaCard
-    teamImage={team_wand}
+    teamImage={astrodog}
     placement="[Digi Key] 2nd"
     teamName="AstroDog"
-    link="https://gooogle.com"
+    link="https://devpost.com/software/astrodog"
     buttonText="See on Devpost"
   />,
   <MediaCard
-    teamImage={team_wand}
+    teamImage={astrodog}
     placement="Best Hardware Track"
     teamName="AstroDog"
-    link="https://gooogle.com"
+    link="https://devpost.com/software/astrodog"
     buttonText="See on Devpost"
   />,
   <MediaCard
-    teamImage={team_wand}
+    teamImage={food_1}
     placement="[Best Meal] 1st"
     teamName="Anita Yep"
     link="https://gooogle.com"
     buttonText="See Meal"
   />,
   <MediaCard
-    teamImage={team_wand}
+    teamImage={food_2}
     placement="[Best Meal] 2nd"
     teamName="Ngan Tran"
     link="https://gooogle.com"
     buttonText="See Meal"
   />,
   <MediaCard
-    teamImage={team_wand}
+    teamImage={food_3}
     placement="[Best Meal] 3rd"
     teamName="Deeksha Koya"
     link="https://gooogle.com"
     buttonText="See Meal"
   />,
   <MediaCard
-    teamImage={team_wand}
+    teamImage={workspace_1}
     placement="[Best Workspace] 1st"
     teamName="Rachel Moan"
     link="https://gooogle.com"
     buttonText="See Workspace"
   />,
   <MediaCard
-    teamImage={team_wand}
+    teamImage={workspace_2}
     placement="[Best Workspace] 2nd"
     teamName="Katie Park"
     link="https://gooogle.com"
     buttonText="See Workspace"
   />,
   <MediaCard
-    teamImage={team_wand}
+    teamImage={workspace_3}
     placement="[Best Workspace] 3rd"
     teamName="Brandon Yau"
     link="https://gooogle.com"
@@ -150,66 +170,59 @@ const overall_items = [
 
 const category_items = [
   <MediaCard
-    teamImage={team_wand}
+    teamImage={inventrack}
     placement="[NCR] 1st"
     teamName="InvenTrack"
-    link="https://gooogle.com"
+    link="https://devpost.com/software/inventrack"
     buttonText="See on Devpost"
   />,
   <MediaCard
-    teamImage={team_wand}
+    teamImage={chopchop}
     placement="[NCR] 2nd"
     teamName="ChopChop"
-    link="https://gooogle.com"
+    link="https://devpost.com/software/chopchop"
     buttonText="See on Devpost"
   />,
   <MediaCard
-    teamImage={team_wand}
+    teamImage={atm_pal}
     placement="[NCR] 3rd"
     teamName="ATM-Pal"
-    link="https://gooogle.com"
+    link="https://devpost.com/software/atm-pal"
     buttonText="See on Devpost"
   />,
   <MediaCard
-    teamImage={team_wand}
+    teamImage={luxstra}
     placement="[State Farm] 1st"
     teamName="Luxstra"
-    link="https://gooogle.com"
+    link="https://devpost.com/software/luxstra"
     buttonText="See on Devpost"
   />,
   <MediaCard
-    teamImage={team_wand}
+    teamImage={atm_pal}
     placement="[Capital One] 1st"
-    teamName="WAND"
-    link="https://gooogle.com"
+    teamName="ATM Pal"
+    link="https://devpost.com/software/atm-pal"
     buttonText="See on Devpost"
   />,
   <MediaCard
-    teamImage={team_wand}
-    placement="[Capital One] 2nd"
-    teamName="WAND2"
-    link="https://gooogle.com"
-    buttonText="See on Devpost"
-  />,
-  <MediaCard
-    teamImage={team_wand}
+    teamImage={luxstra}
     placement="[GCP] 1st"
     teamName="Luxstra"
-    link="https://gooogle.com"
+    link="https://devpost.com/software/luxstra"
     buttonText="See on Devpost"
   />,
   <MediaCard
-    teamImage={team_wand}
-    placement="[Blackrock] 1st"
-    teamName="Solvit Sustainable"
-    link="https://gooogle.com"
-    buttonText="See on Devpost"
-  />,
-  <MediaCard
-    teamImage={team_wand}
-    placement="[Blackrock] 2nd"
+    teamImage={landr}
+    placement="[BlackRock] 1st"
     teamName="Landr"
-    link="https://gooogle.com"
+    link="https://devpost.com/software/landr"
+    buttonText="See on Devpost"
+  />,
+  <MediaCard
+    teamImage={solvit_sus}
+    placement="[BlackRock] 2nd"
+    teamName="Solvit Sustainable"
+    link="https://devpost.com/software/solvit-eja01g"
     buttonText="See on Devpost"
   />,
 ];
