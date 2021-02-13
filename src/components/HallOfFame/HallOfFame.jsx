@@ -64,14 +64,14 @@ const overall_items = [
     teamImage={oz}
     placement="[Art Contest] 1st"
     teamName="Danielle Mawson"
-    link="https://gooogle.com"
+    link={oz}
     buttonText="See Artwork"
   />,
   <MediaCard
     teamImage={magic}
     placement="[Art Contest] 2nd"
     teamName="Lauren Lin"
-    link="https://gooogle.com"
+    link={magic}
     buttonText="See Artwork"
   />,
   <MediaCard

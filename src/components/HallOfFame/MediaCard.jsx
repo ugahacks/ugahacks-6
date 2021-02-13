@@ -23,6 +23,9 @@ const useStyles = makeStyles({
     maxWidth: 345,
     height: 300,
     textAlign: 'center',
+    '@media (max-width:480px)': {
+      maxWidth: '100%'
+    }
   },
   media: {
     height: 180,
