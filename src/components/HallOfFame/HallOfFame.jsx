@@ -6,7 +6,6 @@ import MediaCard from './MediaCard.jsx';
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
 
-import team_wand from "./media/wand.png"
 import reading_buddy from "./media/reading_buddy.png";
 import astrodog from "./media/astrodog.png";
 import luxstra from "./media/luxstra.png";
@@ -128,42 +127,42 @@ const overall_items = [
     teamImage={food_1}
     placement="[Best Meal] 1st"
     teamName="Anita Yep"
-    link="https://gooogle.com"
+    link={food_1}
     buttonText="See Meal"
   />,
   <MediaCard
     teamImage={food_2}
     placement="[Best Meal] 2nd"
     teamName="Ngan Tran"
-    link="https://gooogle.com"
+    link={food_2}
     buttonText="See Meal"
   />,
   <MediaCard
     teamImage={food_3}
     placement="[Best Meal] 3rd"
     teamName="Deeksha Koya"
-    link="https://gooogle.com"
+    link={food_3}
     buttonText="See Meal"
   />,
   <MediaCard
     teamImage={workspace_1}
     placement="[Best Workspace] 1st"
     teamName="Rachel Moan"
-    link="https://gooogle.com"
+    link={workspace_1}
     buttonText="See Workspace"
   />,
   <MediaCard
     teamImage={workspace_2}
     placement="[Best Workspace] 2nd"
     teamName="Katie Park"
-    link="https://gooogle.com"
+    link={workspace_2}
     buttonText="See Workspace"
   />,
   <MediaCard
     teamImage={workspace_3}
     placement="[Best Workspace] 3rd"
     teamName="Brandon Yau"
-    link="https://gooogle.com"
+    link={workspace_3}
     buttonText="See Workspace"
   />,
 ];
