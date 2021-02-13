@@ -60,7 +60,7 @@ function Countdown(props) {
 
   if (timerComponents.length) {
     return (
-      <>
+      <div>
       <div className="subheader">
         <h2 id="eventdate">February 5-7, 2021 Online</h2>
       </div>
@@ -69,17 +69,16 @@ function Countdown(props) {
         <h1> until registration</h1>
         <CustomButton variant="contained" size="medium" href="https://ugeorgia.ca1.qualtrics.com/jfe/form/SV_8x05NF3a2OkoMeh">Interest Form</CustomButton>
       </div>
-      </>
+      </div>
     );
   } else {
     return (
-      <>
-      <div className="subheader">
-        <h2 id="tagline"><b>BOOT UP YOUR DREAMS.<span className="eventline"> BUILD THE FUTURE.</span></b></h2>
-        <h2 id="eventdate">February 5-7, 2021 Online</h2>
+      <div>
+        <div className="subheader">
+          <h2 id="tagline"><b>BOOT UP YOUR DREAMS.<span className="eventline"> BUILD THE FUTURE.</span></b></h2>
+          <h2 id="eventdate">February 5-7, 2021 Online</h2>
+        </div>
       </div>
-      <CustomButton variant="contained" size="large" href="https://6.ugahacks.com/static/media/pre_event_packet.99c85e96.pdf" target="_blank">Pre-event Guide</CustomButton>
-      </>
     );
   }
 
@@ -89,7 +88,6 @@ function Countdown(props) {
 
 function Splash(props) {
   return (
-    <>
       <section className="section splash" id="splash">
       <a id="mlh-trust-badge" href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white" target="_blank" rel="noopener noreferrer"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg" alt="Major League Hacking 2021 Hackathon Season"></img></a>
         <div className="headercontainer">
@@ -97,7 +95,6 @@ function Splash(props) {
           <Countdown/>
         </div>
       </section>
-    </>
 
   );
 }

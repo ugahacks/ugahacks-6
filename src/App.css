@@ -35,20 +35,20 @@ section {
 }
 
 
-.fp-viewing-1 #fp-nav ul li a span {
+.fp-viewing-2 #fp-nav ul li a span {
   background: #223c9d !important;
 }
 
-.fp-viewing-1 .fp-tooltip {
+.fp-viewing-2 .fp-tooltip {
   color: #223c9d !important;
 }
 
 
-.fp-viewing-3 #fp-nav ul li a span {
+.fp-viewing-4 #fp-nav ul li a span {
   background: #223c9d !important;
 }
 
-.fp-viewing-3 .fp-tooltip {
+.fp-viewing-4 .fp-tooltip {
   color: #223c9d !important;
 }
 
@@ -72,5 +72,13 @@ section {
   section {
     height: auto;
     min-height: 100vh;
+  }
+
+  .alice-carousel__dots {
+    display: none;
+  }
+
+  .carousel { 
+    padding-bottom: 20px;
   }
 }

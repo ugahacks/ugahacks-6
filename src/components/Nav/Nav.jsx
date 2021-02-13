@@ -35,7 +35,7 @@ const InvertedTooltip = withStyles({
 function Nav(props) {
 
   /* Hooks and States. */
-  const sections = ["splash", "about", "schedule", "faq", "tracks", "sponsors"];
+  const sections = ["splash", "hof", "about", "schedule", "faq", "sponsors"];
   const [invertStyle, setInvertStyle] = useState(true);
   const [invertToolTipStyle, setInvertToolTipStyle] = useState(true);
   const [current, setCurrent] = useState({0: 1, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0});
@@ -66,7 +66,8 @@ function Nav(props) {
     }
 
     var timeToInvert = in_section(scrollTop, 0, -1) ||
-                        in_section(scrollTop, 2, 1) ||
+                        in_section(scrollTop, 1, 0) ||
+                        in_section(scrollTop, 3, 2) ||
                         in_section(scrollTop, 5, 4);
 
     /* Regular setters. */
@@ -109,29 +110,29 @@ function Nav(props) {
 
             <div>
               {invertToolTip
-                ? <InvertedTooltip   title="About" placement={isBrowser ? "right" : "bottom"} arrow><a href="#about" className={current[1] ? 'current' : ''}>About</a></InvertedTooltip>
-                : <CustomizedTooltip title="About" placement={isBrowser ? "right" : "bottom"} arrow><a href="#about" className={current[1] ? 'current' : ''}>About</a></CustomizedTooltip>
+                ? <InvertedTooltip   title="Hall of Fame" placement={isBrowser ? "right" : "bottom"} arrow><a href="#hof" className={current[1] ? 'current' : ''}>Hall of Fame</a></InvertedTooltip>
+                : <CustomizedTooltip title="Hall of Fame" placement={isBrowser ? "right" : "bottom"} arrow><a href="#hof" className={current[1] ? 'current' : ''}>Hall of Fame</a></CustomizedTooltip>
               }
             </div>
 
             <div>
               {invertToolTip
-                ? <InvertedTooltip   title="Schedule" placement={isBrowser ? "right" : "bottom"} arrow><a href="#schedule" className={current[2] ? 'current' : ''}>Schedule</a></InvertedTooltip>
-                : <CustomizedTooltip title="Schedule" placement={isBrowser ? "right" : "bottom"} arrow><a href="#schedule" className={current[2] ? 'current' : ''}>Schedule</a></CustomizedTooltip>
+                ? <InvertedTooltip   title="About" placement={isBrowser ? "right" : "bottom"} arrow><a href="#about" className={current[2] ? 'current' : ''}>About</a></InvertedTooltip>
+                : <CustomizedTooltip title="About" placement={isBrowser ? "right" : "bottom"} arrow><a href="#about" className={current[2] ? 'current' : ''}>About</a></CustomizedTooltip>
               }
             </div>
 
             <div>
               {invertToolTip
-                ? <InvertedTooltip   title="FAQ" placement={isBrowser ? "right" : "bottom"} arrow><a href="#faq" className={current[3] ? 'current' : ''}>FAQ</a></InvertedTooltip>
-                : <CustomizedTooltip title="FAQ" placement={isBrowser ? "right" : "bottom"} arrow><a href="#faq" className={current[3] ? 'current' : ''}>FAQ</a></CustomizedTooltip>
+                ? <InvertedTooltip   title="Schedule" placement={isBrowser ? "right" : "bottom"} arrow><a href="#schedule" className={current[3] ? 'current' : ''}>Schedule</a></InvertedTooltip>
+                : <CustomizedTooltip title="Schedule" placement={isBrowser ? "right" : "bottom"} arrow><a href="#schedule" className={current[3] ? 'current' : ''}>Schedule</a></CustomizedTooltip>
               }
             </div>
 
             <div>
               {invertToolTip
-                ? <InvertedTooltip   title="Tracks" placement={isBrowser ? "right" : "bottom"} arrow><a href="#tracks" className={current[4] ? 'current' : ''}>Tracks</a></InvertedTooltip>
-                : <CustomizedTooltip title="Tracks" placement={isBrowser ? "right" : "bottom"} arrow><a href="#tracks" className={current[4] ? 'current' : ''}>Tracks</a></CustomizedTooltip>
+                ? <InvertedTooltip   title="FAQ" placement={isBrowser ? "right" : "bottom"} arrow><a href="#faq" className={current[4] ? 'current' : ''}>FAQ</a></InvertedTooltip>
+                : <CustomizedTooltip title="FAQ" placement={isBrowser ? "right" : "bottom"} arrow><a href="#faq" className={current[4] ? 'current' : ''}>FAQ</a></CustomizedTooltip>
               }
             </div>
 

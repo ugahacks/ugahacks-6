@@ -4,11 +4,11 @@ import { hotjar } from 'react-hotjar';
 import './App.css';
 import Nav from './components/Nav/Nav.jsx'
 import Splash from './components/Splash/Splash.jsx';
-// import HallOfFame from './components/HallOfFame/HallOfFame.jsx';
+import HallOfFame from './components/HallOfFame/HallOfFame.jsx';
 import About from './components/About/About.jsx';
 import FAQ from './components/FAQ/FAQ.jsx';
 // import CovidFAQ from './components/FAQ/CovidFAQ.jsx';
-import Tracks from './components/Tracks/Tracks.jsx';
+// import Tracks from './components/Tracks/Tracks.jsx';
 import Schedule from './components/Schedule/Schedule.jsx';
 import Sponsors from './components/Sponsors/Sponsors.jsx';
 import Footer from './components/Footer/Footer.jsx';
@@ -39,7 +39,7 @@ function SPA() {
           debug
           navigation = {true}
           navigationPosition = {'left'}
-          navigationTooltips = {['', 'About', 'Schedule', 'FAQ', 'Tracks', 'Sponsors']}
+          navigationTooltips = {['', 'Hall of Fame', 'About', 'Schedule', 'FAQ', 'Sponsors']}
           licenseKey = {'OPEN-SOURCE-GPLV3-LICENSE'}
           // menu = {'#navbar'}
           scrollingSpeed = {1000}
@@ -49,10 +49,10 @@ function SPA() {
           render={comp => (
               <ReactFullPage.Wrapper>
                 <Splash/>
+                <HallOfFame/>
                 <About/>
                 <Schedule/>
                 <FAQ/>
-                <Tracks/>
                 <Sponsors/>
                 <Footer/>
               </ReactFullPage.Wrapper>
@@ -63,10 +63,10 @@ function SPA() {
       <Tablet>
         <Nav/>
         <Splash/>
+        <HallOfFame/>
         <About/>
         <Schedule/>
         <FAQ/>
-        <Tracks/>
         <Sponsors/>
         <Footer/>
       </Tablet>
