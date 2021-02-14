@@ -14,29 +14,29 @@ import tsys from './images/sponsorlogos/tsys.png';
 import uga from './images/sponsorlogos/uga-combo.png';
 import credera from './images/sponsorlogos/credera.png';
 import acm from './images/sponsorlogos/acm.png';
-// import Button from '@material-ui/core/Button';
-// import { withStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+import { withStyles } from '@material-ui/core/styles';
+import sponsorship_packet from '../../media/sponsorship_packet.pdf';
 
-// const CustomButton = withStyles({
-//   root: {
-//     backgroundColor: '#fafafa',
-//     paddingLeft: '55px',
-//     paddingRight: '55px',
-//     fontWeight: 600,
-//     fontSize: '1.1em',
-//     fontFamily: 'Poppins',
-//     borderRadius: '50px',
-//     marginTop: '25px',
-//     maxWidth: '500px',
-//     width: '75vw',
-//     '@media (max-width:480px)': {
-//       width: '100%',
-//       fontSize: '1em',
-//       paddingRight: '10px',
-//       paddingLeft: '10px',
-//     }
-//   }
-// })(Button);
+const CustomButton = withStyles({
+  root: {
+    backgroundColor: '#fafafa',
+    paddingLeft: '55px',
+    paddingRight: '55px',
+    fontWeight: 600,
+    fontSize: '1.1em',
+    fontFamily: 'Poppins',
+    borderRadius: '50px',
+    marginTop: '25px',
+    marginBottom: '20px',
+    '@media (max-width:480px)': {
+      width: '100%',
+      fontSize: '1em',
+      paddingRight: '10px',
+      paddingLeft: '10px',
+    }
+  }
+})(Button);
 
 function Sponsors(props) {
   return (
@@ -62,6 +62,7 @@ function Sponsors(props) {
           <SponsorLogo id="acm" image={acm} alt="ACM" tier="partner" link="https://uga.campuslabs.com/engage/organization/acm" />
         </div>
         <p><i>This event is supported in part by the President's Venture Fund through the generous gifts of University of Georgia donors.</i></p>
+        <CustomButton variant="contained" size="large" href={sponsorship_packet} target="_blank">Sponsorship Packet</CustomButton>
       </div>
     </section>
   );

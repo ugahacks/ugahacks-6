@@ -3,6 +3,7 @@ import "./Splash.css";
 import sixLogo from "./images/sixlogoncr.svg";
 import Button from "@material-ui/core/Button";
 import { withStyles } from '@material-ui/core/styles';
+import event_recap from '../../media/event_recap.pdf';
 
 const CustomButton = withStyles({
   root: {
@@ -78,6 +79,7 @@ function Countdown(props) {
           <h2 id="tagline"><b>BOOT UP YOUR DREAMS.<span className="eventline"> BUILD THE FUTURE.</span></b></h2>
           <h2 id="eventdate">February 5-7, 2021 Online</h2>
         </div>
+        <CustomButton variant="contained" size="large" href={event_recap} target="_blank">Event Recap</CustomButton>
       </div>
     );
   }
