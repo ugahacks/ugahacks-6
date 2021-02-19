@@ -6,6 +6,10 @@ import MediaCard from './MediaCard.jsx';
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
 
+import IconButton from '@material-ui/core/IconButton';
+import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
+import NavigateNextIcon from '@material-ui/icons/NavigateNext';
+
 import reading_buddy from "./media/reading_buddy.png";
 import astrodog from "./media/astrodog.png";
 import luxstra from "./media/luxstra.png";
@@ -25,8 +29,6 @@ import food_3 from "./media/food_3.png";
 import workspace_1 from "./media/workspace_1.png";
 import workspace_2 from "./media/workspace_2.png";
 import workspace_3 from "./media/workspace_3.png";
-
-
 
 
 const responsive = {
@@ -226,7 +228,13 @@ const category_items = [
   />,
 ];
 
+const PrevButton = ({ isDisabled }) => {
+  return <IconButton disabled={isDisabled} color="inherit"><NavigateBeforeIcon fontSize="large" aria-label="Previous"/></IconButton>
+};
 
+const NextButton = ({ isDisabled }) => {
+  return <IconButton disabled={isDisabled} color="inherit"><NavigateNextIcon fontSize="large" aria-label="Next"/></IconButton>
+}
 
 const HallOfFame = () => {
   return (
@@ -236,11 +244,13 @@ const HallOfFame = () => {
         <h2 className="subheader">Congratulations to Our Winners!</h2>
         <div className="carousel overall-winners">
           <h3 className="title">Overall Winners</h3>
-          <AliceCarousel disableButtonsControls mouseTracking responsive={responsive} items={overall_items} />
+          <AliceCarousel mouseTracking autoPlay autoPlayInterval="2000" disableDotsControls
+          responsive={responsive} renderPrevButton={PrevButton} renderNextButton={NextButton} items={overall_items} />
         </div>
         <div className="carousel art-winners">
           <h3 className="title">Sponsor Winners</h3>
-          <AliceCarousel disableButtonsControls mouseTracking responsive={responsive} items={category_items} />
+          <AliceCarousel mouseTracking autoPlay autoPlayInterval="2000" disableDotsControls
+          responsive={responsive} renderPrevButton={PrevButton} renderNextButton={NextButton} items={category_items} />
         </div>
       </div>
     </section>
